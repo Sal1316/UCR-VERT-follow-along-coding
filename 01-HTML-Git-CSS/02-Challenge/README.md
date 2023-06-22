@@ -4,35 +4,35 @@
 
 There are two types of Challenges in this course. Each one is designed to prepare you for a scenario that you're likely to encounter as a web developer.
 
-### Challenge Types 
+### Challenge Types
 
 The two types of Challenges are the following:
 
-* **On-the-job ticket** or **feature request Challenges** give you starter code in a folder called `Develop`, which you'll modify to complete the Challenge. Odd-numbered modules follow this format.
+- **On-the-job ticket** or **feature request Challenges** give you starter code in a folder called `Develop`, which you'll modify to complete the Challenge. Odd-numbered modules follow this format.
 
-* **Job-seeking coding assessments** or **take-home assignments** don't provide starter code. You'll build these from scratch. Even-numbered modules follow this format.
+- **Job-seeking coding assessments** or **take-home assignments** don't provide starter code. You'll build these from scratch. Even-numbered modules follow this format.
 
 ### Challenge Elements
 
-Challenges adhere to a format that's commonly used by software development teams that use **agile project management** to manage their work. Practicing this will prepare you for the workflows you'll experience as a professional full-stack web developer. 
+Challenges adhere to a format that's commonly used by software development teams that use **agile project management** to manage their work. Practicing this will prepare you for the workflows you'll experience as a professional full-stack web developer.
 
 > **Deep Dive**: To learn more about agile, read this [Wikipedia article on agile software development](https://en.wikipedia.org/wiki/Agile_software_development).
 
 Each Challenge contains the following elements:
 
-* **User Story**: This is a short, simple description of a feature told from the perspective of the person who is requesting the new capability, usually a user or customer of the system. This follows an AS AN / I WANT / SO THAT format. For example, "AS A shopper visiting an online store, I WANT to place items in a shopping cart, SO THAT I can purchase them." 
+- **User Story**: This is a short, simple description of a feature told from the perspective of the person who is requesting the new capability, usually a user or customer of the system. This follows an AS AN / I WANT / SO THAT format. For example, "AS A shopper visiting an online store, I WANT to place items in a shopping cart, SO THAT I can purchase them."
 
-* **Acceptance Criteria**: These are the requirements that you must meet to satisfy the scope of work. They are not exhaustive, but they do entail the minimum aspects of a working solution. Consider this a checklist of baseline requirements. Acceptance criteria can be presented in various ways. In this case, we'll use a common format called **scenario-oriented criteria** which expresses each requirement in a WHEN / THEN format. Don't worry if this doesn't make sense now; it will become very familiar to you after you complete a couple of Challenges. 
+- **Acceptance Criteria**: These are the requirements that you must meet to satisfy the scope of work. They are not exhaustive, but they do entail the minimum aspects of a working solution. Consider this a checklist of baseline requirements. Acceptance criteria can be presented in various ways. In this case, we'll use a common format called **scenario-oriented criteria** which expresses each requirement in a WHEN / THEN format. Don't worry if this doesn't make sense now; it will become very familiar to you after you complete a couple of Challenges.
 
-* **Mock-up**: This is an image or animation that demonstrates the design and functionality of the web application that you'll build for the Challenge.
+- **Mock-up**: This is an image or animation that demonstrates the design and functionality of the web application that you'll build for the Challenge.
 
-* **Submission**: You'll submit your completed Challenge for review. In the real world, when a developer finishes working on a project, another developer reviews the code, providing feedback on errors and making sure that all of the acceptance criteria have been met. For each Challenge, your instructional staff will serve as your team of reviewers.
+- **Submission**: You'll submit your completed Challenge for review. In the real world, when a developer finishes working on a project, another developer reviews the code, providing feedback on errors and making sure that all of the acceptance criteria have been met. For each Challenge, your instructional staff will serve as your team of reviewers.
 
 ## Your Task
 
-This week is an odd-numbered week, so your Challenge is an on-the-job ticket&mdash;meaning that you'll begin with starter code that you need to modify. 
+This week is an odd-numbered week, so your Challenge is an on-the-job ticket&mdash;meaning that you'll begin with starter code that you need to modify.
 
-**Refactoring** existing code (improving it without changing what it does) to meet a certain set of standards or to implement a new technology is a common task for front-end and junior developers. For this particular Challenge, a marketing agency has hired you to refactor an existing site to make it more accessible. 
+**Refactoring** existing code (improving it without changing what it does) to meet a certain set of standards or to implement a new technology is a common task for front-end and junior developers. For this particular Challenge, a marketing agency has hired you to refactor an existing site to make it more accessible.
 
 > **Important**: When working with someone else's code, you should adhere to the **Scout Rule**&mdash;always leave the code a little cleaner than when you found it.
 
@@ -43,6 +43,26 @@ Accessibility can include complex requirements, but your tech lead has given you
 To impress clients, you should always exceed expectations and improve the codebase for long-term sustainability. For example, check that all links are functioning correctly. You can also increase the efficiency of the CSS by consolidating the selectors and properties, organizing them to follow the semantic structure of the HTML elements, and including comments before each element or section of the page.
 
 Are you ready to begin? Here are this week's Challenge requirements.
+
+<!--  -->
+<!--
+ <!-- -->
+ <!--  -->
+ <!--  -->
+ <!--  -->
+ <!--  -->
+ <!--  -->
+ <!--  -->
+ <!--  -->
+ <!--  -->
+ <!--  -->
+ <!--  -->
+ <!-- 
+  <!-- -->
+  <!--  -->
+  <!--  -->
+
+## Ignore all above
 
 ## User Story
 
@@ -56,7 +76,7 @@ SO THAT our own site is optimized for search engines
 
 ```
 GIVEN a webpage meets accessibility standards
-WHEN I view the source code
+WHEN I view the source code ?
 THEN I find semantic HTML elements
 WHEN I view the structure of the HTML elements
 THEN I find that the elements follow a logical structure independent of styling and positioning
@@ -100,59 +120,60 @@ Be sure to add, commit, and push your work to see the most up-to-date version of
 
 > **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
 >
-> * A repository that has no code
+> - A repository that has no code
 >
-> * A repository that includes a unique name but nothing else
+> - A repository that includes a unique name but nothing else
 >
-> * A repository that includes only a README file but nothing else
+> - A repository that includes only a README file but nothing else
 >
-> * A repository that only includes starter code
+> - A repository that only includes starter code
 
-This Challenge is graded based on the following criteria: 
+This Challenge is graded based on the following criteria:
 
 ### Technical Acceptance Criteria: 40%
 
-* Satisfies all of the preceding acceptance criteria plus the following code improvements:
+- Satisfies all of the preceding acceptance criteria plus the following code improvements:
 
-  * Application's links all function correctly.
+  - Application's links all function correctly.
 
-  * Application's CSS selectors and properties are consolidated and organized to follow semantic structure.
+  - Application's CSS selectors and properties are consolidated and organized to follow semantic structure.
 
-  * Application's CSS file is properly commented.
+  - Application's CSS file is properly commented.
 
 ### Deployment: 32%
 
-* Application deployed at live URL.
+- Application deployed at live URL.
 
-* Application loads with no errors.
+- Application loads with no errors.
 
-* Application GitHub URL submitted.
+- Application GitHub URL submitted.
 
-* GitHub repository contains application code.
+- GitHub repository contains application code.
 
 ### Application Quality: 15%
 
-* Application resembles mock-up provided in the Challenge instructions (at least 90%).
+- Application resembles mock-up provided in the Challenge instructions (at least 90%).
 
 ### Repository Quality: 13%
 
-* Repository has a unique name.
+- Repository has a unique name.
 
-* Repository follows best practices for file structure and naming conventions.
+- Repository follows best practices for file structure and naming conventions.
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+- Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 
-* Repository contains multiple descriptive commit messages.
+- Repository contains multiple descriptive commit messages.
 
-* Repository contains quality README file with description, screenshot, and link to deployed application.
+- Repository contains quality README file with description, screenshot, and link to deployed application.
 
 ## Review
 
 You are required to submit the following for review:
 
-* The URL of the deployed application.
+- The URL of the deployed application.
 
-* The URL of the GitHub repository, with a unique name and a README that describes the project.
+- The URL of the GitHub repository, with a unique name and a README that describes the project.
 
 ---
+
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
