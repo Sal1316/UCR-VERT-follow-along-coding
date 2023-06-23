@@ -64,6 +64,7 @@ Are you ready to begin? Here are this week's Challenge requirements.
 
 ## Ignore all above
 
+<input type="checkbox">
 ## User Story
 
 ```
