@@ -6,7 +6,7 @@
 }
 
 .section-blue {
-  /* Line-height property sets the distance between lines of text */
+  /* Line-height property sets the distance of the height whey you highlight the lines of text */
   line-height: 100px;
   color: #ffa500;
   background-color: #0000FF;

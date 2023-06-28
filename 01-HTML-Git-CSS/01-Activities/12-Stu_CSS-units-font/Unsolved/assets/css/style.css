@@ -1,7 +1,7 @@
 /* TODO: Add typography */
 .lesson {
     background-color: #fffacd;
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande','sans-serif' ;
+    font-family: 'Lucida Grande','Lucida Sans Unicode', sans-serif ;
 }
 
 /* Fact 1 */
@@ -17,4 +17,5 @@
 /* TODO: Fact 3 */
 #fact-3 {
   line-height: 50px;
+  /* background-color: green; */
 }

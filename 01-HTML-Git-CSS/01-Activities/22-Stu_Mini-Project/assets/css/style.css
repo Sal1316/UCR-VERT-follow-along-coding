@@ -1,0 +1,33 @@
+.navbar {
+      background-color: darkgoldenrod;
+      height: 100px;
+}
+.header {
+      height: 100px;
+      background-color: antiquewhite;
+      position: fixed;
+}
+.nav-tabs>li {
+      list-style-type: none;
+      display:inline-block;
+      
+}
+.relative {
+      position: relative;
+}
+
+.lionImg {
+      width: 400px;
+      height: 400px;
+}
+
+.absolute {
+      position: absolute;
+      left: 200px;
+      top: 100px;
+      color: white;
+}
+
+.footer {
+      background-color: aquamarine;
+}

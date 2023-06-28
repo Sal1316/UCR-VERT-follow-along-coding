@@ -1,9 +1,9 @@
-/* TODO: Label selector type */
+/* "*" selects all tags in the html page*/
 * {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   }
 
-/* TODO: Label selector type */
+/* TODO: targets the body background color */
 body {
   background-color: lemonchiffon;
 }
@@ -22,12 +22,12 @@ figure {
   background-color: #f0ead6;
 }
 
-/* TODO: Label selector type */
+/* TODO: class*/
 .highlighted-text {
   font-weight: bolder;
 }
 
-/* TODO: Label selector type */
+/* TODO: id*/
 #contact-section {
   background-color: #f0ead6;
 }
