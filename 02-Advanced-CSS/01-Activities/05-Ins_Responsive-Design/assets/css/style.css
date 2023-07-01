@@ -16,13 +16,14 @@ header {
 
 nav {
   display: flex;
+  justify-content:end;
   background-color: #d8a47f;
 }
 
 nav a {
   color: #13293d;
   padding: 14px 20px;
-  text-decoration: none;
+  text-decoration: none; /* Removes the hyperlink*/
   text-align: center;
 }
 
@@ -32,7 +33,7 @@ main {
 }
 
 aside {
-  flex: 1;
+  flex: 1; /* need to have display: flex in the container for this to work.*/
   background-color: #b9c6ae;
   padding: 20px;
 }

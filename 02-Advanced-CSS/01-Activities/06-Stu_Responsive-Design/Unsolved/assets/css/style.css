@@ -16,7 +16,7 @@ header {
 
 /* 
 What happens when we set the display property to flex? 
-TODO: Write your answer here 
+TODO: the content wraps over depending on screen size.
 */
 nav {
   display: flex;
@@ -27,16 +27,16 @@ nav a {
   color: #13293d;
   padding: 14px 20px;
   text-decoration: none;
-  text-align: center;
+  text-align:center;
 }
 
 /* 
 What is the flex-wrap property? 
-TODO: Write your answer here 
+TODO: it wrapps the content over to another line.
 */
 main {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 aside {
@@ -56,10 +56,10 @@ footer {
 
 /* 
 What does the justify-content property do? 
-TODO: Write your answer here 
+TODO: it centeres the cards withing the poducts tag.
 */
 .products {
-  flex: 4;
+  flex: 5;
   background-color: #fff;
   padding: 20px;
   display: flex;
@@ -70,18 +70,19 @@ TODO: Write your answer here
 /* 
 What is the flex property a shorthand property for?
 What is it doing here? 
-TODO: Write your answer here 
+TODO: the flex property aligns them horizantally
 */
 .card {
   border-style: solid;
   border-width: 1px;
   border-radius: 10px;
   padding: 10px;
-  flex: 0 0 400px;
+  flex: 1 0 400px;
 }
 
 .card header {
   padding: 20px;
+
 }
 
 .card p {
@@ -90,16 +91,17 @@ TODO: Write your answer here
 
 .card img {
   width: 100%;
+  
 }
 
 /* 
 What does the flex-direction property define?
 What is it doing here? 
-TODO: Write your answer here 
+TODO: it defines the colomn stacking of the main and nav components.
 */
 @media screen and (max-width: 768px) {
   main,
   nav {
-    flex-direction: column;
+    flex-direction:column;
   }
 }

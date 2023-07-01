@@ -9,12 +9,12 @@ body {
 
 .products {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   /* Centers along the main axis determined by flex-direction */
   justify-content: center;
   /* Centers along the opposite axis */
   align-items: center;
-  width: 90%;
+  width: 50%;
   /* Uses the height of the viewport */
   height: 100vh;
   margin: 0 auto;
@@ -24,7 +24,7 @@ body {
 
 .card {
   padding: 10px;
-  width: 250px;
+  width: 350px;
   text-align: center;
   border-style: solid;
   border-width: 1px;

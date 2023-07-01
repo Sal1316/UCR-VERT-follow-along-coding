@@ -30,10 +30,27 @@ header {
   text-align: center;
 }
 
-.card img {
+.card img { /* says any img with a .card parent*/
   width: 100%;
 }
 
-/* TODO: Use media query to change the width of the cards so they split into two columns at 992px or smaller*/
-
-/* TODO: Use media query to change the width of the cards so they are stacked on top of each other at 768px or smaller */
+/* TODO: Use media query to change the width of the cards 
+so they split into two columns at 992px or smaller*/
+@media screen and (max-width: 992px) {
+  .card{
+     width: 50%;
+  }
+  header {
+    background-color: green;
+  }
+}
+/* TODO: Use media query to change the width of the cards 
+so they are stacked on top of each other at 768px or smaller */
+@media screen and (max-width: 768px) {
+  .card{
+    width: 100%;
+  }
+  header {
+    background-color: rgb(229, 229, 134);
+  }
+}

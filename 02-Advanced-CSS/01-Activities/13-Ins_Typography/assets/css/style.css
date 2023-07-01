@@ -15,12 +15,12 @@ header {
 
 /* Change font size of headings */
 h1 {
-  font-size: 200%;
+  font-size: 400%;
 }
 
 /* Change the margin */
 h2 {
-  margin: 2% 0;
+  margin: 12% 0;
   font-size: 150%;
 }
 
@@ -87,15 +87,15 @@ article ul {
 /* Using DevTools, change the following properties to demonstrate the differences */
 .four {
   /* Change font family: serif, sans-serif, monospace, cursive */
-  font-family: serif;
+  font-family: serif, sans-serif, monospace, cursive;
   /* Change font weight: bold, 100-900 */
-  font-weight: 100;
+  font-weight: 900;
   /* Change the font style: normal, italic, oblique */
-  font-style: normal;
+  font-style: italic;
   /* Transform the text: uppercase, lowercase, capitalize */
-  text-transform: none;
+  text-transform: capitalize;
   /* Set text decorations on fonts: underline, overline, line-through */
-  text-decoration: none;
+  text-decoration: line-through;
 }
 
 aside {

@@ -11,6 +11,7 @@ button {
   color: #13293d;
   background-color: #fff;
   border: 3px solid #13293d;
+  box-shadow: 12px 12px 14px 1px rgba(0, 0, 0, 0.5);
 }
 
 /* The user's cursor is positioned over the element */
@@ -23,6 +24,7 @@ button:hover {
 button:active {
   font-size: 180%;
   box-shadow: 0 0 10px #000 inset;
+  /* box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.5); */
 }
 
 /* The element is currently in focus, either by tabbing to or clicking on it */
