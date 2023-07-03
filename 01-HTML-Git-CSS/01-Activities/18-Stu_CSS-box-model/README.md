@@ -2,7 +2,7 @@
 
 Work with a partner to implement the following user story:
 
-* As a developer, I want to use the CSS box model properties to position four boxes inside a frame.
+* ✅ As a developer, I want to use the CSS box model properties to position four boxes inside a frame.
 
 ## Acceptance Criteria
 

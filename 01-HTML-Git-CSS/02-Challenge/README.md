@@ -64,11 +64,13 @@ Are you ready to begin? Here are this week's Challenge requirements.
 
 ## Ignore all above
 
-<input type="checkbox">
 ## User Story
+
+✅ Refactor the existing site to make it more accessible. Replace all div tags with their proper symantic tag like section, p, header, footer....
 
 ```
 AS A marketing agency
+
 I WANT a codebase that follows accessibility standards
 SO THAT our own site is optimized for search engines
 ```

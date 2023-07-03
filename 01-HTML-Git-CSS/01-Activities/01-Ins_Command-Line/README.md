@@ -1,4 +1,4 @@
-#  Instructor Demo: Command Line
+# ✅ Instructor Demo: Command Line
 
 * Terminal commands are useful ways to navigate between folders, also called directories, quickly and easily. The commands are entered into the terminal or bash.
 

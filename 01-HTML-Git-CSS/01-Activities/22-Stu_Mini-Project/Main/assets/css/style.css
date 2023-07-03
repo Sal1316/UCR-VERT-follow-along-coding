@@ -1,7 +1,7 @@
 /* Universal Selector */
 * {
-  margin:0;
-  padding:0;  
+  margin: 0;
+  padding: 0;
 }
 
 /* Element Selectors */
@@ -9,8 +9,8 @@ body {
   position: relative;
   font-family: "Goudy Bookletter 1911", sans-serif;
   font-size: 20px;
-  background-color: #FDF8F5;
-  color: #4F4846;
+  background-color: green;
+  color: #4f4846;
 }
 
 h1,
@@ -30,7 +30,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #FDF8F5;
+  color: #fdf8f5;
 }
 
 header,
@@ -43,15 +43,15 @@ footer {
 
 header {
   position: fixed;
-  border-bottom: 10px solid #DDAF94;
+  border-bottom: 10px solid #ddaf94;
 }
 
 footer {
   position: absolute;
   margin-top: 0;
   bottom: 0;
-  border-bottom: 10px solid #4F4846;
-  color: #FDF8F5;    
+  border-bottom: 10px solid #4f4846;
+  color: #fdf8f5;
 }
 
 figure {
@@ -59,6 +59,8 @@ figure {
 }
 
 img {
+  height: 200px;
+  width: 300px;
   display: block;
   margin: 20px auto;
 }
@@ -66,8 +68,8 @@ img {
 section {
   margin-bottom: 0;
   padding: 20px 10px 40px 10px;
-  border-top: 3px solid #DDAF94;
-  background-color:  #E8CEBF;
+  border-top: 3px solid #ddaf94;
+  background-color: #e8cebf;
 }
 
 form {
@@ -75,7 +77,7 @@ form {
   margin: 0 auto;
   width: 500px;
   padding: 10px;
-  border: 5px solid #DDAF94;
+  border: 5px solid #ddaf94;
   border-radius: 20px;
 }
 
@@ -83,26 +85,26 @@ label {
   display: inline-block;
   width: 100px;
 }
-  
-input, 
+
+input,
 textarea {
   box-sizing: border-box;
   width: 300px;
-  border: 1px solid #4F4846;
+  border: 1px solid #4f4846;
 }
 
 textarea {
   vertical-align: top;
   height: 60px;
 }
-  
+
 button {
   height: 40px;
   width: 120px;
-  background-color: #4F4846;
-  color: #FDF8F5;
+  background-color: #4f4846;
+  color: #fdf8f5;
 }
- 
+
 /* Class Selectors */
 .text-center {
   text-align: center;

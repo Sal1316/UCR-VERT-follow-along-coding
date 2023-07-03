@@ -1,4 +1,4 @@
-# 🐛 List Items and Boxes Are Not Displaying Correctly
+# ✅🐛 List Items and Boxes Are Not Displaying Correctly
 
 Work with a partner to resolve the following issues:
 
