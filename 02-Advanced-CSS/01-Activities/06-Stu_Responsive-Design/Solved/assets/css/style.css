@@ -46,13 +46,6 @@ aside {
   text-align: center;
 }
 
-footer {
-  padding: 20px;
-  text-align: center;
-  background: #13293d;
-  color: #fff;
-}
-
 /* 
 What does the justify-content property do?
 It is used to align the flex items; in our case, the product cards 
@@ -90,6 +83,13 @@ We are making the product card not growable, not shrinkable, and with an initial
 
 .card img {
   width: 100%;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
 }
 
 /* 

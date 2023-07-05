@@ -1,4 +1,4 @@
-# Set Up a Local Repository with Git
+# ✅ Set Up a Local Repository with Git
 
 In this activity, we will explore configuring the local Git default branch to `main`. We will also review another way to create a repository, using the `git init` command. Lastly, we will review the `git pull` command.
 

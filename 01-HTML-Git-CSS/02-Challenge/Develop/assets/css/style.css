@@ -1,3 +1,4 @@
+/* the general formating.  like a default. */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -16,6 +17,7 @@ body {
     color: #ffffff;
 }
 
+/* the more precission the better  */
 .header h1 {
     display: inline-block;
     font-size: 48px;
@@ -52,6 +54,7 @@ p {
     font-size: 16px;
 }
 
+/* the section does not show any other tags, but with the hero class you can add more items like images. */
 .hero {
     height: 800px;
     width: 100%;

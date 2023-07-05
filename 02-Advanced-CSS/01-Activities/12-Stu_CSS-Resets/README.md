@@ -1,18 +1,18 @@
-# 🐛 Custom Font Styles Aren't Loading
+# ✅🐛 Custom Font Styles Aren't Loading
 
 Work with a partner to resolve the following issues:
 
-* As a user, I expect headings to be a larger font size.
+* ✅As a user, I expect headings to be a larger font size.
 
-* As a user, I expect spacing in between the lines of text.
+* ✅As a user, I expect spacing in between the lines of text.
 
 ## Expected Behavior
 
-The blog title and article headings should be a larger font size.
+✅ The blog title and article headings should be a larger font size.
 
 ## Actual Behavior
 
-The headings are the same size as the other text on the page.
+✅ The headings are the same size as the other text on the page.
 
 ## Assets
 

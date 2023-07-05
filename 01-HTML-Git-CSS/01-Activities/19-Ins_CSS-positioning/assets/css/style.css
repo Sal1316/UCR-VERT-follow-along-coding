@@ -17,26 +17,33 @@ section {
   border: 10px solid black;
 }
 
-/* Relative positioning */
+/* Relative positioning: 
+in this case, it always maintains the 200px padding 
+on the left when page shrinks/expands. */
 #relative-box {
   position: relative;
   left: 200px;
 }
 
-/* Absolute positioning */
+/* Absolute positioning: Element is removed from normal flow.
+always maintains the given positioning within the 
+#absolute-section parent tag. Overlaps the tags when minimized.*/
 #absolute-section {
   position: relative;
 }
-
 #absolute-box {
   position: absolute;
   top: 50px;
   right: 100px;
 }
 
-/* Fixed positioning */
+/* Fixed positioning: Element is removed from normal flow, 
+and stayes in one spot in the viewport. acts like 'sticky'
+Overlaps the tags when minimized.
+*/
 #fixed-box {
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 200px;
+  /* right: 0; */
+  left:200px;
 }

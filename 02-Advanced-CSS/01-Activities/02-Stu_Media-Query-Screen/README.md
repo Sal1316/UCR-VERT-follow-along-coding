@@ -6,13 +6,13 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-*<input type="checkbox"> It's done when the screen size is larger than 992px and the product cards on the screen are side by side.
+*✅ It's done when the screen size is larger than 992px and the product cards on the screen are side by side.
 
-*<input type="checkbox">It's done when I change the screen size to 992px or smaller, and the product cards on the screen split into two columns.
+*✅ It's done when I change the screen size to 992px or smaller, and the product cards on the screen split into two columns.
 
-*<input type="checkbox">It's done when I change the screen size to 768px or smaller, and the product cards on the screen become stacked on top of each other.
+*✅ It's done when I change the screen size to 768px or smaller, and the product cards on the screen become stacked on top of each other.
 
-*<input type="checkbox">Optional: Just for fun, change the background color of the header each time the product cards change layout. 
+*✅ Optional: Just for fun, change the background color of the header each time the product cards change layout. 
 
 ## Assets
 

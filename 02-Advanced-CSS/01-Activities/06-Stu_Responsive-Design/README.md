@@ -1,4 +1,4 @@
-# 📐 Add Comments to Implementation of a Responsive Design
+# ✅ 📐 Add Comments to Implementation of a Responsive Design
 
 Work with a partner to add comments describing the functionality of the code found in [Unsolved/assets/css/style.css](./Unsolved/assets/css/style.css).
 

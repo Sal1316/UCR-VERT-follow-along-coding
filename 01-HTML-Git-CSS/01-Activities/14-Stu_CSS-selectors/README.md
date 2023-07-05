@@ -1,4 +1,4 @@
-# 📐 Add Comments to Implementation of CSS Selectors
+# ✅ 📐 Add Comments to Implementation of CSS Selectors
 
 Work with a partner to add comments describing the functionality of the code found in [Unsolved](./Unsolved/assets/css/style.css).
 

@@ -1,18 +1,18 @@
-# 🐛 Product Cards Run Off the Page
+# ✅ 🐛 Product Cards Run Off the Page
 
 Work with a partner to resolve the following issues:
 
-* As a user, when products don't fit within one row, I want to see them displayed in two or more rows.
+* ✅As a user, when products don't fit within one row, I want to see them displayed in two or more rows.
 
-* As a user, I don't want to scroll horizontally to see additional products.
+* ✅As a user, I don't want to scroll horizontally to see additional products.
 
 ## Expected Behavior
 
-  Product cards that don't fit within the first row should display on the next row.
+  ✅Product cards that don't fit within the first row should display on the next row.
 
 ## Actual Behavior
 
-Product cards run off the page in a single row.
+✅Product cards run off the page in a single row.
 
 ## Assets
 

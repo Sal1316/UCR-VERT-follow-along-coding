@@ -24,20 +24,11 @@ nav {
   justify-content: flex-end;
   background-color: #d8a47f;
 }
-
 nav a {
   color: #13293d;
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
-}
-
-footer {
-  padding: 20px;
-  text-align: center;
-  background: #13293d;
-  color: #fff;
-  margin-top: auto;
 }
 
 .product {
@@ -65,6 +56,14 @@ footer {
 .product-details {
   margin-left: 3%;
   flex: 0 0 60%;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+  margin-top: auto;
 }
 
 @media screen and (max-width: 768px) {

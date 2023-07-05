@@ -16,7 +16,10 @@
   color: yellow;
   background-color: purple;
 }
-
+#section-2, #section-3 {
+  background-color: blue;
+  color: orange;
+}
 #section-4, #section-5 {
   color: white;
 }

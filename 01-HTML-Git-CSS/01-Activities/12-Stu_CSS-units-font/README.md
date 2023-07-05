@@ -1,4 +1,4 @@
-# 🐛 CSS Styling Not Applied to HTML Elements
+# ✅🐛 CSS Styling Not Applied to HTML Elements
 
 Work with a partner to resolve the following issues:
 
@@ -8,13 +8,13 @@ Work with a partner to resolve the following issues:
 
 - Each section should have a background color of `#fffacd`, and the font family `"Lucida Sans Unicode", "Lucida Grande", sans-serif` should be specified.
 
-- <input type="checkbox">The `fact-1` paragraph should be bold.
+- ✅The `fact-1` paragraph should be bold.
 
-- <input type="checkbox">The `fact-2` paragraph should have a font size of 24px.
+- ✅The `fact-2` paragraph should have a font size of 24px.
 
-- <input type="checkbox">The `fact-3` paragraph should have a line height of 50px.
+- ✅The `fact-3` paragraph should have a line height of 50px.
 
-- <input type="checkbox">The finished page should match the mockup.
+- ✅The finished page should match the mockup.
 
 ## Actual Behavior
 

@@ -1,4 +1,4 @@
-# 🏗️ Implement Absolute and Relative Positioning to Change Layout
+# ✅ 🏗️ Implement Absolute and Relative Positioning to Change Layout
 
 Work with a partner to implement the following user story:
 
@@ -6,11 +6,11 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when `box 2` is positioned in the middle of `square 1` using relative positioning.
+* ✅ It's done when `box 2` is positioned in the middle of `square 1` using relative positioning.
 
-* It's done when `box 2` is positioned outside of the upper-right corner of `square 2` using absolute positioning.
+* ✅ It's done when `box 2` is positioned outside of the upper-right corner of `square 2` using absolute positioning.
 
-* It's done when the finished page matches the mockup.  
+* ✅ It's done when the finished page matches the mockup.  
 
 ## Assets
 

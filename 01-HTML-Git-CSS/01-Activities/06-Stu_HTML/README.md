@@ -1,4 +1,4 @@
-# 🏗️ Create a Webpage Using HTML 
+# ✅ 🏗️ Create a Webpage Using HTML 
 
 Work with a partner to implement the following user story:
 
@@ -6,13 +6,13 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when the main header reads "Student Bio". 
+* ✅It's done when the main header reads "Salvador's Bio". 
 
-* It's done when there is a section that includes a name, an image, and a paragraph.
+* ✅It's done when there is a section that includes a name, an image, and a paragraph.
 
-* It's done when there is a second section that includes a subheader labeled "Contact Info" and a list that includes links to my email, GitHub, and portfolio.
+* ✅It's done when there is a second section that includes a subheader labeled "Contact Info" and a list that includes links to my email, GitHub, and portfolio.
 
-* It's done when the finished page matches the mockup. 
+* ✅It's done when the finished page matches the mockup. 
 
 ## Assets
 

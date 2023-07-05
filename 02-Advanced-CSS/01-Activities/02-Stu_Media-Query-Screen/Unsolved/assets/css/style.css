@@ -19,7 +19,7 @@ header {
   border-width: 1px;
   padding: 10px;
   float: left;
-  width: 25%;
+  width: 25%;  /* take up 25% of the width available inside the .card component.*/
 }
 
 .card header {

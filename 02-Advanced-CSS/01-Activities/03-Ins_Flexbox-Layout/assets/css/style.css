@@ -23,14 +23,13 @@ main {
   background: #13293d;
   color: #fff;
 }
-
 .sub-header {
   display: flex;
   width: 400px;
 }
 .sub-header h2 {
   display: flex;
-  margin: auto;
+  margin-right: 20px;
 }
 
 .card {

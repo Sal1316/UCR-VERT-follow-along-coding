@@ -22,7 +22,7 @@ nav {
 
 nav a {
   color: #13293d;
-  padding: 14px 20px;
+  padding: 14px 20px; /* top & bottom, left & right.*/
   text-decoration: none; /* Removes the hyperlink*/
   text-align: center;
 }
@@ -65,15 +65,13 @@ footer {
   nav {
     flex-direction: column;
   }
-  /* Make the sidebar stack below the body */
+  /* Make the sidebar stack below the body when shrinks to 768px.*/
   aside {
     order: 2;
   }
-  /* Change the header background */
   header {
     background: #772014;
   }
-  /* Change the navbar and footer background */
   nav,
   footer {
     background-color: #bb8588;

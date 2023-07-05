@@ -1,6 +1,6 @@
 # Module 02 Mini-Project: CSS Snippet Cheat Sheet
 
-In this activity, you will work with a group to build a webpage that will hold a collection of CSS snippets. What better way to learn CSS than to build a knowledge base of CSS?
+✅ In this activity, you will work with a group to build a webpage that will hold a collection of CSS snippets. What better way to learn CSS than to build a knowledge base of CSS?
 
 ## Instructions
 

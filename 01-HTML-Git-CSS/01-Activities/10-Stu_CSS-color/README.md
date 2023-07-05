@@ -1,4 +1,4 @@
-# 📖 Add Color to HTML Page Using CSS
+# ✅ 📖 Add Color to HTML Page Using CSS
 
 Work with a partner to implement the following user story:
 
@@ -8,17 +8,17 @@ Work with a partner to implement the following user story:
 
 - It's done when the HTML page has been linked with the external CSS style sheet.
 
-- <input type="checkbox"> It's done when `Section 1` has a background color of purple and the text is yellow.
+- ✅ It's done when `Section 1` has a background color of purple and the text is yellow.
 
-- <input type="checkbox">It's done when `Section 2` and `Section 3` have a background color of blue and the text is orange.
+- ✅It's done when `Section 2` and `Section 3` have a background color of blue and the text is orange.
 
-- <input type="checkbox">It's done when the `container` has a background color of black.
+- ✅It's done when the `container` has a background color of black.
 
-- <input type="checkbox">It's done when `Section 4` and `Section 5` have a text color of white..
+- ✅It's done when `Section 4` and `Section 5` have a text color of white..
 
-- <input type="checkbox">It's done when `Section 6` has a text color of yellow.
+- ✅It's done when `Section 6` has a text color of yellow.
 
-- <input type="checkbox" >It's done when the finished page matches the mockup.
+- ✅It's done when the finished page matches the mockup.
 
 ## 📝 Notes
 
