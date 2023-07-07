@@ -1,4 +1,7 @@
-/* create custom CSS variables (also called custom properties) and apply them to the root of the page, making them accessible to all other CSS */
+/* create custom CSS variables (also called Custom Properties) 
+and apply them to the root of the page, making them accessible
+to all other CSS. They are accessed using the var()function 
+( e.g., color: var(--dark) ) */
 :root {
   /* declare a variable with `--` syntax */
   --dark: #13293d;
@@ -17,7 +20,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1%;
-  /* use CSS var() function to reference a variable created above */
+  /* use CSS var() function to reference a variable created 
+  above */
   background-color: var(--dark);
   color: var(--light);
 }
@@ -31,6 +35,9 @@ h2 {
   font-size: 250%;
 }
 
+/* what is the difference between using $ and * after href? 
+the $, selects href attrubutes that 'end with' ".css"
+the *, selects href attributes that 'contain' ".css" */
 a[href*='.css']::after {
   content: '📝';
   display: inline-block;
@@ -62,7 +69,8 @@ main {
 }
 
 article {
-  /* If we were to change the value of `--dark`, then all references to it would change automatically */
+  /* If we were to change the value of `--dark`, 
+  then all references to it would change automatically */
   border-bottom: 1px solid var(--dark);
 }
 

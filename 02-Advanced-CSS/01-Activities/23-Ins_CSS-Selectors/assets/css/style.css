@@ -65,18 +65,23 @@ article li {
 }
 
 /* Use :nth-child() to select every even list item */
-article ul li:nth-child(even) {
+article ul li:nth-child(2) {
   background-color: #b9c6ae;
   color: #13293d;
 }
 
-/* Use adjacent sibling combinator (+) to select all <p> elements that come immediately after a <ul> element inside of an <article> element */
+/* Use adjacent sibling combinator (+) 
+to select all <p> elements that come immediately after 
+a <ul> element inside of an <article> element */
 article ul + p {
   background-color: #13293d;
   color: #fff;
 }
 
-/* Use child combinator (>) with a wildcard selector (*) to select every single element that is a direct descendant (or child) of any <div> element in an <article> element */
+/* Use child combinator (>) with a wildcard selector (*) 
+to select every single element that is a DIRECT descendant 
+(or child) of any <div> element in an <article> element. 
+Does not select the children of those element. Its only top level */
 article div > * {
   padding: 20px;
   border: 4px solid #b9c6ae;

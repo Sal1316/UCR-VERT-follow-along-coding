@@ -2,13 +2,13 @@
 
 Work with a partner to implement the following user story:
 
-* As a user, I want additional resource links at the bottom of the article.
+* ✅ As a user, I want additional resource links at the bottom of the article.
 
 ## Acceptance Criteria
 
-* It's done when the resource links are initially hidden on page load.
+* ✅ It's done when the resource links are initially hidden on page load.
 
-* It's done when the user moves the mouse over the text "Show Resources," and the resource links display.
+* ✅ It's done when the user moves the mouse over the text "Show Resources," and the resource links display.
 
 ## Assets
 

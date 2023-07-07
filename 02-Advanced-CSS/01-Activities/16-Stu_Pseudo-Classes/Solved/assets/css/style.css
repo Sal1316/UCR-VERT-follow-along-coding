@@ -104,7 +104,7 @@ footer {
 
 .links a {
   color: #772014;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 .links a:hover {

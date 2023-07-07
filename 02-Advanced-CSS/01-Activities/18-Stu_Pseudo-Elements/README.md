@@ -1,16 +1,16 @@
-# 📖 Implement a CSS Tooltip
+# ✅ 📖 Implement a CSS Tooltip
 
 Work with a partner to implement the following user story:
 
-* As a user, I want to hover over terms or phrases and read short info on them instead of having that info directly on the page.
+* ✅ As a user, I want to hover over terms or phrases and read short info on them instead of having that info directly on the page.
 
 ## Acceptance Criteria
 
-* It's done when certain terms and phrases are underlined and change the cursor to a hand icon when the user hovers over them.
+* ✅ It's done when certain terms and phrases are underlined and change the cursor to a hand icon when the user hovers over them.
 
-* It's done when the user hovers over the term or phrase and a rectangular tooltip appears next to it.
+* ✅ It's done when the user hovers over the term or phrase and a rectangular tooltip appears next to it.
 
-* It's done when the tooltip has the same background color and text color as the header and navbar items.
+* ✅ It's done when the tooltip has the same background color and text color as the header and navbar items.
 
 ## 📝 Notes
 

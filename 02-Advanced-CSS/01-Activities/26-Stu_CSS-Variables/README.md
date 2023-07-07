@@ -2,13 +2,13 @@
 
 Work with a partner to implement the following user story:
 
-* As a developer, I want to manage CSS values that are used in multiple CSS rules in a more efficient manner.
+* ✅ As a developer, I want to manage CSS values that are used in multiple CSS rules in a more efficient manner.
 
 ## Acceptance Criteria
 
-* It's done when any repeated color values are defined once as a CSS variable.
+* ✅ It's done when any repeated color values are defined once as a CSS variable.
 
-* It's done when any repeated border radius values are defined once as a CSS variable.
+* ✅ It's done when any repeated border radius values are defined once as a CSS variable.
 
 ---
 

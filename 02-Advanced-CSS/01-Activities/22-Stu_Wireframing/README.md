@@ -2,13 +2,13 @@
 
 Work with a partner to implement the following user story:
 
-* As a developer, I want to be able to see how my elements will be grouped together so that I can better design my website.
+* ✅ As a developer, I want to be able to see how my elements will be grouped together so that I can better design my website.
 
 ## Acceptance Criteria
 
-* It is done when I have created a wireframe using Google Slides that has the correct elements grouped together based on the web app's columns and rows.
+* ✅ It is done when I have created a wireframe using Google Slides that has the correct elements grouped together based on the web app's columns and rows.
 
-* It is done when I have completed the wireframe of the CSS snippet cheat sheet mini-project.
+* ✅ It is done when I have completed the wireframe of the CSS snippet cheat sheet mini-project.
 
 ## Assets
 

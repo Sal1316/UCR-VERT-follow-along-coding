@@ -68,7 +68,18 @@ footer {
   color: #fff;
 }
 
-/* TODO: Add code here to select all <a> elements that link to a file with a `.css` extension */
+/* ✅ TODO: Add code here to select all <a> elements 
+that link to a file with a `.css` extension */
+div li a[href$=".css"]::after {
+  content: ' 📝'; /*⛅🎮 need to be inside quotes */
+}
+/* 
+div li a::after {
+  content: 'Pseudo Elements';
+  font-style:oblique;
+  color: red
+} 
+*/
 
 @media screen and (max-width: 768px) {
   header {

@@ -22,6 +22,10 @@ h2 {
   font-size: 250%;
 }
 
+h3 {
+  font-size: 150%;
+}
+
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -87,19 +91,25 @@ footer {
   color: #fff;
 }
 
-/* TODO: Add styles that will hide the resource links by default */
-.resource-list li{
-  list-style:circle;
-  text-decoration: none;
-  color: brown;
-  /* display: none; */
+/* ✅ TODO: Add styles that will hide the resource
+ links by default 
+ 1st - hide the links by hiding the li.
+ 2nd - display: block on hovering over links.
+ 3rd - change the color of the links. */
+.resources .link {
+  display: none;
+  padding: 1% 0;
 }
-
-/* TODO: Add styles that will display the links when the mouse hovers over the parent element */
-/* .resources:hover .resource-list li {
+.resources:hover .link {
   display: block;
-} */
-
+}
+.resources h3 {
+  font-size: 150%;
+}
+.link a {
+  color: #772014;
+  text-decoration: none;
+}
 
 @media screen and (max-width: 768px) {
   header, main {

@@ -17,7 +17,7 @@ h1 {
   font-size: 200%;
 }
 
-/* Added the rest of the header text */
+/* ::after, added the rest of the header text and new formating*/
 h1::after {
   font-family: Impact;
   content: 'Pseudo Elements';
@@ -35,7 +35,7 @@ h3 {
   font-size: 150%;
 }
 
-/* Added asterisk before every h3 heading */
+/* ::before added asterisk before every h3 heading */
 h3::before {
   font-family: Impact;
   content: '\273A';
@@ -87,13 +87,6 @@ article {
 article p {
   margin: 2% 0;
   font-size: 110%;
-}
-
-article ul {
-  margin-left: 5%;
-  margin-bottom: 2%;
-  font-size: 110%;
-  list-style: circle;
 }
 
 aside {

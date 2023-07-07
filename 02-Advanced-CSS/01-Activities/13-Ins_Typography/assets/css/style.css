@@ -13,14 +13,14 @@ header {
   color: #fff;
 }
 
-/* Change font size of headings */
+/* ✅ Change font size of headings */
 h1 {
-  font-size: 400%;
+  font-size: 300%;
 }
 
-/* Change the margin */
+/* ✅ Change the margin */
 h2 {
-  margin: 12% 0;
+  margin: 5% 0;
   font-size: 150%;
 }
 
@@ -57,7 +57,7 @@ article p {
   font-size: 110%;
 }
 
-/* Change the margin specifically */
+/* ✅ Change the margin specifically */
 article ul {
   margin-left: 5%;
   margin-bottom: 2%;
@@ -65,7 +65,7 @@ article ul {
   list-style: circle;
 }
 
-/* Implement font stacks */
+/* ✅ Implement font stacks */
 .one {
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-weight: 900;
@@ -84,17 +84,17 @@ article ul {
   font-style: normal;
 }
 
-/* Using DevTools, change the following properties to demonstrate the differences */
+/* ✅ Using DevTools, change the following properties to demonstrate the differences */
 .four {
-  /* Change font family: serif, sans-serif, monospace, cursive */
+  /* ✅ Change font family: serif, sans-serif, monospace, cursive */
   font-family: serif, sans-serif, monospace, cursive;
-  /* Change font weight: bold, 100-900 */
+  /* ✅ Change font weight: bold, 100-900 */
   font-weight: 900;
-  /* Change the font style: normal, italic, oblique */
+  /* ✅ Change the font style: normal, italic, oblique */
   font-style: italic;
-  /* Transform the text: uppercase, lowercase, capitalize */
+  /* ✅ Transform the text: uppercase, lowercase, capitalize */
   text-transform: capitalize;
-  /* Set text decorations on fonts: underline, overline, line-through */
+  /* ✅ Set text decorations on fonts: underline, overline, line-through */
   text-decoration: line-through;
 }
 

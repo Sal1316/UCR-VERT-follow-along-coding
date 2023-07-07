@@ -59,9 +59,32 @@ article p {
   font-size: 110%;
 }
 
-/* TODO: Style the term/phrase - underline, black text, grab cursor */
+/* TODO:  underline, black text, grab cursor */
+span[data-description] {
+  position: relative;
+  text-decoration: underline;
+  color: black;
+  cursor: grab;
+}
 
-/* TODO: Position tooltip above the term/phrase, same color as header and nav links, no border-radius, smaller font size */
+/* TODO: Position tooltip above the term/phrase, 
+same color as header and nav links, no border-radius, 
+smaller font size */
+span[data-description]:hover::after {
+  content: attr(data-description); 
+  position: absolute;
+  padding: 5px;
+  left: 25px;
+  bottom: 24px;
+  min-width: 200px;
+  border: 1px #aaaaaa solid;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #13293d;
+  color: #fff;
+  font-size: 80%;
+  z-index: 1;
+}
 
 aside {
   width: 25%;
@@ -123,3 +146,35 @@ footer {
     text-align: center;
   }
 }
+
+
+/* Tooltip: Another way of crating a tooltip.
+
+  //make a tooltip class where you want it to show.
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    // z-index has to be > 0 bc it needs to show above the code.
+    
+    position: absolute;
+    z-index: 1;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+*/

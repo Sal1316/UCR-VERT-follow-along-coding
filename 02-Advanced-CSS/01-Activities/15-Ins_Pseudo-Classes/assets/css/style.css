@@ -5,7 +5,7 @@ nav {
 }
 
 button {
-  width: 250px;
+  width: 200px;
   margin: 0 .5%;
   font-size: 200%;
   color: #13293d;
@@ -14,7 +14,7 @@ button {
   box-shadow: 12px 12px 14px 1px rgba(0, 0, 0, 0.5);
 }
 
-/* The user's cursor is positioned over the element */
+/*  The user's cursor is positioned over the element */
 button:hover {
   background-color: #772014;
   color: #fff;
@@ -27,7 +27,8 @@ button:active {
   /* box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.5); */
 }
 
-/* The element is currently in focus, either by tabbing to or clicking on it */
+/* The element is currently in focus, 
+either by tabbing to or clicking on it. After affect */
 button:focus {
   outline: none;
   border-color: #8ac4ff;
