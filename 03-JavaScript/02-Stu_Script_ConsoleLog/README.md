@@ -2,11 +2,11 @@
 
 Work with a partner to implement the following user story:
 
-* As a developer, I want to link an external JavaScript file to an existing `index.html` file to add JavaScript functionality to my static webpage. 
+* ✅ As a developer, I want to link an external JavaScript file to an existing `index.html` file to add JavaScript functionality to my static webpage. 
 
 ## Acceptance Criteria
 
-* It's done when I open the `index.html` file, navigate to the console, and see the message contained in the `script.js` file logged to the console. 
+* ✅ It's done when I open the `index.html` file, navigate to the console, and see the message contained in the `script.js` file logged to the console. 
 
 ## 📝 Notes
 

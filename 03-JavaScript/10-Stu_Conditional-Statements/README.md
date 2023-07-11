@@ -1,6 +1,6 @@
 # 🏗️ Create an Algorithm Using Conditional Statements
 
-Work with a partner to implement the following user story:
+✅ Work with a partner to implement the following user story:
 
 * As a developer, I want to write an algorithm that will take in two expressions and evaluate whether both expressions evaluate to `true`, only one expression evaluates to `true`, or both expressions evaluate to `false`.
 

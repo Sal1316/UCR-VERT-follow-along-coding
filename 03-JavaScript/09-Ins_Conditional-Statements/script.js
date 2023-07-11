@@ -4,7 +4,6 @@ var lunchBill = 11;
 
 // If statement
 // Evaluates to true so "Hungry" is logged
-
 if (hungerLevel >= 50) {
   console.log("Hungry!");
 }

@@ -1,12 +1,12 @@
-# 🐛 Logs Using Logical and Conditional Operators Return False
+# ✅ 🐛 Logs Using Logical and Conditional Operators Return False
 
 Work with a partner to resolve the following issue(s):
 
-* When I open the console, all the logs should read `true`, but right now they do not!
+* ✅ When I open the console, all the logs should read `true`, but right now they do not!
 
 ## Expected Behavior
 
-When an expression is logged to the console, it should return `true`.
+✅ When an expression is logged to the console, it should return `true`.
 
 ## Actual Behavior
 
