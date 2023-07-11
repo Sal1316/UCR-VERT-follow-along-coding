@@ -126,12 +126,10 @@ margins to offset the padding on the .card-column class */
 width to be 100% and we'll update it using media 
 queries for larger screen sizes */
 .card-column {
-  flex: 1 0 100%;
   padding: 1.5rem;
   /* when the screen resizes, make it so our columns 
   don't jump in size */
   transition: flex-basis 500ms linear;
-  margin-bottom: 1.5rem;
 }
 
 /* make each code card a flexbox column to align and 
