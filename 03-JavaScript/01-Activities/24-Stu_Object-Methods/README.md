@@ -2,11 +2,11 @@
 
 Work with a partner to resolve the following issue(s):
 
-* Users should see a message log to the console indicating whether the shelter dog or cat is available.
+* ✅ Users should see a message log to the console indicating whether the shelter dog or cat is available.
 
 ## Expected Behavior
 
-When a name is stored in the `chosenPet` variable, a message should log to the console indicating the name stored in `chosenPet`. The message should also indicate whether the pet is a dog or a cat and indicate the availability of the dog or cat.If the pet is unavailable, display a message suggesting the shelter's featured animal, which is the first listed cat or dog.
+✅ When a name is stored in the `chosenPet` variable, a message should log to the console indicating the name stored in `chosenPet`. The message should also indicate whether the pet is a dog or a cat and indicate the availability of the dog or cat.If the pet is unavailable, display a message suggesting the shelter's featured animal, which is the first listed cat or dog.
 
 
 ## Actual Behavior

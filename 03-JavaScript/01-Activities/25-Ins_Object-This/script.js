@@ -1,5 +1,10 @@
-// The default keyword "this" refers to the global object
-// In a browser, the global object is the Window 
+/* The default keyword "this" refers to the global object. This is the windows object that has a bunch of other properties.
+In a browser, the global object is the Window 
+the value of 'this' can change depending on where you are in your code. On the w
+- the main thing tha 'this' is used for is inside of objects. it belongs to the object in which it was created.
+'this' globally = windows, 
+'this' inisde obj = the properties in the obj.
+*/
 
 // Logs Window
 console.log(this);

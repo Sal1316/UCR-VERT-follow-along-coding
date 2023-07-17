@@ -2,7 +2,7 @@
 
 In this activity, you will work with a group to build a game using only JavaScript.
 
-## Instructions
+## Instructions ✅
 
 The completed application should meet the following criteria:
 
