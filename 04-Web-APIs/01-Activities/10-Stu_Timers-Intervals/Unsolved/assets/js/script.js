@@ -10,14 +10,22 @@ function countdown() {
 
   // TODO: Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
   var timeInterval = setInterval(function () {
-    //
-    // YOUR CODE HERE
-    //
-  });
+    
+    if(timeLeft >= 1) {
+      timerEl.textContent = timeLeft + " seconds left till colorsplosion.";
+      timeLeft--;
+    
+    } else {
+      timerEl.textContent = "";
+      clearInterval(timeInterval); 
+      startSpeedReader();
+    }
+    
+  }, 1000);
 }
 
 // Displays the message one word at a time
-function displayMessage() {
+function startSpeedReader() {
   var wordCount = 0;
 
   // Uses the `setInterval()` method to call a function to be executed every 1000 milliseconds
@@ -31,7 +39,7 @@ function displayMessage() {
       mainEl.textContent = words[wordCount];
       wordCount++;
     }
-  }, 1000);
+  }, 100);
 }
 
 countdown();

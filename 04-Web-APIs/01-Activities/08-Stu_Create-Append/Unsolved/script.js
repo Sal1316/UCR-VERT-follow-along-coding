@@ -18,14 +18,13 @@ kittenEl.textContent = "This is my kitten 🐱.";
 nameEl.textContent = "His name is Jax.";
 favoriteEl.textContent = "My favorite foods are:";
 
+// items only exist in Js when they are appended to something that exist in the document.
 body.appendChild(h1El);
 body.appendChild(infoEl);
 infoEl.appendChild(imgEl);
 infoEl.appendChild(kittenEl);
 infoEl.appendChild(nameEl);
 body.appendChild(favoriteEl);
-favoriteEl.appendChild(listEl);
-// Append ordered list 
 favoriteEl.appendChild(listEl);
 
 h1El.setAttribute("style", "margin:auto; width:50%; text-align:center;");
@@ -36,3 +35,19 @@ kittenEl.setAttribute("style", "font-size:25px; text-align:center;");
 favoriteEl.setAttribute("style", "font-size:20px;");
 
 // TODO: Add ordered list items containing four favorite foods
+li1.textContent = "Cheesecake";
+li2.textContent = "Pizza";
+li3.textContent = "Dumpling";
+li4.textContent = "Burger";
+
+listEl.appendChild(li1)
+listEl.appendChild(li2)
+listEl.appendChild(li3)
+listEl.appendChild(li4)
+
+listEl.setAttribute("style", "background-color: #333333; padding:20px;");
+listEl.setAttribute("style", "color: white; background-color:#666666; padding:5px; margin-left: 35px");
+listEl.setAttribute("style", "color: white; background-color:#777777; padding:5px; margin-left: 35px");
+listEl.setAttribute("style", "color: white; background-color:#666666; padding:5px; margin-left: 35px");
+listEl.setAttribute("style", "color: white; background-color:#666666; padding:5px; margin-left: 35px");
+

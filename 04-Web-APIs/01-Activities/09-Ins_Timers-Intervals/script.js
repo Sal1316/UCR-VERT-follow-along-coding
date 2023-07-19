@@ -14,7 +14,7 @@ function setTime() {
 
     if(secondsLeft === 0) {
       // Stops execution of action at set interval
-      clearInterval(timerInterval);
+      clearInterval(timerInterval); // this fx stops the timer
       // Calls function to create and append image
       sendMessage();
     }

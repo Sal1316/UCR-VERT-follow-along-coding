@@ -1,4 +1,4 @@
-# 🐛 Style Changes on HTML Elements Not Rendering on Page
+# ✅🐛 Style Changes on HTML Elements Not Rendering on Page
 
 Work with a partner to resolve the following issues:
 
@@ -6,9 +6,9 @@ Work with a partner to resolve the following issues:
 
 ## Expected Behavior
 
-* The article title has a font size of 50px.
+* ✅ The article title has a font size of 50px.
 
-* The text in the headline "Welcome to World News" is white. 
+* ✅ The text in the headline "Welcome to World News" is white. 
 
 ## Actual Behavior
 

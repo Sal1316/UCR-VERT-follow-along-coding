@@ -1,6 +1,6 @@
 # 📐 Add Comments to Implementation of Window Object
 
-Work with a partner to add comments describing the functionality of the code found in [Unsolved](./02-Stu_Window-Object/Unsolved/script.js).
+✅ Work with a partner to add comments describing the functionality of the code found in [Unsolved](./02-Stu_Window-Object/Unsolved/script.js).
 
 ## 📝 Notes
 
