@@ -24,5 +24,14 @@ if (nextTag === true) {
     var secondTag = document.createElement(secondTagName);
     secondTag.textContent = "This is our second tag via prompts, it's a " + secondTagName + ".";
     document.body.appendChild(secondTag);
+    
+    /*
+    
+    Stages to making a tag:
+      1. create the elelment
+      2. fill it with text if required.
+      3. append it to the body.
+    
+    */
   }
 }

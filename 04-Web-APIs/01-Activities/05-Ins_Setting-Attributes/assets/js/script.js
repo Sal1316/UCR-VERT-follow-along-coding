@@ -1,7 +1,9 @@
 // ✅ Access multiple elements using .querySelectorAll()
- var divTags = document.querySelectorAll("div");
+ var divTags = document.querySelectorAll("div");// gets all div tags and returns them in an array.
+ console.log(divTags);
  var pTags = document.querySelectorAll("p");
  var imgEl = document.querySelectorAll("img");
+
 
 // Access element by ID using .querySelector()
  var changeP = document.querySelector("#change2");

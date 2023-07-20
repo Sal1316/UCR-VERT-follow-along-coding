@@ -3,6 +3,8 @@ var imageContainer = document.querySelector(".img-container");
 // Listen for any clicks within the img-container div
 imageContainer.addEventListener("click", function(event) {
   var element = event.target; // target is the element that actually triggered the event.
+  console.log(element.dataset.animate);
+
 
   // Check if the clicked element was an image
   if (element.matches("img")) {

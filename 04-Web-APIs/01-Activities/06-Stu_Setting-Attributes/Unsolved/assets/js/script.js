@@ -31,7 +31,6 @@ allH4[2].setAttribute("style", "color:blue; font-size: 30px");
 
 for (var i = 0; i < allH4.length; i++) {
       allH4[i].setAttribute("style", "color:blue; font-size: 30px");
-      console.log("Here are the results: " + allH4[i])
 }
 
 var paddTitle = document.body.children[0].setAttribute("style", "padding-left:10px; margin:0;");

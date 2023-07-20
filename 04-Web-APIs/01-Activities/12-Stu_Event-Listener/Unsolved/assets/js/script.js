@@ -9,7 +9,7 @@ function setCounterText() {
 
 // TODO: Add event listener to increment button
 incrementEl.addEventListener("click", function () {
-  count++;
+  count+=2;
   setCounterText();
 });
 
