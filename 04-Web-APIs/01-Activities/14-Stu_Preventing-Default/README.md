@@ -6,11 +6,11 @@ Work with a partner to resolve the following issues:
 
 ## Expected Behavior
 
-When a user enters numbers in the text fields and clicks on the Calculate Tip button, calculated totals for both the tip amount and total should appear on screen.  
+✅ When a user enters numbers in the text fields and clicks on the Calculate Tip button, calculated totals for both the tip amount and total should appear on screen.  
 
 ## Actual Behavior
 
-When a user clicks on the Calculate Tip button, the page refreshes without updating content on the screen.
+✅ When a user clicks on the Calculate Tip button, the page refreshes without updating content on the screen.
 
 ## Assets
 

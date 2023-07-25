@@ -11,7 +11,7 @@ function saveLastGrade() {
     grade: grade.value,
     comment: comment.value.trim()
   };
-  // Use .setItem() to store object in storage and JSON.stringify to convert it as a string
+  // Use .setItem() to store object in storage and JSON.stringify to convert it to a string
   localStorage.setItem("studentGrade", JSON.stringify(studentGrade));
 }
 
@@ -20,21 +20,21 @@ function renderLastGrade() {
   var lastGrade = JSON.parse(localStorage.getItem("studentGrade"));
   // Check if data is returned, if not exit out of the function
   if (lastGrade !== null) {
-  document.getElementById("saved-name").innerHTML = lastGrade.student;
-  document.getElementById("saved-grade").innerHTML = lastGrade.grade;
-  document.getElementById("saved-comment").innerHTML = lastGrade.comment;
+    document.getElementById("saved-name").innerHTML = lastGrade.student;
+    document.getElementById("saved-grade").innerHTML = lastGrade.grade;
+    document.getElementById("saved-comment").innerHTML = lastGrade.comment;
   } else {
     return;
   }
 }
 
 saveButton.addEventListener("click", function(event) {
-event.preventDefault();
-saveLastGrade();
-renderLastGrade();
+  event.preventDefault();
+  saveLastGrade();
+  renderLastGrade();
 });
 
-// The init() function fires when the page is loaded 
+// first thing that runs when the page is loaded. The init() function fires when the page is loaded 
 function init() {
   // When the init function is executed, the code inside renderLastGrade function will also execute
   renderLastGrade();

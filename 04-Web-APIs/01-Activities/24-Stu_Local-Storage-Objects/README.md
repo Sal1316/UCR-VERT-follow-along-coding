@@ -6,9 +6,9 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when I click the Save button and the form's current values are stored in a object.
+* ✅ It's done when I click the Save button and the form's current values are stored in a object.
 
-* It's done when the object is saved as a string using `localStorage`.
+* ✅ It's done when the object is saved as a string using `localStorage`.
 
 ## 📝 Notes
 

@@ -1,6 +1,6 @@
 # 📐 Add Comments to Implementation of Local Storage
 
-Work with a partner to add comments describing the functionality of the code found in [Unsolved](./Unsolved/assets/js/script.js).
+✅ Work with a partner to add comments describing the functionality of the code found in [Unsolved](./Unsolved/assets/js/script.js).
 
 ## 📝 Notes
 

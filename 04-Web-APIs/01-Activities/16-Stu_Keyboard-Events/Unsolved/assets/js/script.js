@@ -1,3 +1,9 @@
+
+document.addEventListener("keyup", keyupAction);
+
+document.addEventListener("keydown", keydownAction)
+
+// TODO: Add Event Listener for "keydown" event
 function keydownAction(event) {
   // TODO: Complete keydown function
   console.log(event);
@@ -9,9 +15,5 @@ function keydownAction(event) {
 function keyupAction() {
   // document.querySelector("#status").innerHTML = "KEYUP Event"; // both work but the appropriate one is .textContent
   document.querySelector("#status").textContent = "KEYUP Event";
+
 }
-
-document.addEventListener("keyup", keyupAction);
-
-// TODO: Add Event Listener for "keydown" event
-document.addEventListener("keydown", keydownAction)

@@ -5,13 +5,13 @@ var todoCountSpan = document.querySelector("#todo-count");
 
 var todos = [];
 
-// TODO: What is the purpose of this function?
+// fx renders a list of to do items under the input box.
 function renderTodos() {
   // TODO: Describe the functionality of the following two lines of code.
-  todoList.innerHTML = "";
+  todoList.innerHTML = "";// sets the html to blank.
   todoCountSpan.textContent = todos.length;
   
-  // TODO: Describe the functionality of the following `for` loop.
+  // TODO: the loop does multipel things everytime it renders a new todo item.
   for (var i = 0; i < todos.length; i++) {
     var todo = todos[i];
 
