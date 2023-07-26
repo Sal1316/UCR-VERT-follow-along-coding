@@ -33,5 +33,5 @@ lotteryButtonEl.on('click', function () {
 
 // Click event causes refresh
 refreshButtonEl.on('click', function () {
-  location.reload();
+  location.reload(); // location mean where ever you are at now, ex what is the url bar.
 });

@@ -60,7 +60,7 @@ buttonListEl.on('click', '.letter-button', function (event) {
   displayLetterEl.addClass('letter');
 
   // get letter from clicked letter button's `data-letter` attribute and use it for display
-  displayLetterEl.text($(event.target).attr('data-letter'));
+  displayLetterEl.text($(event.target).attr('data-letter')); // attr('data-letter') is clearino out the letter bc it doesnt have a second arguemnt.
   displayEl.append(displayLetterEl);
 });
 
@@ -78,3 +78,12 @@ showLettersBtnEl.on('click', function () {
 clearEl.on('click', function () {
   displayEl.empty();
 });
+
+
+/*
+Notes: 
+
+
+
+
+*/ 

@@ -2,9 +2,9 @@
 
 // var rootEl = document.getElementById("root");
 var rootEl = $('#root');
-
+console.log(rootEl);
 // var titleEl = document.createElement("h1");
-var titleEl = $('<h1>');
+var titleEl = $('<h1>');  // <h1> is the selector.
 
 // titleEl.textContent = "Hello friends";
 titleEl.text('Hello friends');
@@ -17,6 +17,7 @@ titleEl.addClass('p-5');
 
 // titleEl.style.border = "rgb(122, 242, 242) 3px solid";
 titleEl.css('border', 'rgb(122, 242, 242) 5px solid');
+titleEl.css('border', ''); // to clear the border.
 
 // rootEl.appendChild(titleEl);
 rootEl.append(titleEl);

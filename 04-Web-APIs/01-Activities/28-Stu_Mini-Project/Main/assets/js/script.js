@@ -1,40 +1,3 @@
-/* STEPS TO CREATING THE GAME: 
-
-Variables: 
-  var guessWordsArray;
-  var timerLimit;
-  var timerCountDown;
-  var recordWins;
-  var recordLosses;
-
-Data holding arrrays:
-- var guessWordsArray;
-- var letterPickerArray;
-
-Event Listeners: 
-- listen for start button press
-- listen for reset button press.
-
-Main Function needed: 
-- start the game by pressing the 'start' button
-      start the countdown fx
-      start the underscore letter clearing fx.
-      
-Helping functions: 
-- record the wins fx.
-- clear letter and replace with underscore fx
-- start the countdown fx
-    saves wins to the localStorage
-- record the losses fx.
-    saves losses to the localStorage
-- you win fx.
-    updates the scoreboard with win
-- you lose fx. 
-    updates the scoreboard with loss
-
-- reset fx
-    clears the data in the localStorage.
-*/ 
 
 var wordBlank = document.querySelector(".word-blanks"); // = "J _ v _ S c r_ _t" initially
 var win = document.querySelector(".win"); // = 0
@@ -42,7 +5,7 @@ var lose = document.querySelector(".lose"); // = 0
 var timerElement = document.querySelector(".timer-count"); // = 10 initially.
 var startButton = document.querySelector(".start-button");
 
-var chosenWord = "";
+var chosenWord = ""; // initally empty, gets populated as the game goes on
 var numBlanks = 0;
 var winCounter = 0;
 var loseCounter = 0;
@@ -74,26 +37,38 @@ function setsLossesToLocal() {
   localStorage.setItem("loseCount", loseCounter);
 }
 
-// The startGame function is called when the start button is clicked
+
+// 1: The startGame function is called when the start button is clicked
 function startGame() {
-  isWin = false;
+  isWin = false; // bc you havent won yet.
   timerCount = 10;
   // Prevents start button from being clicked when round is in progress
   startButton.disabled = true;
-  renderBlanks()// fills game with underscores. clears the letters.
+  renderBlanks()
   startTimer() 
 }
 
-// The winGame function is called when the win condition is met
-function winGame() {
+// function winOrLose(gameOutcome) { //polymorphic fx
+//   if(gameOutcome === "win") {
+//     wordBlank.textContent = "YOU WON!!!🏆 ";
+//     winCounter++
+//     startButton.disabled = false;
+//     saveWinOrLose("win") 
+//   } else {
+//     wordBlank.textContent = "GAME OVER";
+//     loseCounter++
+//     startButton.disabled = false;
+//     saveWinOrLose("lose")
+//   }
+// }
+
+function winGame() {// The winGame function is called when the win condition is met
   wordBlank.textContent = "YOU WON!!!🏆 ";
   winCounter++
   startButton.disabled = false;
   setWinsToLocal()
 }
-
-// The loseGame function is called when timer reaches 0
-function loseGame() {
+function loseGame() {// The loseGame function is called when timer reaches 0
   wordBlank.textContent = "GAME OVER";
   loseCounter++
   startButton.disabled = false;
@@ -174,16 +149,17 @@ function checkWin() {
 
 // Tests if guessed letter is in word and renders it to the screen.
 function checkLetters(letter) {
-  var letterInWord = false;
+  var letterInWord = false; // bc you havent found any letters yet.
   for (var i = 0; i < numBlanks; i++) {
     if (chosenWord[i] === letter) {
       letterInWord = true;
+      console.log("chosenWord[i]: " + chosenWord[i] );
     }
   }
   if (letterInWord) {
     for (var j = 0; j < numBlanks; j++) {
       if (chosenWord[j] === letter) {
-        blanksLetters[j] = letter;
+        blanksLetters[j] = letter; // if the letter is found, it is replace here.
       }
     }
     wordBlank.textContent = blanksLetters.join(" ");
