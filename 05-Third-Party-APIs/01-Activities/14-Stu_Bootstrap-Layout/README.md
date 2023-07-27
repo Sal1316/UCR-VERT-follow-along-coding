@@ -2,7 +2,7 @@
 
 Work with a partner to implement the following user story:
 
-* As a developer, I want to be able to create a responsive layout without having to write custom CSS.
+* ✅ As a developer, I want to be able to create a responsive layout without having to write custom CSS.
 
 ## Acceptance Criteria
 

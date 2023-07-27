@@ -11,12 +11,17 @@
   background-color: var(--light);
 }
 
+body {
+  font-family: Bungee Spice, sans-serif;
+}
+
 .custom-navbar {
   background-color: var(--teal);
 }
 
 .custom-navbar a {
   font-size: 1.5rem;
+  font-family: Bungee+Spice, sans-serif;
   color: var(--lightteal);
 }
 
