@@ -8,9 +8,9 @@ Work with a partner to implement the following user stories:
 
 ## Acceptance Criteria
 
-* It's done when the form input for entering a skill has an autocomplete feature added to it, to pick from a list of skills.
+* ✅ It's done when the form input for entering a skill has an autocomplete feature added to it, to pick from a list of skills.
 
-* It's done when the form input for entering a date has a datepicker feature added to it, to select by month and year.
+* ✅ It's done when the form input for entering a date has a date-picker feature added to it, to select by month and year.
 
 ## 📝 Notes
 
@@ -28,7 +28,7 @@ Refer to the following documentation:
 
 If you have completed the activity and want to further your knowledge, work through the following challenge with your partner: 
 
-* What built-in HTML feature can also help enforce a date? Use [Google](https://www.google.com) or another search engine to answer the preceding question.
+* What built-in HTML feature can also help enforce a date? by using the type = "date" inside the input tag.
 
 ---
 

@@ -3,14 +3,9 @@ var nameInputEl = $('#skill-name');
 var dateInputEl = $('#datepicker');
 var skillsListEl = $('#skills-list');
 
-var printSkills = function (name, date) {
-  var listEl = $('<li>');
-  var listDetail = name.concat(' on ', date);
-  listEl.addClass('list-group-item').text(listDetail);
-  listEl.appendTo(skillsListEl);
-};
 
-var handleFormSubmit = function (event) {
+// HOISTING: Declared function vs function expression. 
+var handleFormSubmit = function (event) { 
   event.preventDefault();
 
   var nameInput = nameInputEl.val();
@@ -23,14 +18,58 @@ var handleFormSubmit = function (event) {
 
   printSkills(nameInput, dateInput);
 
+  // after it list the skill, the value are cleared from the input forms
   nameInputEl.val('');
   dateInputEl.val('');
 };
 
-formEl.on('submit', handleFormSubmit);
+var printSkills = function (name, date) {
+  var listEl = $('<li>');
+  var listDetail = name.concat(' on ', date);
+  listEl.addClass('list-group-item').text(listDetail);
+  listEl.appendTo(skillsListEl);
+};
 
 // Add Autocomplete widget here
-//
+$(function () {
+  var availableTags = [
+    "ActionScript",
+    "AppleScript",
+    "Asp",
+    "BASIC",
+    "C",
+    "C++",
+    "Clojure",
+    "COBOL",
+    "ColdFusion",
+    "Erlang",
+    "Fortran",
+    "Groovy",
+    "Haskell",
+    "Java",
+    "JavaScript",
+    "Lisp",
+    "Perl",
+    "PHP",
+    "Python",
+    "Ruby",
+    "Scala",
+    "Scheme",
+  ];
+  
+  $("#skill-name").autocomplete({
+    source: availableTags,
+  });
 
-// Add Datepicker widget here
-//
+});
+
+// Add Datepicker widget here:CODE IS WORKING WITHOUT THIS FUNCTION?
+$(function () {
+  dateInputEl.datepicker({
+    changeMonth: true,
+    changeYear: true,
+  });
+});
+
+// Event Handlers: to avoid confussin, put event handlers at the tom ? 
+formEl.on('submit', handleFormSubmit);

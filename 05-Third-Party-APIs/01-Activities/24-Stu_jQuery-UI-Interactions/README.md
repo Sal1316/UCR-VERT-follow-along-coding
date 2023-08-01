@@ -6,9 +6,9 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when the list of skills can be reorganized and sorted using drag-and-drop functionality.
+* ✅It's done when the list of skills can be reorganized and sorted using drag-and-drop functionality.
 
-* It's done when a placeholder is filling empty space.
+* ✅ It's done when a placeholder is filling empty space.
 
 ## 📝 Notes
 
