@@ -3,9 +3,9 @@ var site2El = document.querySelector(".site2");
 var site3El = document.querySelector(".site3");
 
 
-site1El.children[0].textContent = "Site 1";
-site1El.children[1].setAttribute("href", "https://google.com"); // the <a> tag
-site1El.children[1].children[0].setAttribute("src", "assets/images/image_1.jpg");
+site1El.children[0].textContent = "Site 1"; // add content to h4.
+site1El.children[1].setAttribute("href", "https://google.com"); // adds attributes to the a tag
+site1El.children[1].children[0].setAttribute("src", "assets/images/image_1.jpg"); // adds an image to the img tag.
 site1El.children[1].children[0].setAttribute("alt", "man working");
 site1El.children[1].children[0].setAttribute("style", "padding:10px;");
 

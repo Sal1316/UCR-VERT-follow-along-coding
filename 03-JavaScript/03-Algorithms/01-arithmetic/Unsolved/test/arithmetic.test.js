@@ -1,4 +1,5 @@
 var expect = chai.expect;
+console.log("test-test", expect)
 
 describe("add", function() {
   it("should add two numbers", function() {

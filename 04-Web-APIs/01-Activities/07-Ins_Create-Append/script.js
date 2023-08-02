@@ -28,7 +28,7 @@ if (nextTag === true) {
     /*
     
     Stages to making a tag:
-      1. create the elelment
+      1. create the element
       2. fill it with text if required.
       3. append it to the body.
     
