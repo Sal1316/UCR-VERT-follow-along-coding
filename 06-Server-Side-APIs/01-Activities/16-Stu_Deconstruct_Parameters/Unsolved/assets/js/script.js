@@ -8,11 +8,16 @@ fetch(
   .then(function (data) {
     console.log(data);
   });
+
+
+  
 /* Parameter explanation.
-per_page=10 > the number of number of result per page.
-state=open >
-sort=created > 
-direction=desc > decending or accending order. 
+per_page=10 > number of result per page.
+
+query strin parameters: 
+  state=open >
+  sort=created > 
+  direction=desc > decending or accending order. 
 
 
 

@@ -1,4 +1,4 @@
-# 📖 Implement Cache Reloading for Fetch Requests
+#✅ 📖 Implement Cache Reloading for Fetch Requests
 
 Work with a partner to implement the following user story:
 
