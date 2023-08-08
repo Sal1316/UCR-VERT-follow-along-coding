@@ -71,6 +71,9 @@ pre {
 a {
   background-color: transparent;
 }
+li {
+  list-style: none;
+}
 
 /**
  * 1. Remove the bottom border in Chrome 57-

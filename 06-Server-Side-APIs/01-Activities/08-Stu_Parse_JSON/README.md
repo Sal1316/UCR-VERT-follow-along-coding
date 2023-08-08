@@ -1,4 +1,4 @@
-# 📖 Implement a `fetch()` Request to Log Repository Issues
+# ✅ 📖 Implement a `fetch()` Request to Log Repository Issues
 
 Work with a partner to implement the following user story:
 

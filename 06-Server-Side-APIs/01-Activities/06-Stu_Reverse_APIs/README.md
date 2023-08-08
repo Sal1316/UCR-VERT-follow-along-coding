@@ -1,4 +1,4 @@
-# 📐 Add Comments to Implementation of Different Request Methods
+# ✅ 📐 Add Comments to Implementation of Different Request Methods
 
 Work with a partner to add comments describing the functionality of the code found in [Unsolved/assets/js/script.js](./Unsolved/assets/js/script.js).
 

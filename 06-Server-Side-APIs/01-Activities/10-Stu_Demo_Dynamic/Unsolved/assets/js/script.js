@@ -17,18 +17,19 @@ function getApi() {
         var user = data[i];
 
         var userNameEl = document.createElement('h3'); // block level elem
-        var userUrlEl = document.createElement('p'); // block level
-        var userUrlLinkEl = document.createElement('a') // not block level so need to be formated by putting the link inside the p tag.
-
         userNameEl.textContent = user.login;
+        
+        var userUrlEl = document.createElement('p'); // block level
+       
+        var userUrlLinkEl = document.createElement('a') // not block level so need to be formated by putting the link inside the p tag.
+        userUrlLinkEl.href = user.html_url; // this makes them clickable.
         userUrlLinkEl.textContent = user.html_url;
-        userUrlLinkEl.href = user.html_url;
 
         userUrlEl.append(userUrlLinkEl);
-
         userContainer.append(userNameEl);
         userContainer.append(userUrlEl);
       }
     });
 }
+
 fetchButton.addEventListener('click', getApi);

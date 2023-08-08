@@ -1,4 +1,4 @@
-fetch('https://api.github.com/gists/public?since=2021-06-01&per_page=100')
+fetch('https://api.github.com/gists/public?since=2021-06-01&per_page=90')
   .then(function (response) {
     return response.json();
   })

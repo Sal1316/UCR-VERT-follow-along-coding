@@ -8,7 +8,7 @@ function getApi(requestUrl) {
       
       console.log(response.status);
       
-      if(!response.ok) { // bc ok gives you a response from 200 - 299 which is still ok.
+      if(!response.ok) { // bc 'ok' gives a response from 200-299, which is still 'ok'.
         responseText.textContent = response.status;
       }
       return response.json(); // need this to use the second .then().

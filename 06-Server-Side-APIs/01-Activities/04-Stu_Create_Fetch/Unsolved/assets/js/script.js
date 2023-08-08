@@ -2,16 +2,16 @@ var repoList = document.querySelector('ul');
 var fetchButton = document.getElementById('fetch-button');
 
 //getApi function is called when the fetchButton is clicked
+fetchButton.addEventListener('click', getApi);
 
 function getApi() {
-  // Insert the API url to get a list of your repos
-  var requestUrl = 'https://api.github.com/users/sal1316/repos?per_page=5';
+  var requestUrl = 'https://api.github.com/users/sal1316/repos';//?per_page=5';
   fetch(requestUrl)
-    .then(function (response) {
+    .then(function (response) { // get error or succes codes.
       return response.json();
     })
     .then(function (data) {
-      //looping over the fetch response and inserting the URL of your repos into a list
+      //loops over the response and inserts the URL of your repos into a list
       for (var i = 0; i < data.length; i++) {
         //Create a list element
         var listItem = document.createElement('li');
@@ -25,4 +25,4 @@ function getApi() {
     });
 }
 
-fetchButton.addEventListener('click', getApi);
+

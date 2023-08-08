@@ -6,7 +6,7 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when a request is made to an invalid API URL, and the 404 status displays on the page.
+* ✅ It's done when a request is made to an invalid API URL, and the 404 status displays on the page.
 
 ---
 

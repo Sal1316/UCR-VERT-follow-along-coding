@@ -1,4 +1,4 @@
-# 📖 Implement the Location Web API to Redirect 404 Errors
+# ✅ 📖 Implement the Location Web API to Redirect 404 Errors
 
 Work with a partner to implement the following user story:
 
@@ -6,7 +6,7 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when I make a `fetch()` request that results in a 404 status, and the browser redirects to `404.html`.
+* ✅ It's done when I make a `fetch()` request that results in a 404 status, and the browser redirects to `404.html`.
 
 ## 📝 Notes
 

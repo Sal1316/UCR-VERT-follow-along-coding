@@ -1,5 +1,6 @@
 // TODO: Edit the URL to get only 5 issues of Twitter's Chill repo
 var requestUrl = 'https://api.github.com/repos/twitter/chill/issues?per_page=5';
+var containerEl= document.getElementById('appendTo');
 
 fetch(requestUrl)
   .then(function (response) {
@@ -15,5 +16,5 @@ fetch(requestUrl)
       console.log('the url: ', data[i].url);
       console.log('the login: ', data[i].user.login);
     }
-    
+
   });

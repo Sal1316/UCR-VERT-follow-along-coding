@@ -10,7 +10,7 @@ fetch(requestUrl)
 
 
 /*
-When using live server you get 304 codes that should be 200. To fix right click the refrec icon, and empty cash and hard reload
+When using live server you get 304 codes that should be 200. To fix right click the refresh icon, and empty cash and hard reload
  
  
  

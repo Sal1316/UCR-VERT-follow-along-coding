@@ -2,10 +2,7 @@ var requestUrl = 'https://api.github.com/orgs/Netflix/repos';
 
 // JQuery AJAX
 // TODO: Comment on how AJAX returns an API call
-$.ajax({
-  url: requestUrl,
-  method: 'GET',
-}).then(function (response) {
+$.ajax({ url: requestUrl, method: 'GET' }).then(function (response) {
   console.log('AJAX Response \n-------------');
   console.log(response);
 });
@@ -13,10 +10,10 @@ $.ajax({
 // Browser Fetch Method
 // TODO: Comment on how Fetch returns an API call
 fetch(requestUrl)
-  .then(function (response) {
+  .then(function (response) { // returns success or error codes.
     return response.json();
   })
-  .then(function (data) {
+  .then(function (data) { // return array of objects.
     console.log('Fetch Response \n-------------');
     console.log(data);
   });

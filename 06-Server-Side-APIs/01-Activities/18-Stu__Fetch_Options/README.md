@@ -6,7 +6,7 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when I make a `fetch()` request, and the `cache` option is set to `reload`.
+* ✅ It's done when I make a `fetch()` request, and the `cache` option is set to `reload`.
 
 ## 📝 Notes
 

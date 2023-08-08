@@ -1,4 +1,4 @@
-# 🐛 curl Command to GitHub API Doesn't Work
+# ✅ 🐛 curl Command to GitHub API Doesn't Work
 
 Work with a partner to resolve the following issue(s):
 

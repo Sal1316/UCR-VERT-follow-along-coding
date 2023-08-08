@@ -1,4 +1,4 @@
-# 📐 Add Comments to Implementation of Git It Done Application: Part Two
+# ✅ 📐 Add Comments to Implementation of Git It Done Application: Part Two
 
 Work with a partner to add comments describing the functionality of the code found in [single.js](./Unsolved/assets/js/single.js).
 

@@ -2,7 +2,7 @@
 
 Work with a partner to resolve the following issue(s):
 
-* As a developer, I want all of my scripts to be properly loaded by the browser.
+* ✅ As a developer, I want all of my scripts to be properly loaded by the browser.
 
 ## Expected Behavior
 

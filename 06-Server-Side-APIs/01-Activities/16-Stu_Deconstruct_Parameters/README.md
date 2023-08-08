@@ -1,4 +1,4 @@
-# 📐 Add Comments to Implementation of API Parameters
+# ✅ 📐 Add Comments to Implementation of API Parameters
 
 Work with a partner to add comments describing the functionality of the code found in [Unsolved/assets/js/script.js](./Unsolved/assets/js/script.js).
 

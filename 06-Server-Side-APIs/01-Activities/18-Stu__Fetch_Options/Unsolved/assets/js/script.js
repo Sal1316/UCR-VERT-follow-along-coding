@@ -1,5 +1,7 @@
-fetch('https://api.github.com/repos/nodejs/node/issues?per_page=5', {
 
+console.log("document.location: ", document.URL);
+
+fetch('https://api.github.com/repos/nodejs/node/issues?per_page=5', {
   cache: "reload", // *default, no-cache, reload, force-cache, only-if-cached
 
 })

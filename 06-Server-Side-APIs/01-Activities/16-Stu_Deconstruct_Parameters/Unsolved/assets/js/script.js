@@ -16,7 +16,7 @@ per_page=10 > number of result per page.
 
 query strin parameters: 
   state=open >
-  sort=created > 
+  sort=created > The property to sort the results by. Default: created. Can be one of: created, updated, pushed, full_name
   direction=desc > decending or accending order. 
 
 

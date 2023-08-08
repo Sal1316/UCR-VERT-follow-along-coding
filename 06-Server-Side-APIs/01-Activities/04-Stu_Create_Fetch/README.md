@@ -1,12 +1,12 @@
-# 🏗️ Implement a fetch() Request to Display User Repositories
+# ✅ 🏗️ Implement a fetch() Request to Display User Repositories
 
 Work with a partner to implement the following user story:
 
-  * As a user, I want to see a list of my GitHub repositories.
+  * ✅ As a user, I want to see a list of my GitHub repositories.
 
 ## Acceptance Criteria
 
-  * It's done when I click the "Fetch Your User Repos" button, and a list of my GitHub repositories displays on the page.
+  * ✅ It's done when I click the "Fetch Your User Repos" button, and a list of my GitHub repositories displays on the page.
 
 ## Assets
 

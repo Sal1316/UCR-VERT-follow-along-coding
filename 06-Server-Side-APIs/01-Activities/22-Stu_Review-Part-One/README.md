@@ -1,4 +1,4 @@
-# 📐 Add Comments to Implementation of Git It Done Application: Part One 
+# ✅ 📐 Add Comments to Implementation of Git It Done Application: Part One 
 
 Work with a partner to add comments describing the functionality of the code found in the HTML and JavaScript files in [Unsolved](./Unsolved)
 
