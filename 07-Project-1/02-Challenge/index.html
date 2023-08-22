@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Web API Tutorial</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./Assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input id="input" type="input" />
+      <div>
+        <button id="submit" type="submit">Search</button>
+      </div>
+    </div>
+
+    <div id="songContainer">
+      <!-- music genre container: should have 5 song recomendations -->
+      <div id="embed-iframe"></div>
+      <div class="episodes">
+        <button
+          class="episode"
+          data-spotify-id="spotify:episode:7makk4oTQel546B0PZlDM5"
+        >
+          My Path to Spotify: Women in Engineering
+        </button>
+
+        <button
+          class="episode"
+          data-spotify-id="spotify:episode:43cbJh4ccRD7lzM2730YK3"
+        >
+          What is Backstage?
+        </button>
+
+        <button
+          class="episode"
+          data-spotify-id="spotify:episode:6I3ZzCxRhRkNqnQNo8AZPV"
+        >
+          Introducing Nerd Out@Spotify
+        </button>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- spotify iframe -->
+    <script
+      src="https://open.spotify.com/embed-podcast/iframe-api/v1"
+      async
+    ></script>
+
+    <script src="./Assets/js/script.js" type="text/javascript"></script>
+  </body>
+</html>
