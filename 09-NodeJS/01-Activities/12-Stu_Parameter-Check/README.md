@@ -1,4 +1,4 @@
-# 🏗️ Implement `process.argv`
+# ✅🏗️ Implement `process.argv`
 
 Work with a partner to implement the following user story:
 
@@ -6,13 +6,13 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when I have created a file, `index.js`, in the working directory.
+* ✅ It's done when I have created a file, `index.js`, in the working directory.
 
-* It's done when I use `process.argv` to assign two arguments to variables.
+* ✅ It's done when I use `process.argv` to assign two arguments to variables.
 
-* It's done when I compare those two variables to see whether they are the same or not.
+* ✅ It's done when I compare those two variables to see whether they are the same or not.
 
-* It's done if the program returns `true` when the values are the same and `false` if they are not. 
+* ✅ It's done if the program returns `true` when the values are the same and `false` if they are not. 
 
 ## 💡 Hints
 

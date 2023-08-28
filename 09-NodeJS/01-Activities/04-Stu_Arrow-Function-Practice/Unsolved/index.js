@@ -1,8 +1,8 @@
 // 1. funnyCase makes each letter in a string the opposite case as the one before
-var funnyCase = string => {
+var funnyCase = (string) => {
   var newString = "";
   for (var i = 0; i < string.length; i++) {
-    if (i % 2 === 0) newString += string[i].toLowerCase();
+    if (i % 2 === 0) newString += string[i].toLowerCase();// even string char is lowercase.
     else newString += string[i].toUpperCase();
   }
   return newString;
@@ -14,11 +14,11 @@ console.log(funnyCase("You can't just do whatever you want all the time!"));
 // --------------------------------------------------------------------------
 
 // 2. Map lets you loop over an array and modify the elements inside
-var map = (arr, cb) => {
+var map = (arr, callback) => {
   var result = [];
   for (var index = 0; index < arr.length; index++) {
     var currentElement = arr[index];
-    result.push(cb(currentElement, index));
+    result.push(callback(currentElement, index)); //NOT SURE HOW THIS IS TAKING TWO ARGUMENTS? bc the second is not being use.
   }
   return result;
 };
@@ -33,11 +33,11 @@ console.log(doubled);
 // --------------------------------------------------------------------------
 
 // 3. filter lets you loop over an array and remove elements
-var filter = (arr, cb) => {
+var filter = (arr, callback) => {
   var result = [];
   for (var index = 0; index < arr.length; index++) {
     var currentElement = arr[index];
-    if (cb(currentElement, index)) {
+    if (callback(currentElement, index)) {
       result.push(currentElement);
     }
   }
@@ -59,26 +59,28 @@ var netflixQueue = {
     "Eternal Sunshine of the Spotless Mind",
     "Fight Club"
   ],
-  watchMovie: () => {
-    this.queue.pop();
+  watchMovie: () => { //fx removes last element
+    this.queue.pop(); // pop() removes last element.
+    console.log("removed a movie from the queue")
   },
   addMovie: (movie) => {
-    this.queue.unshift(movie);
+    this.queue.unshift(movie); // unshift adds element to the beginning.
+    console.log("\nWatched a movie!\n")
   },
   printQueue: () => {
     var list = "";
-    for (var i = this.queue.length - 1; i >= 0; i--) {
+    for (var i = this.queue.length - 1; i >= 0; i--) { // counting down from the last queue.
       var currentMovie = this.queue[i];
       list += (this.queue.length - i) + ". " + currentMovie + "\n";
     }
     console.log(list);
-  }
+  } 
 };
 
 console.log("Printing movie queue!\n");
 netflixQueue.printQueue();
-netflixQueue.watchMovie();
-console.log("\nWatched a movie!\n");
+netflixQueue.watchMovie();// what does this return 
+// console.log("\nWatched a movie!\n");
 console.log("Printing movie queue!\n");
 netflixQueue.printQueue();
 console.log("\nAdding a movie!\n");
