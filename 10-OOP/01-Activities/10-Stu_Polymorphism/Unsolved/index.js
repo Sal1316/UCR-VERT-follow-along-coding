@@ -13,7 +13,7 @@ class ForumItem {
 }
 
 class BlogPost extends ForumItem {
-  constructor(authorName, title, text, createdOn) {
+  constructor(authorName, title, text, createdOn) { // getting the printMetaData for free.
     super(authorName, text, createdOn);
     this.title = title;
     this.comments = [];
@@ -25,9 +25,12 @@ class BlogPost extends ForumItem {
 }
 
 class Comment extends ForumItem {
-  constructor(authorName, text, createdOn, reaction) {
+  constructor(authorName, text, createdOn, reaction) { // getting the printMetaData for free.
     super(authorName, text, createdOn);
     this.reaction = reaction;
+  }
+  printMetaData() { // redifines the method with the reactions info: 
+    console.log(`Created by ${this.authorName} on ${this.createdOn} ${this.reaction}`);
   }
 }
 

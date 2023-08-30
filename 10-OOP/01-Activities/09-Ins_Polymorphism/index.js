@@ -1,3 +1,5 @@
+// Polymorphis > creating a variable that takes may forms
+
 function Animal(name, age, breed) {
   this.name = name;
   this.age = age;
@@ -22,7 +24,7 @@ Dog.prototype.bark = function () {
 function Cat(name, age, breed, kittens) {
   Animal.call(this, name, age, breed);
   this.kittens = kittens;
-  // 'getLives()' method is overriden to provide Cat with a different functionality
+  // 'getLives()' method is overriden to provide Cat with a different functionality of 9
   this.getLives = function () {
     return 9;
   };
@@ -35,5 +37,5 @@ Cat.prototype.meow = function () {
 const dog = new Dog('Rex', 2, 'Bulldog', ['Baxter', 'Marley', 'Scooby']);
 const cat = new Cat('Tom', 2, 'Shorthair', ['Garfield', 'Felix', 'Salem']);
 
-console.log(dog.getLives());
-console.log(cat.getLives());
+console.log(dog.getLives()); // returns 1
+console.log(cat.getLives()); // returns 9 bc it was overiden.

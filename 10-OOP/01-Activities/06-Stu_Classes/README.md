@@ -6,13 +6,13 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when a class constructor is created named `BlogPost()` and it takes in five parameters, `authorName`, `title`, `text`, `comments`, `createdOn` (this should be a date).
+* ✅It's done when a class constructor is created named `BlogPost()` and it takes in five parameters, `authorName`, `title`, `text`, `comments`, `createdOn` (this should be a date).
 
-* It's done when the parameters are passed into the object's keys as their values.
+* ✅It's done when the parameters are passed into the object's keys as their values.
 
-* It's done when the object's fifth key is a method called `printMetaData()` that prints a message in the console saying `Created by (authorName) on (createdOn)`.
+* ✅It's done when the object's fifth key is a method called `printMetaData()` that prints a message in the console saying `Created by (authorName) on (createdOn)`.
 
-* It's done when the object's sixth key is a method called `addComment()` that takes in a comment and adds it to the `comments` array on the BlogPost.
+* ✅It's done when the object's sixth key is a method called `addComment()` that takes in a comment and adds it to the `comments` array on the BlogPost.
 
 * It's done when I create a new object using the `BlogPost()` class constructor with my own custom values.
 

@@ -6,7 +6,7 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when the constructor function is named `BlogPost()` and takes in four parameters, `authorName`, `title`, `text`, and `createdOn` (this should be a date).
+* ✅It's done when the constructor function is named `BlogPost()` and takes in four parameters, `authorName`, `title`, `text`, and `createdOn` (this should be a date).
 
 * It's done when the parameters are passed into the object's keys as their values.
 
