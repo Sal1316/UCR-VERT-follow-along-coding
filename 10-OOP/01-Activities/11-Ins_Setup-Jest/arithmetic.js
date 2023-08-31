@@ -1,5 +1,5 @@
 // A constructor Arithmetic is created.
-function Arithmetic() {};
+function Arithmetic() { };
 
 // Constructor Arithmetic is given a sum method that returns two numbers added together.
 Arithmetic.prototype.sum = (a, b) => {
@@ -23,3 +23,14 @@ Arithmetic.prototype.quotient = (a, b) => {
 
 // Constructor Arithmetic is exported from the file.
 module.exports = Arithmetic;
+
+
+/* Notes: 
+- jest > for testing our code. specificallly looks for files that end in text.js
+
+
+
+
+
+
+*/

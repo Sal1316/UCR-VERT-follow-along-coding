@@ -1,6 +1,29 @@
 const BlogPost = require('../blogPost.js');
 
 describe('BlogPost', () => {
-  // TODO: Write a test that verifies that BlogPost throws an error when the authorName provided is less than 2 characters long.
-  // TODO: Write a test that verifies that BlogPost throws an error when the authorName provided does not only contain uppercase, lowercase, numbers, dashes, and underscores.
+  describe('constructor', () => {
+    test('should throw error when authorname is < 2 characters', () => { // modifiers test.only, test.todo, test.skip
+      // arrange
+      const err = new Error("Author must be at least 3 characters long.") 
+      
+      // act
+      const cb = () => new BlogPost('j');
+
+      // assert 
+      expect(cb).toThrowError(err);
+    })
+
+    test('should throw error when authorname is < 2 characters', () => { // modifiers test.only, test.todo, test.skip
+      // arrange
+      const err = new Error("Author must be at least 3 characters long.") 
+      
+      // act
+      const cb = () => new BlogPost('{Sal Ceja}');
+
+      // assert 
+      expect(cb).toThrowError(err);
+    })
+  
+  })
+
 });

@@ -48,3 +48,12 @@ describe('Arithmetic', () => {
     });
   });
 });
+
+/* NOTES
+- UNIT TESTS: Usually the assertions test are made first then the code. 
+type of test: 
+ 1. unit test - run locally, 
+ 2. integration test -
+ 3. end to end (E2E) test - testing from the browser level, users perspective.
+
+*/ 
