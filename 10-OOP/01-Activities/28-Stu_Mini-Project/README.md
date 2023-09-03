@@ -1,29 +1,59 @@
-# Module 09 Mini-Project: Portfolio Generator
+# 🏗️ Module 10 Mini-Project: Create Tests and Classes for List Generator
 
-In this activity, you will build a command-line tool that generates an HTML portfolio page from user input.
+In this mini-project, you will work with a group to create classes and tests for an app that generates an HTML page with a user's task list.
 
-## Instructions
+* As a developer, I want to be able to define classes for different pieces of an application.
 
-* Your application should prompt the user for information like their name, location, bio, LinkedIn URL, and GitHub URL. Feel free to add any additional prompts you think of.
+* As a developer, I want to create tests to validate the core functionality of all classes in the application.
 
-* An HTML document containing the information collected from the prompts should be constructed and written to the file system. Make sure to add some CSS styling to the document.
+## Acceptance Criteria
 
-* You’ll need the following tools and technologies to accomplish this:
+* It's done when I have created a `Component` class that takes in children, which defaults to an empty array if not provided.
 
-  * `fs` for writing to the file system
+* ✅ It's done when a `render()` method is placed on the `Component` class that throws an error saying `Child class must implement render() method.`
 
-  * `inquirer` version 8.2.4 for collecting user input
+* It's done when a `renderInnerHTML()` method is placed on the `Component` class that loops over the children and converts any that aren't strings to strings by calling their `render()` method.
 
-  * String template literals for generating a string version of the HTML document before it is written to the file system
+* ✅ It's done when I have created a `Header` class that inherits from the `Component` class.
 
-## 💡 Hints
+* It's done when a `render()` method is placed on the `Header` class that returns a string of HTML following this format: `<header class="header"><h1>Todo Today</h1><p>{DATE_HERE}</p></header>`.
 
-It might be a good idea to start building out the HTML skeleton in a real HTML file. Once you're happy with the HTML file's appearance in the browser, you can copy and paste its contents into a string template literal. Then you can write a function to insert the user input into the appropriate places in the HTML string before writing it to the file system.
+* ✅ It's done when I have created a `TaskListItem` class that inherits from the `Component` class.
 
-## 🏆 Bonus
+* It's done when the `TaskListItem` class passes children to its parent class and sets a `priority` property.
 
-* Instead of using callback functions, what are some other tools in JavaScript we can use to handle asynchronous functionality?
+* ✅ It's done when a `render()` method is placed on the `TaskListItem` class and returns a string of HTML following this format: `<li class="tasks-item">{INNER_HTML}</li>`.
+
+* It's done when the `render()` method on the `TaskListItem` class optionally places a class name `tasks-item-priority` if the `priority` property is `true`.
+
+* ✅ It's done when I have created a `TaskList` class that inherits from the `Component` class.
+
+* It's done when the `TaskList` class passes children to its parent class.
+
+* ✅ It's done when a `render()` method is placed on the `TaskList` class and returns a string of HTML following this format: `<ul class="tasks">{INNER_HTML}</ul>`.
+
+* It's done when I have created a testing suite for the `Component` class to verify that `render()` throws an error when called directly.
+
+* It's done when I have created a testing suite for the `Header` class to verify the header renders correctly with the date.
+
+* It's done when I have created a testing suite for the `TaskListItem` class that verifies that the list item renders correctly.
+
+* It's done when the `TaskListItem` class testing suite also verifies that a priority task renders correctly.
+
+* It's done when I have created a testing suite for the `TaskList` class that verifies the unordered list with tasks renders correctly.
+
+* It's done when I have modified the `createDocument()` method on `document.js` to create a new `Header` class and to add `TaskListItems` to a `TaskList` class.
+
+* It's done when the `return` of the `createDocument()` method is modified to include the newly created `Header`, `TaskList`, and `TaskListItems` classes.
 
 ---
 
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+## 💡 Hints
+
+How can we set up inheritance between classes?
+
+How can we use the `toThrow()` matcher from Jest to check for errors?
+
+---
+
+© 2023 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.

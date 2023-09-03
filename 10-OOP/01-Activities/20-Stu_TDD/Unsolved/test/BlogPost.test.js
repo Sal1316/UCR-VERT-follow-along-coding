@@ -1,8 +1,9 @@
-const BlogPost = require('../lib/BlogPost.js');
-const Comment = require('../lib/Comment.js');
+const BlogPost = require('../lib/BlogPost.js'); // imports the blogpost
+const Comment = require('../lib/Comment.js');  // imports the comments.
 
 describe('BlogPost', () => {
-  // TODO: Add a comment describing this test.
+  /* TODO: Add a comment describing this test.
+    we use describe block*/
   describe('Instantiate', () => {
     it('should be an instance of BlogPost class', () => {
       const blogpost = new BlogPost();
