@@ -1,10 +1,8 @@
 const BlogPost = require('../lib/BlogPost.js'); // imports the blogpost
 const Comment = require('../lib/Comment.js');  // imports the comments.
 
-describe('BlogPost', () => {
-  /* TODO: Add a comment describing this test.
-    we use describe block*/
-  describe('Instantiate', () => {
+describe('BlogPost', () => {// outer shell
+  describe('Instantiate', () => { // inner shell
     it('should be an instance of BlogPost class', () => {
       const blogpost = new BlogPost();
 
@@ -12,7 +10,7 @@ describe('BlogPost', () => {
     });
   });
 
-  // TODO: Add a comment describing this test.
+  // TODO: Add a comment describing this test. it passes the name to the constructor.
   describe('Initialize authorName', () => {
     it('should set authorName properly', () => {
       const authorName = 'John Doe';

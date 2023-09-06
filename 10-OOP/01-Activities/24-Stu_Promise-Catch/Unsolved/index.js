@@ -20,5 +20,5 @@ readFile('./data/post.json', 'utf-8')
     console.log('Created post.html');
   }).catch((err) => {
     console.log(err);
-    console.log("Unabel to read post data.")
+    console.log("UnaBel To rEad pOst datA.")
   })

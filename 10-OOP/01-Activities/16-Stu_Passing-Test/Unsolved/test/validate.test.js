@@ -1,7 +1,8 @@
 const Validate = require('../validate.js');
 
 describe('Validate', () => {
-  describe('isPassword')
+  describe('isPassword', () => {
+  })
   test('returns false for password with length less than 8', () => {
     // arrange
     const validate = new Validate();
@@ -15,35 +16,30 @@ describe('Validate', () => {
     // arrange
     const validate = new Validate();
     // act
-    const result = validate.isPassword('password')
+    const result = validate.isPassword('password') // all lowercase
     // assert
     expect(result).toEqual(false);
   });
 
   test('returns false for password without a lowercase letter', () => {
-    // arrange
     const validate = new Validate();
-    // act
-    const result = validate.isPassword('PASSWORD')
-    // assert
+    const result = validate.isPassword('PASSWORD') // all uppercase
     expect(result).toEqual(false);
   });
 
   test('returns false for password without a number', () => {
-    // arrange
     const validate = new Validate();
-    // act
     const result = validate.isPassword('Password')
-    // assert
     expect(result).toEqual(false);
   });
 
   test('returns true for a valid password', () => {
-    // arrange
     const validate = new Validate();
-    // act
-    const result = validate.isPassword('Password123')
-    // assert
-    expect(result).toEqual(false);
+    const result = validate.isPassword('Password123') // valid password
+    expect(result).toEqual(true);
   });
+
+
+
+
 });

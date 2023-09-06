@@ -1,6 +1,6 @@
 # 📐 Add Comments to Implementation of the Promise Constructor
 
-Work with a partner to add comments describing the functionality of the code found in [promises.js](./Unsolved/promises.js).
+Work with a partner to add comments describing the functionality of the code found in [promises.js](./Unsolved/index.js).
 
 ## 📝 Notes
 

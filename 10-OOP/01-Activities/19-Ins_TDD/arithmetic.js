@@ -7,7 +7,7 @@ class Arithmetic {
       throw new Error('Please enter numbers for calculation');
     }
     
-    this.num1 = num1;
+    this.num1 = num1; // assign the porperties to the object.
     this.num2 = num2;
     this.operator = operator;
   }

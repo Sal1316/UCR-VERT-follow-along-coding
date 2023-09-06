@@ -3,7 +3,7 @@ const http = require('http');
 // TODO: What does this function return? returns an api call to an endpoint.
 // ans: asyncRequst returns a promise
 const asyncRequest = (url) =>
-  new Promise((resolve, reject) => {
+  new Promise((resolve, reject) => { // creating a Promise wrapper around the http.get().on() mothod.
     let error;
     let rawData = '';
 
@@ -30,17 +30,24 @@ const asyncRequest = (url) =>
         // The 'close' event fires after the incoming message is completely received. Error will be undefined if the
         // response status code was 200.
         if (error) {
-          // TODO: What the following line do? the following line rejects with an error. Calling reject will reject the promise with the error. This executes the cb in the asyncRequest().catch(cb)
+          // Calling reject will reject the promise with the error. This executes the cb in the asyncRequest().catch(cb)
           reject(error);
         } else {
           // TODO: What does the following line do?
-          resolve(rawData);// the data returned from the http call.
+          resolve(rawData);// the rasData. This executes cb in 'asyncRequest().them(cb)'.
         }
       });
   });
 
 asyncRequest('http://numbersapi.com/random/trivia')
-  // TODO: When is the callback function passed to .then() called by the promise? when the reject or the 
+  // The callback function passed to .then() is called when the resolve parameter is calle din the Promise 
   .then((data) => console.log(data))
-  // TODO: When is the callback function passed to .catch() called by the promise?
+  // The callback function passed to .catch()  is called when the reject parameter is calle din the Promise 
   .catch((error) => console.log(error));
+
+
+  /* NOTES: 
+  - theres lots of ways to make network request: 
+    in the past we use, jquery ajax, fetch and now we are using nodes, http.get(). Only use if you need fine tuned control.
+  
+  */ 

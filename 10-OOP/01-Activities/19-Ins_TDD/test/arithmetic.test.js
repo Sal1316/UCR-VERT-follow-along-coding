@@ -51,7 +51,6 @@ describe('Arithmetic', () => {
 
 // A testing suite for Arithmetic is created.
 describe('Arithmetic', () => {
-
   // A test is created to check that modulus does in fact return the remainder of the quotient of the two numbers.
   // This test checks to see if 2 % 2 has a remainder of 0 and returns 0.
   describe('modulus', () => {
@@ -65,7 +64,6 @@ describe('Arithmetic', () => {
 
 // A testing suite for Arithmetic is created.
 describe('Arithmetic', () => {
-
   // A test is created to check that modulus does in fact return the remainder of the quotient of the two numbers.
   // This test checks to see if 3 % 2 has a remainder of 1 and returns 1.
   describe('modulus', () => {
@@ -79,7 +77,6 @@ describe('Arithmetic', () => {
 
 // A testing suite for Arithmetic is created.
 describe('Arithmetic', () => {
-
   // A test is created to check that modulus does in fact return the remainder of the quotient of the two numbers.
   // This test checks to see if 10 % 6 has a remainder of 4 and returns 4.
   describe('modulus', () => {
@@ -93,7 +90,6 @@ describe('Arithmetic', () => {
 
 // A testing suite for Arithmetic is created.
 describe('Arithmetic', () => {
-
   // This test checks to see if an error is properly thrown if either num1 or num2 are not numbers.
   describe('Num1 and Num2 are integers', () => {
     it('should throw an error when the Num1 or Num2 arguments are not integers', () => {
@@ -104,3 +100,10 @@ describe('Arithmetic', () => {
     });
   });
 });
+
+
+/* Notes; 
+- this code above has extra code but it still works. We could have taken out the descriptions and made a main one
+  and put the ohter wihing it. Just like the past examples.
+
+*/
