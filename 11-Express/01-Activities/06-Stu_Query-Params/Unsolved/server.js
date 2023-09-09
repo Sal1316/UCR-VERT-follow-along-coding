@@ -8,14 +8,17 @@ const PORT = 3001;
 const app = express();
 
 const sortHelper = (type) =>
-  termData.sort(sortData('term', 'relevance', `${type}`));
+  termData.sort(sortData('term', 'relevance', `${type}`)); // look into how this works?  
 
+app.get('/', (req, res) => {
+  res.send("hello from the root route");
+})
 // TODO: Add a comment describing the functionality of this route
-
-app.get('/api/terms/', (req, res) => {
+// gets the terms directory
+app.get('/api/terms/', (req, res) => { //
   // TODO: Add a comment describing the req.query object
-
-  const hasQuery = Object.keys(req.query).length > 0;
+  console.log("req: ", req)
+  const hasQuery = Object.keys(req.query).length > 0; // 
 
   if (hasQuery && req.query.sort === 'dsc') {
     return res.json(sortHelper('dsc'));
@@ -66,11 +69,11 @@ app.get('/api/terms/:category', (req, res) => {
 app.get('/api/categories', (req, res) => {
   const categories = termData.map((term) => term.category);
 
-  const result = categories.filter((cat, i) => categories.indexOf(cat) === i);
+  const result = categories.filter((cat, i) => categories.indexOf(cat) === i); // filters out any duplicates.
 
   return res.json(result);
 });
 
 app.listen(PORT, () =>
-  console.info(`Example app listening at http://localhost:${PORT}`)
+  console.info(`Example is app listening at http://localhost:${PORT}`)
 );
