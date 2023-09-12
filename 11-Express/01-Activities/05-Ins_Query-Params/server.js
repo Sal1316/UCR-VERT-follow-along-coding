@@ -6,12 +6,12 @@ const PORT = 3001;
 const app = express();
 
 // GET route to get all of the terms
-app.get('/api/terms', (req, res) => res.json(termData));
+app.get('/api/terms', (req, res) => res.json(termData)); // this returns all the info from terms file.
 
 // GET route that returns any specific term
-app.get('/api/terms/:term', (req, res) => {
+app.get('/api/terms/:term', (req, res) => { // filters through the terms file and finds the one with :terms
   // Coerce the specific search term to lowercase
-  const requestedTerm = req.params.term.toLowerCase();
+  const requestedTerm = req.params.term.toLowerCase(); // the term key corresponds to the term in line 12.
 
   // Iterate through the terms name to check if it matches `req.params.term`
   for (let i = 0; i < termData.length; i++) {

@@ -7,7 +7,7 @@ const PORT = 3001;
 // Allows us to reference files with their relative path
 // Example: http://localhost:3001/images/cat.jpg
 
-app.use(express.static('public'));
+app.use(express.static('public')); // everything becomes avaible from the public folder at the root without specifiing the public directory on the web.
 
 app.listen(PORT, () =>
   console.log(`Serving static asset routes on port ${PORT}!`)

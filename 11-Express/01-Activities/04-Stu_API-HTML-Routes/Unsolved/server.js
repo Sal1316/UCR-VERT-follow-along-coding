@@ -1,12 +1,26 @@
 // TODO: Import express
+const express = require('express');
 
-// TODO: Import 'terms.json' file
+const termData = require('./terms.json')
 const PORT = 3001;
 
-// TODO: Initialize app variable
+// app.use(express.static('public'));
 
-// TODO: Create a route for a GET request that will return the content of our `terms.json` file
+const app = express();
+
+app.get('/', (req, res) => {
+  console.log("req", req)
+  console.log("res", res)
+
+  res.json(termData);
+});
+
+// app.get('/terms', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'terms.json'))
+// });
 
 app.listen(PORT, () =>
   console.log(`Example app listening at http://localhost:${PORT}`)
 );
+
+

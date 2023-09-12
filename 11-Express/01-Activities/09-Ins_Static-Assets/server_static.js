@@ -26,3 +26,10 @@ app.get('/css', (req, res) =>
 app.listen(PORT, () =>
   console.log(`serving all static files from public on port ${PORT}!`)
 );
+
+
+/*  NOTES: 
+
+- static middle ware alows us to write less code and be more flexible/scalable
+
+*/ 
