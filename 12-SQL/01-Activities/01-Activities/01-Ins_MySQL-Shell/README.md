@@ -1,4 +1,4 @@
-#  Instructor Demo: MySQL Shell
+#  ✅ Instructor Demo: MySQL Shell
 
 MySQL Shell is an advanced client and code editor for MySQL located right in our terminal. Let's open the MySQL Shell. 
 

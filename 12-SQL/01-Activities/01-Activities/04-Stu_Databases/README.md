@@ -1,10 +1,10 @@
-# 📖 Use MySQL Statements to Delete, Create, and Select a Database
+# 📖✅ Use MySQL Statements to Delete, Create, and Select a Database
 
 Work with a partner to implement the following user story:
 
-* As a developer, I want to delete an existing database.
+* ✅ As a developer, I want to delete an existing database.
 
-* As a developer, I want to create a new database and select that database for use.
+* ✅ As a developer, I want to create a new database and select that database for use.
 
 ## Acceptance Criteria
 

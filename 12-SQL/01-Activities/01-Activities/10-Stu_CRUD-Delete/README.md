@@ -1,4 +1,4 @@
-# 🐛 Data Not Updating in Database
+# 🐛✅ Data Not Updating in Database
 
 Work with a partner to resolve the following issue(s):
 
@@ -14,13 +14,13 @@ When I execute a MySQL statement to update the data, the data in every row displ
 
 ## Steps to Reproduce the Problem
 
-1. Create a `books_db` database and select it for use.
+1. ✅ Create a `books_db` database and select it for use.
 
-2. Execute the `insert.sql` file in the command line to insert data.
+2. ✅ Execute the `insert.sql` file in the command line to insert data.
 
-3. Execute the `update.sql` file to update the table.
+3. ✅ Execute the `update.sql` file to update the table.
 
-4. Enter the query `SELECT * FROM fiction` to view the contents of the table.
+4. ✅ Enter the query `SELECT * FROM fiction` to view the contents of the table.
 
 ## Assets
 

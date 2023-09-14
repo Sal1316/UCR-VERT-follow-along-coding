@@ -1,14 +1,14 @@
-# 🏗️ Add Table to Database
+# ✅ 🏗️ Add Table to Database
 
 Work with a partner to implement the following user story:
 
-* As a developer, I want to delete a table from an existing database and replace it with a new table.
+* ✅ As a developer, I want to delete a table from an existing database and replace it with a new table.
 
 ## Acceptance Criteria
 
-* It's done when a new table `biographies` has been created and includes two columns `id` and `name`.
+* ✅ It's done when a new table `biographies` has been created and includes two columns `id` and `name`.
 
-* It's done when the `id` column has a data type of `INT` and the `name` column has a data type of `VARCHAR(100)`.
+* ✅ It's done when the `id` column has a data type of `INT` and the `name` column has a data type of `VARCHAR(100)`.
 
 ## Assets
 

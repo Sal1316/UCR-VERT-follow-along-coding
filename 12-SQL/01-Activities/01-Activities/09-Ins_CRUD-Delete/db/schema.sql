@@ -18,7 +18,7 @@ CREATE TABLE produce (
 INSERT INTO produce (id, name)
 VALUES
     ( 1, "apple"),
-    ( 2, "orange"),
+    ( 2, "orange"), -- we deleted this record with delete.sql --
     ( 3, "banana");
     
     

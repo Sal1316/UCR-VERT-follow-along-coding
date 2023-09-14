@@ -1,4 +1,4 @@
-# 📖 Execute a SQL File Using MySQL Shell
+# 📖 ✅ Execute a SQL File Using MySQL Shell
 
 Work with a partner to implement the following user story:
 
@@ -6,7 +6,7 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when the `schema.sql` file is executed using the command-line interface and a message reading `Query OK` is returned.
+* ✅ It's done when the `schema.sql` file is executed using the command-line interface and a message reading `Query OK` is returned.
 
 ## 📝 Notes
 
