@@ -3,9 +3,9 @@ const express = require('express');
 const PORT = 3001;
 const app = express();
 
-// We can send a body parameter to the client using the res.send() method. This body parameter can be a string, buffer, or even an array.
+// We can send a body parameter <p> to the client using the res.send() method. This body parameter can be a string, buffer, or even an array. Whats a buffer?
 app.get('/', (req, res) => {
-  res.send( // .send() alows us to send various types of data. html, error codes...
+  res.send( 
     `<p>API - An application programming interface, is a computing interface that defines interactions between multiple software intermediaries</p>`
   );
 });
@@ -23,3 +23,7 @@ app.listen(PORT, () =>
   console.log(`Example app listening at http://localhost:${PORT}`)
 );
  
+/* NOTES: 
+- .send() allows us to send various types of data. html, JSON Objects, error codes( error(404)) ...
+- res.json() need to send to the browser json formated code.
+*/ 

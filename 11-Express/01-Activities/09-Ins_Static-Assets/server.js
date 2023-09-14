@@ -12,3 +12,13 @@ app.use(express.static('public')); // everything becomes avaible from the public
 app.listen(PORT, () =>
   console.log(`Serving static asset routes on port ${PORT}!`)
 );
+
+
+/* NOTES: 
+- when you use app.use(express.static('public')); anything inside this folder becomes available at the root. 
+  but why is the cat.jpg showing?
+  ans: bc, the html is pointing to that page.
+
+
+
+*/ 

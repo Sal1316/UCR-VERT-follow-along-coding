@@ -9,22 +9,23 @@ const app = express();
 app.get('/api/terms', (req, res) => res.json(termData)); // this returns all the info from terms file.
 
 // GET route that returns any specific term
-app.get('/api/terms/:term', (req, res) => { // filters through the terms file and finds the one with :terms
-  // Coerce the specific search term to lowercase
-  const requestedTerm = req.params.term.toLowerCase(); // the term key corresponds to the term in line 12.
-
+app.get('/api/terms/:term', (req, res) => { // filters through the terms.json file, and finds the one with :terms('Route Parameters') key
+ 
+  const requestedTerm = req.params.term.toLowerCase(); /* the term key corresponds to the term in line 12. 
+    if the /api/terms/:name, was 'name' insteadof 'term', then we would change it in req.params.name.toLowerCase().
+     
+  */
   // Iterate through the terms name to check if it matches `req.params.term`
   for (let i = 0; i < termData.length; i++) {
-    if (requestedTerm === termData[i].term.toLowerCase()) {
+    if (requestedTerm === termData[i].term.toLowerCase()) { // means: ('rest' === 'rest')
       return res.json(termData[i]);
     }
   }
 
-  // Return a message if the term doesn't exist in our DB
-  return res.json('No match found');
+  return res.json('No match found');// Return a message if the term doesn't exist in our terms.json file
 });
 
-// Fallback route for when a user attempts to visit routes that don't exist
+// Fallback route for when a user attempts to visit routes that don't exist, like the root route.
 app.get('*', (req, res) =>
   res.send(
     `Make a GET request using Insomnia to <a href="http://localhost:${PORT}/api/terms">http://localhost:${PORT}/api/terms</a>`

@@ -1,4 +1,4 @@
-# 📐 Add Comments to Implementation of Query Parameters
+# 📐 ✅ Add Comments to Implementation of Query Parameters
 
 Work with a partner to add comments describing the functionality of the code found in [Unsolved](./Unsolved/server.js).
 

@@ -8,8 +8,14 @@ const PORT = 3001;
 const app = express();
 
 // Middleware for parsing JSON and urlencoded form data
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// clog need to be loaded before api// registered clog middleare;
+app.use(clog);
+
+// middleware for modular routes: 
 app.use('/api', api);
 
 app.use(express.static('public'));

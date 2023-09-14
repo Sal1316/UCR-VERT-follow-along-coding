@@ -1,4 +1,4 @@
-# 📖  Implement Middleware for Static Assets
+# 📖 ✅ Implement Middleware for Static Assets
 
 Work with a partner to implement the following user story:
 

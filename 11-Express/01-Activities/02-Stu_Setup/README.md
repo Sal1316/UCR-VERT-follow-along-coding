@@ -1,4 +1,4 @@
-# 🏗️ Implement Express.js Routing
+# 🏗️ ✅ Implement Express.js Routing
 
 Work with a partner to implement the following user story:
 
@@ -6,11 +6,11 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when I have created an `app` variable set to the value of `express()`.
+* ✅ It's done when I have created an `app` variable set to the value of `express()`.
 
-* It's done when I have set up middleware to serve static files from `/public`.
+* ✅ It's done when I have set up middleware to serve static files from `/public`.
 
-* It's done when I have created an HTML route to serve up `paths.html`.
+* ✅ It's done when I have created an HTML route to serve up `paths.html`.
 
 ---
 

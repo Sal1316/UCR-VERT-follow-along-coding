@@ -1,6 +1,9 @@
 {
   "name": "01-ins-setup",
   "version": "1.0.0",
+  "script": {
+    "start": "node server.js"
+  },
   "main": "server.js",
   "license": "MIT",
   "dependencies": {

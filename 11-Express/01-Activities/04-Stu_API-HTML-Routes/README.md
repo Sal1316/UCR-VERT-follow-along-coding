@@ -1,4 +1,4 @@
-# 🏗️ Create an API Route
+# 🏗️ ✅ Create an API Route
 
 Work with a partner to implement the following user story:
 
@@ -6,13 +6,13 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when I have imported Express.js into my project.
+* ✅ It's done when I have imported Express.js into my project.
 
-* It's done when I have created an `app` variable set to the value of `express()`.
+* ✅ It's done when I have created an `app` variable set to the value of `express()`.
 
-* It's done when I have created an API route to `/api/`.
+* ✅ It's done when I have created an API route to `/api/`.
 
-* It's done when GET requests made using the browser to the API endpoint return the content found in `terms.json`.
+* ✅ It's done when GET requests made using the browser to the API endpoint return the content found in `terms.json`.
 
 ---
 
