@@ -1,4 +1,4 @@
-# 📖 Implement Data Types and Constraints
+# 📖 ✅ Implement Data Types and Constraints
 
 Work with a partner to implement the following user story:
 
@@ -6,9 +6,9 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when each column in the `customers` table has a defined data type and constraint.
+* ✅ It's done when each column in the `customers` table has a defined data type and constraint.
 
-* It's done when the values in the `id`, `first_name`, and `last_name` columns cannot be `NULL`.
+* ✅ It's done when the values in the `id`, `first_name`, and `last_name` columns cannot be `NULL`.
 
 ## 📝 Notes
 

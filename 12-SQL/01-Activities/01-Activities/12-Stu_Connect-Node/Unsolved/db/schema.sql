@@ -1,7 +1,9 @@
+-- schema file defines the structure of db. --
+
 DROP DATABASE IF EXISTS classlist_db;
 CREATE DATABASE classlist_db;
 
-USE classlist_db;
+USE classlist_db;  -- switches to this db.
 
 CREATE TABLE students (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,

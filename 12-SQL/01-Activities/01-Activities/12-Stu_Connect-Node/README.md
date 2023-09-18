@@ -1,4 +1,4 @@
-# 📐 Add Comments to Implementation of MySQL in Node.js Environment
+# 📐 ✅ Add Comments to Implementation of MySQL in Node.js Environment
 
 Work with a partner to add comments describing the functionality of the code found in [server.js](./Unsolved/server.js).
 

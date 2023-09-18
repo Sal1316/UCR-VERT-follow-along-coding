@@ -1,4 +1,4 @@
-# 🏗️ Design Schema With Tables
+# 🏗️✅ Design Schema With Tables
 
 Work with a partner to implement the following user story:
 
@@ -6,11 +6,11 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when the schema includes two tables.
+* ✅ It's done when the schema includes two tables.
 
-* It's done when each table has two or more columns, and each column has a defined data type and constraint.
+* ✅ It's done when each table has two or more columns, and each column has a defined data type and constraint.
 
-* It's done when the schema matches the diagram.
+* ✅ It's done when the schema matches the diagram.
 
 ## Assets
 

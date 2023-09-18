@@ -1,4 +1,4 @@
-# 🐛 Seed Data Not Populating Table
+# ✅ 🐛 Seed Data Not Populating Table
 
 Work with a partner to resolve the following issue(s):
 
@@ -14,11 +14,11 @@ When the `seeds.sql` file is executed, the data is not successfully populated in
 
 ## Steps to Reproduce the Problem
 
-1. Execute `schema.sql` in MySQL Shell to create the database and table.
+1. ✅ Execute `schema.sql` in MySQL Shell to create the database and table.
 
-2. Execute `seeds.sql` in MySQL Shell to populate data in the table.
+2. ✅ Execute `seeds.sql` in MySQL Shell to populate data in the table.
 
-3. Run `SELECT * FROM products;` to view seeded data.
+3. ✅ Run `SELECT * FROM products;` to view seeded data.
 
 ## Assets
 

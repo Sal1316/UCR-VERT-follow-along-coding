@@ -1,4 +1,4 @@
-# 🏗️ Use Primary Key and Foreign Key to Define Relationship Between Tables
+# 🏗️ ✅ Use Primary Key and Foreign Key to Define Relationship Between Tables
 
 Work with a partner to implement the following user story:
 
@@ -6,9 +6,9 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when the `id` column in the `customers` table is defined as the primary key.
+* ✅ It's done when the `id` column in the `customers` table is defined as the primary key.
 
-* It's done when the foreign key in the `customer_orders` table refers to the `customers` table primary key.
+* ✅ It's done when the foreign key in the `customer_orders` table refers to the `customers` table primary key.
 
 ## Assets
 
