@@ -2,9 +2,14 @@ const tipForm = document.getElementById("tip-form");
 const tipsContainer = document.getElementById("tip-container");
 const fbBtn = document.getElementById("feedback-btn");
 
-fbBtn.addEventListener("click", (e) => {
+console.log('window.location', window.location);
+
+fbBtn.addEventListener("click", (e) => { // what does this btn do?
   e.preventDefault();
-  window.location.href = "/feedback";
+  console.log('window.location', window.location);
+  window.location.href = "/feedback"; /* This line sets the href property of the window.location 
+  object to "/feedback". In other words, it instructs the browser to navigate to the URL "/feedback".
+  */
 });
 
 const createCard = (tip) => {
@@ -37,8 +42,8 @@ const createCard = (tip) => {
   tipsContainer.appendChild(cardEl);
 };
 
-// Get a list of existing tips from the server
-const getTips = () =>
+
+const getTips = () => // Get a list of existing tips from the SERVER
   fetch("/api/tips", {
     method: "GET",
     headers: {
@@ -51,8 +56,7 @@ const getTips = () =>
       console.error("Error:", error);
     });
 
-// Post a new tip to the page
-const postTip = (tip) =>
+const postTip = (tip) => // Post a new tip to the page
   fetch("/api/tips", {
     method: "POST",
     headers: {
@@ -73,7 +77,6 @@ const postTip = (tip) =>
 getTips().then((data) => data.forEach((tip) => createCard(tip)));
 
 // Function to validate the tips that were submitted
-// TODO: Use this function to validate the form data. Accepts an object with {username, topic, tip}. Returns { isValid: boolean, and errors: Object }
 const validateTip = (newTip) => {
   const { username, topic, tip } = newTip;
 

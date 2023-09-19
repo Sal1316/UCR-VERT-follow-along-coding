@@ -22,5 +22,11 @@
         "tip": "Valid tip test was added",
         "topic": "UX",
         "tip_id": "78972a6c-db23-4df0-a5c5-422c3b346bd2"
+    },
+    {
+        "username": "salvador",
+        "tip": "Yo lo was here and so was polo",
+        "topic": "UX",
+        "tip_id": "53eac834-5b8b-4366-873d-e0269db2bbca"
     }
 ]

@@ -1,4 +1,4 @@
-const tips = require('express').Router();
+const tips = require('express').Router(); //Express provides a Router class that allows you to create modular and reusable sets of routes. By calling the .Router()
 const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
 const { v4: uuidv4 } = require('uuid');
 
