@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require('sequelize'); // when we set up the model, we have to destructure two items from the sequelize
 const sequelize = require('../config/connection');
 
 // Create a new Sequelize model for books
@@ -9,7 +9,7 @@ Book.init(
   // An `id` is automatically created by Sequelize, though best practice would be to define the primary key ourselves
   {
     title: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING // same as, title VARCHAR(100) in sql.
     },
     author: {
       type: DataTypes.STRING
@@ -33,7 +33,7 @@ Book.init(
     sequelize,
     // Set to false to remove `created_at` and `updated_at` fields
     timestamps: false,
-    underscored: true,
+    underscored: true, 
     modelName: 'book'
   }
 );

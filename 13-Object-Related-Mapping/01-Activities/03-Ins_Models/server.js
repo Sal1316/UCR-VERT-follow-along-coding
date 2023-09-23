@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Force true to drop/recreate table(s) on every sync
+// Force true to drop/recreate table(s) on every sync, ex if the db exist drop it and create it.
 sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });

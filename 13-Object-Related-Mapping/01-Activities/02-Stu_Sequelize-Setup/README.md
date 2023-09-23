@@ -1,4 +1,4 @@
-# 📖 Replace Hardcoded Credentials With Environment Variables
+# 📖 ✅ Replace Hardcoded Credentials With Environment Variables
 
 Work with a partner to implement the following user story:
 
@@ -6,9 +6,9 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when the database name, user, and password are moved to environment variables.
+* ✅ It's done when the database name, user, and password are moved to environment variables.
 
-* It's done when Sequelize can connect to the database using the `dotenv` npm package.
+* ✅ It's done when Sequelize can connect to the database using the `dotenv` npm package.
 
 ## 📝 Notes
 
