@@ -26,7 +26,7 @@ License.init(
       references: {
         // This references the `driver` model, which we set in `Driver.js` as its `modelName` property
         model: 'driver',
-        key: 'id',
+        key: 'id', // refrences the driver.key as the forigen key.
       },
     },
   },

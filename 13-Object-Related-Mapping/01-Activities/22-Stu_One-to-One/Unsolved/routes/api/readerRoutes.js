@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Reader, LibraryCard } = require('../../models');
+const { Reader, LibraryCard } = require('../../models'); // imported from the index file, but 
 
 // GET all readers
 router.get('/', async (req, res) => {

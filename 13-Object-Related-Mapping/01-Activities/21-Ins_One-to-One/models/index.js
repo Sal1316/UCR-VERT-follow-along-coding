@@ -5,7 +5,7 @@ const License = require('./License');
 Driver.hasOne(License, {
   foreignKey: 'driver_id',
   // When we delete a Driver, make sure to also delete the associated License.
-  onDelete: 'CASCADE',
+  onDelete: 'CASCADE', // on deleted removes any associated data. ex, if we delete the driver, we also delete the licence.
 });
 
 // We can also define the association starting with License

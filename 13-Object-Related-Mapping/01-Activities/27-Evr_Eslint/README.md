@@ -1,4 +1,5 @@
 # 🐛 Code Not Following ESLint Rules
+ESLint - tool for javascript to help your write better code. Formats it with the right styles and standards.
 
 Work with a partner to resolve the following issues:
 

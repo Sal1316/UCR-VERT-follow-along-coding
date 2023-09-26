@@ -1,5 +1,5 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
 
 class Driver extends Model {}
 
@@ -20,12 +20,12 @@ Driver.init(
       allowNull: false,
     },
   },
-  {
+  { // settings as to how you want the table to be created.
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'driver',
+    modelName: "driver",
   }
 );
 
