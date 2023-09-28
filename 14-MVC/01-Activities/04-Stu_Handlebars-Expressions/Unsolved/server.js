@@ -19,7 +19,4 @@ app.use(require("./controllers/dish-routes"));
 app.listen(PORT, () => {
   console.log("Server listening on: http://localhost:" + PORT);
 });
-router.get("/dish/:num", async (req, res) => {
-  // This method renders the 'dish' template, and uses params to select the correct dish to render in the template, based on the id of the dish.
-  return res.render("dish", dishes[req.params.num - 1]); // 1st param is the veiw, 2nd param is what you want to pass in to the view.
-});
+

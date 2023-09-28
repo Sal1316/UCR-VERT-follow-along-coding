@@ -14,3 +14,11 @@ const seedDatabase = async () => {
 };
 
 seedDatabase();
+
+/* NOTES:
+
+- WHERE IS THIS index.js FILE BEING USED? or what calles it? 
+  ans: npm run seeds. Need to have 'run' eventhough its not in package.json
+    Uses the "seeds": "node seeds/index.js",
+
+*/

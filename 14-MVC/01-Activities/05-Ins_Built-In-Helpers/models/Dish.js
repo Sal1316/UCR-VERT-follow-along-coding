@@ -1,7 +1,8 @@
-// Here is where we set up our Dish model, for when we are ready to connect to a database in future activities.
+/* Here is where we set up our Dish model, for when we are 
+ready to connect to a database in future activities.*/
 
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
 
 class Dish extends Model {}
 
@@ -33,8 +34,15 @@ Dish.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'dish',
+    modelName: "dish", // adds it to the db.
   }
 );
 
 module.exports = Dish;
+
+/* NOTES: 
+- the DataTypes variable imported from sequelize allows you to define the data types
+  for the attributes or the columns of the 'Dish' model. Ex, defines the types, INTEGER, 
+  STRING, TEXT...
+
+*/

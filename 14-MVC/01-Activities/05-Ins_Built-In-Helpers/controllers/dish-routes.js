@@ -1,6 +1,7 @@
 const router = require('express').Router();
 
-// We are using hardcoded data here, where would our data usually come from? Remember - we haven't yet set up a database or Sequelize in our app.
+/* We are using hardcoded data here, where would our data usually come from? 
+Remember - we haven't yet set up a database or Sequelize in our app.*/ 
 const dishes = [
     {
       id: 1,

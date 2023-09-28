@@ -1,8 +1,24 @@
-<div class="dish-card">
+{{!-- <div class="dish-card">
   <div class="dish-card-header">
     {{dish_name}}
   </div>
   <div class="card-body">
+    Description:
     {{description}}
+  </div>
+</div> --}}
+
+{{! BONUS QUESTION:  }}
+<div class="dish-card">
+  <div class="dish-card-header">
+    <ul>
+      {{#each dishes}}
+        {{! Loops through all the items in the dishes array.}}
+        <li>
+          <h2>{{dish_name}}</h2>
+          <p>Description: {{description}}</p>
+        </li>
+      {{/each}}
+    </ul>
   </div>
 </div>

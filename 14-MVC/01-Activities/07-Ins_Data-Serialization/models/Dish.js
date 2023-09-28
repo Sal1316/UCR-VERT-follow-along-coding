@@ -27,8 +27,8 @@ Dish.init(
       type: DataTypes.BOOLEAN,
     },
   },
-  {
-    sequelize,
+  { 
+    sequelize, // imported connection 
     freezeTableName: true,
     underscored: true,
     modelName: 'dish',

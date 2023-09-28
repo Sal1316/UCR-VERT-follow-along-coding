@@ -14,10 +14,19 @@
       </h1>
     </header>
       <main class="container container-fluid mt-5">
-        {{!-- This is a placeholder for rendering all the content of the handlebar templates.--}}
-      {{{ body }}}   {{!-- WHere is this coming from? --}}
+       {{{ body }}}   {{!-- SEE NOTES ON THIS--}}
       </main>
   </div>
   </body>
 
 </html>
+
+{{!-- NOTES: 
+
+- The {{{ body }}}, placeholder is a convention used by templating engines 
+  to indicate where the dynamic content should be injected.
+  + the 'body' is just the name passed in from the options object in the render() fx.
+    
+
+
+ --}}

@@ -7,9 +7,9 @@
       Description:
       {{description}}
     </p>
-<!-- TODO: Use a built-in helper to display "Contains Nuts" if a food item contains nuts.-->
-  </div>
+    <!-- TODO: Use #if to show if dish "Contains Nuts" -->
     {{#if has_nuts}}
-      <p>{{dish_name}} Contains Nuts!</p>
+      <p><b>☠️ Contains Nuts! Beware ☠️</b></p>
     {{/if}}
+  </div>
 </div>

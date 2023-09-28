@@ -6,7 +6,7 @@ Work with a partner to resolve the following issues:
 
 ## Expected Behavior
 
-* When a party guest views the page, they see a menu of food items.
+* ✅ When a party guest views the page, they see a menu of food items.
 
 ## Actual Behavior
 
