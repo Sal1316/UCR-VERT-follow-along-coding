@@ -52,7 +52,7 @@ const dishes = [
 
 // get all dishes
 router.get('/', async (req, res) => {
-  res.render('all', {dishes});
+  res.render('all', { dishes: dishes }); // has to be an obj with properties in it.
 });
 
 // get one dish

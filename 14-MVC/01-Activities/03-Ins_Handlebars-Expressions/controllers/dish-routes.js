@@ -43,7 +43,7 @@ router.get('/', async (req, res) => {
 //get one dish
 router.get('/dish/:num', async (req, res) => {
   // This method renders the 'dish' template, and uses params to select the correct dish to render in the template, based on the id of the dish.
-  return res.render('dish', dishes[req.params.num - 1]);
+  return res.render('dish', dishes[req.params.num - 1]); // dish name of the veiw, what you want topass in.
 });
 
 module.exports = router;
