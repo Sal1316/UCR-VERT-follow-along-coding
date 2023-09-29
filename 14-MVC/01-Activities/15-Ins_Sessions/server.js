@@ -11,13 +11,14 @@ const helpers = require('./utils/helpers');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Set up sessions
+// Set up sessions with some options
 const sess = {
-  secret: 'Super secret secret',
-  resave: false,
+  secret: 'Super secret secret', // you would want this in the .env
+  resave: false, // forces the sesiong to be saved back to the session store(storage).
   saveUninitialized: false,
 };
 
+// use seession.
 app.use(session(sess));
 
 const hbs = exphbs.create({ helpers });

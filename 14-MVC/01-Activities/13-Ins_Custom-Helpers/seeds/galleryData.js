@@ -23,6 +23,6 @@ const gallerydata = [
   },
 ];
 
-const seedGallery = () => Gallery.bulkCreate(gallerydata);
+const seedGallery = () => Gallery.bulkCreate(gallerydata); // bulkCreate() inserts data into the Gallery table.
 
 module.exports = seedGallery;

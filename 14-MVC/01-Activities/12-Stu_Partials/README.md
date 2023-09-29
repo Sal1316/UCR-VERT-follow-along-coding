@@ -1,4 +1,4 @@
-# 🏗️ Use Handlebars.js Partials to Reuse a Template
+# 🏗️ ✅ Use Handlebars.js Partials to Reuse a Template
 
 Work with a partner to implement the following user story:
 

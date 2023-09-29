@@ -1,4 +1,4 @@
-# 📐 Add Comments to Implementation of the Sequelize Store and Cookies
+# 📐 ✅Add Comments to Implementation of the Sequelize Store and Cookies
 
 Work with a partner to add comments describing the functionality of the code found in [Unsolved/server.js](./Unsolved/server.js).
 

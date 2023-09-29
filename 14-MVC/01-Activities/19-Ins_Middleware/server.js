@@ -39,3 +39,12 @@ sequelize.sync({ force: false }).then(() => {
     console.log(`🦚 Now listening on: http://localhost:${PORT} 🦚`)
   );
 });
+
+/* NOTES: 
+
+-Authentication: identity been varified and is ok.
+
+-Authorization: ex, logged in but may not have the correct privilages.
+
+
+*/

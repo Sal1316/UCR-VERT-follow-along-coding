@@ -5,7 +5,7 @@ const { Gallery, Painting } = require('../models');
 router.get('/', async (req, res) => {
   try {
     const dbGalleryData = await Gallery.findAll({
-      include: [
+      include: [ // what does this Do? Seems like it retrieves data from Painting. LIke a JOIN
         {
           model: Painting,
           attributes: ['filename', 'description'],
@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
     });
 
     const galleries = dbGalleryData.map((gallery) =>
-      gallery.get({ plain: true })
+      gallery.get({ plain: true }) // returns 'POJO'
     );
 
     res.render('homepage', {

@@ -1,4 +1,4 @@
-# 📖 Implement Middleware Function for User Authentication
+# 📖 ✅ Implement Middleware Function for User Authentication
 
 Work with a partner to implement the following user story:
 

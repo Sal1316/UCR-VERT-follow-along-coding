@@ -1,8 +1,8 @@
 const path = require('path');
 const express = require('express');
-const session = require('express-session');
+const session = require('express-session'); // imported
 const exphbs = require('express-handlebars');
-const SequelizeStore = require('connect-session-sequelize')(session.Store);
+const SequelizeStore = require('connect-session-sequelize')(session.Store); // import session first
 
 const routes = require('./controllers');
 const sequelize = require('./config/connection');
@@ -16,12 +16,12 @@ const sess = {
   secret: 'Super secret secret',
   cookie: {
     // Stored in milliseconds
-    maxAge: 24 * 60 * 60 * 1000, // expires after 1 day
+    maxAge: 24 * 60 * 60 * 1000, // expires after 1 day // specifies how long the cookie is valid for.
   },
   resave: false,
   saveUninitialized: true,
-  store: new SequelizeStore({
-    db: sequelize,
+  store: new SequelizeStore({ // store alows us to store it in sequelize db.
+    db: sequelize, 
   }),
 };
 

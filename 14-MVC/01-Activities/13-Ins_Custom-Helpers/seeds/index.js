@@ -13,3 +13,6 @@ const seedAll = async () => {
 };
 
 seedAll();
+
+
+// consolidates the gallery and painting data functions.
