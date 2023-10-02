@@ -8,7 +8,7 @@ Work with a partner to implement the following user story:
 
 * It's done when the details for the paintings associated with the gallery are rendered using a Handlebars.js partial in the [gallery.handlebars](./Unsolved/views/gallery.handlebars) file.
 
-* It's done when the `painting-details.handlebars` partial renders a card that links to that painting's page.
+* It's done when the `painting-details.handlebars` partial renders a card that links to that painting's page. 
 
 * It's done when the card includes a header with the painting's title.
 

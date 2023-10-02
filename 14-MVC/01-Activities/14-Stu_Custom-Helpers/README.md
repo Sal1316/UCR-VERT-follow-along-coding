@@ -6,11 +6,11 @@ Work with a partner to resolve the following issues:
 
 ## Expected Behavior
 
-* When a museum visitor visits the painting page, it should clearly and accurately show the date that the exhibition will end.
+* ✅ When a museum visitor visits the painting page, it should clearly and accurately show the date that the exhibition will end.
 
-* The end date is calculated by adding five years to the painting's `exhibition_date`.
+* ✅ The end date is calculated by adding five years to the painting's `exhibition_date`.
 
-* The end date should be formatted as `M/D/YYYY`.
+* ✅ The end date should be formatted as `M/D/YYYY`.
 
 ## Actual Behavior
 

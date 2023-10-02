@@ -3,7 +3,7 @@ const seedGallery = require('./galleryData');
 const seedPaintings = require('./paintingData');
 
 const seedAll = async () => {
-  await sequelize.sync({ force: true });
+  await sequelize.sync({ force: true }); // overrides db.
 
   await seedGallery();
 

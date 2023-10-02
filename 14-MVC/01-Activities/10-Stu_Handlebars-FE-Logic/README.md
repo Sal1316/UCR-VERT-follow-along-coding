@@ -1,6 +1,7 @@
 # 📐 ✅ Add Comments to the Implementation of a Form to Update a Food Item
 
-`This activity has everything you need for project 2, execpt the ability to log in and delete a dish from the Db.`
+`This activity has everything you need for project 2, except the ability to log in and delete a dish from the Db.`
+`To start the application you  have to use mysql -u root -p; to run the schema, and use 'npm run seeds' to seed the data.`
 
 Work with a partner to add comments describing the functionality of the code found in [dish.handlebars](./Unsolved/views/dish.handlebars), [edit-dish](./Unsolved/public/js/edit-dish.js), and [dish-routes](./Unsolved/controllers/api/dish-routes.js).
 

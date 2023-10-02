@@ -42,9 +42,5 @@ sequelize.sync({ force: false }).then(() => {
 
 /* NOTES: 
 
--Authentication: identity been varified and is ok.
-
--Authorization: ex, logged in but may not have the correct privilages.
-
 
 */

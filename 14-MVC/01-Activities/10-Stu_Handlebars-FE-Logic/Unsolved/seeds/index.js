@@ -14,3 +14,6 @@ const seedDatabase = async () => {
 };
 
 seedDatabase();
+
+// this file gets called by 'npm run seeds'
+

@@ -1,25 +1,27 @@
-const router = require('express').Router();
-const { Gallery, Painting } = require('../models');
+const router = require("express").Router();
+const { Gallery, Painting } = require("../models");
 
-// GET all galleries for homepage
-router.get('/', async (req, res) => {
+// GETs all galleries for homepage
+router.get("/", async (req, res) => {
   try {
     const dbGalleryData = await Gallery.findAll({
-      include: [ // what does this Do? Seems like it retrieves data from Painting. LIke a JOIN
+      include: [
+        //  retrieves data from Painting. LIke a JOIN
         {
           model: Painting,
-          attributes: ['filename', 'description'],
+          attributes: ["filename", "description"], // gets these props from the model Painting
         },
       ],
     });
-
-    const galleries = dbGalleryData.map((gallery) =>
-      gallery.get({ plain: true }) // returns 'POJO'
+    // console.log("\n\n dbGAllEryDAtA:", dbGalleryData);
+    const galleries = dbGalleryData.map(
+      (gallery) => gallery.get({ plain: true }) // returns 'POJO' of
     );
-
-    res.render('homepage', {
+    console.log("\n\n gAllEriEs POJO:", galleries);
+    //
+    res.render("homepage", {
       galleries,
-    });
+    }); // passing in the POJO to be accessed in the homepage.handlebars file.
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -27,26 +29,26 @@ router.get('/', async (req, res) => {
 });
 
 // GET one gallery
-router.get('/gallery/:id', async (req, res) => {
+router.get("/gallery/:id", async (req, res) => {
   try {
     const dbGalleryData = await Gallery.findByPk(req.params.id, {
       include: [
         {
-          model: Painting,
+          model: Painting, // gets data from here
           attributes: [
-            'id',
-            'title',
-            'artist',
-            'exhibition_date',
-            'filename',
-            'description',
+            "id",
+            "title",
+            "artist",
+            "exhibition_date",
+            "filename",
+            "description",
           ],
         },
       ],
     });
 
     const gallery = dbGalleryData.get({ plain: true });
-    res.render('gallery', { gallery });
+    res.render("gallery", { gallery });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -54,13 +56,13 @@ router.get('/gallery/:id', async (req, res) => {
 });
 
 // GET one painting
-router.get('/painting/:id', async (req, res) => {
+router.get("/painting/:id", async (req, res) => {
   try {
     const dbPaintingData = await Painting.findByPk(req.params.id);
 
     const painting = dbPaintingData.get({ plain: true });
 
-    res.render('painting', { painting });
+    res.render("painting", { painting });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);

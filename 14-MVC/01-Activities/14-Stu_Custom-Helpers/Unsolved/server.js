@@ -9,7 +9,7 @@ const helpers = require('./utils/helpers');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-const hbs = exphbs.create({ helpers });
+const hbs = exphbs.create({ helpers }); // helper file.
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');

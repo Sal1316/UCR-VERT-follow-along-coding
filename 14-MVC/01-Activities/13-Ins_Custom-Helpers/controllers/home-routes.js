@@ -1,14 +1,14 @@
-const router = require('express').Router();
-const { Gallery, Painting } = require('../models');
+const router = require("express").Router();
+const { Gallery, Painting } = require("../models");
 
 // GET all galleries for homepage
-router.get('/', async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const dbGalleryData = await Gallery.findAll({
       include: [
         {
           model: Painting,
-          attributes: ['filename', 'description'],
+          attributes: ["filename", "description"],
         },
       ],
     });
@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
       gallery.get({ plain: true })
     );
 
-    res.render('homepage', {
+    res.render("homepage", {
       galleries,
     });
   } catch (err) {
@@ -27,26 +27,27 @@ router.get('/', async (req, res) => {
 });
 
 // GET one gallery
-router.get('/gallery/:id', async (req, res) => {
+router.get("/gallery/:id", async (req, res) => {
   try {
     const dbGalleryData = await Gallery.findByPk(req.params.id, {
       include: [
         {
           model: Painting,
           attributes: [
-            'id',
-            'title',
-            'artist',
-            'exhibition_date',
-            'filename',
-            'description',
+            "id", // Where is the name property accessed in the gallery.handlbers? It is passed down from the Gallery, not the Painting.
+            "title",
+            "artist",
+            "exhibition_date",
+            "filename",
+            "description",
           ],
         },
       ],
     });
 
     const gallery = dbGalleryData.get({ plain: true });
-    res.render('gallery', { gallery });
+    console.log("\n gAllEry: ", gallery);
+    res.render("gallery", { gallery });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -54,13 +55,13 @@ router.get('/gallery/:id', async (req, res) => {
 });
 
 // GET one painting
-router.get('/painting/:id', async (req, res) => {
+router.get("/painting/:id", async (req, res) => {
   try {
     const dbPaintingData = await Painting.findByPk(req.params.id);
 
     const painting = dbPaintingData.get({ plain: true });
 
-    res.render('painting', { painting });
+    res.render("painting", { painting });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);

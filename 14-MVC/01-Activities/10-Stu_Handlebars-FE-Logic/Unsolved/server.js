@@ -23,3 +23,13 @@ sequelize.sync({ force: false }).then(() => {
     console.log(`App in now listening on: http://localhost:${PORT} 🔥`)
   );
 });
+
+/* NOTES: 
+
+- Your have to SOURCE db/schema.sql and load the SOURCE seeds/dish-seeds.json 
+  files first before you can see the current menu load in the screen.
+ 
+
+
+
+*/ 

@@ -14,20 +14,20 @@ router.get('/', async (req, res) => {
     });
 
     const galleries = dbGalleryData.map((gallery) =>
-      gallery.get({ plain: true })
+      gallery.get({ plain: true })  // POJO
     );
 
-    req.session.save(() => {
+    req.session.save(() => { 
       // We set up a session variable to count the number of times we visit the homepage
       if (req.session.countVisit) {
         // If the 'countVisit' session variable already exists, increment it by 1
         req.session.countVisit++;
       } else {
-        // If the 'countVisit' session variable doesn't exist, set it to 1
+        // If the 'countVisit' session variable doesn't exist, set it to 1. Meaning that the session in brand new.
         req.session.countVisit = 1;
       }
 
-      res.render('homepage', {
+      res.render('homepage', {  // ?
         galleries,
         // We send over the current 'countVisit' session variable to be rendered
         countVisit: req.session.countVisit,
@@ -91,3 +91,13 @@ router.get('/painting/:id', async (req, res) => {
 });
 
 module.exports = router;
+
+
+/*NOTES: */ 
+/* Questions:
+
+1. IN the session.save(), what is it that extracts the values of countVisits in the homepage?
+    ans: To access those countVisit values, we pass the object that has the 'galleries, and the 
+         countVisit properties.
+
+*/ 

@@ -1,8 +1,8 @@
 <section class="container">
-  <h3 class="gallery-name">{{gallery.name}}</h3>
-  <!-- Without the custom helper, the entire timestamp is printed -->
-  <h4>Opening Hour: {{gallery.starting_date}}</h4>
-  <!-- Using a custom helper 'format_time', the time has been formatted -->
+  <h3 class="gallery-name">{{gallery.name}}</h3>  {{!-- how do they access the name property? --}}
+  <!-- Without the custom helper, 'formatted_date' the entire timestamp is printed -->
+  <h4>Exibit Opens on: {{formatted_date gallery.starting_date}}</h4>
+  <!-- Using the custom helper 'format_time', the time has been formatted -->
   <h4>Closing Hour: {{format_time gallery.ending_date}}</h4>
   <section class="flex-row justify-center">
     {{#each gallery.paintings as |painting|}}
@@ -10,3 +10,15 @@
     {{/each}}
   </section>
 </section>
+
+
+{{!-- How is this page working:
+
+- 1st it is being rendered when the Gallery route with and Id is hit,
+- 2nd the properties from the updated 'POJO' are passed in from the render(),
+- 3rd the properties are accessed and displayed,
+- 4th we created, custom helpers and called them insided the {{ }}
+- last is we used a partial to display each paintings. In our case, it 
+    was 2 of them.
+
+ --}}

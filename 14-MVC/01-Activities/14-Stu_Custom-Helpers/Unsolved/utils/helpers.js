@@ -2,10 +2,9 @@ module.exports = {
   format_time: (date) => {
     return date.toLocaleTimeString();
   },
-  /*TODO: Create a custom helper 'format_date' that takes in a timestamp,
-  adds five years to the date, and formats it as M/D/YYYY*/
+  /*Custome date formater. Into MM/DD/YYYY format */
   format_date: (date) => {
-    const tempDate = new Date(date);
+    const tempDate = new Date(date); // parses the string date and converts it to a Date object. 
 
     const month = tempDate.getMonth() + 1; // returns month in array in zero based indes. just add 1.
     const day = tempDate.getDate(); // get the day of month.
@@ -14,3 +13,5 @@ module.exports = {
     return `${month}/${day}/${year}`;
   },
 };
+
+// date is = 'March 30, 2018'
