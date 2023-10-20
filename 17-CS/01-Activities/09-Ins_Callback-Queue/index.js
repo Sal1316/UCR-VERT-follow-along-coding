@@ -1,7 +1,8 @@
 // Follow the thread of execution
 function outer() {
-  // timer is set to 10 milliseconds, once resolved the console.log is stored in the callback queue, then call stack
-  // logs last, since it arrived last in the call back queue
+  /* timer is set to 10 milliseconds, once resolved the console.log 
+     is stored in the callback queue, then call stack
+     logs last, since it arrived last in the call back queue */
   setTimeout(() => {
     console.log("Hello world")
   }, 10);

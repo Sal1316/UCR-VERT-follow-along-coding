@@ -16,3 +16,9 @@ class Queue {
 }
 
 module.exports = Queue;
+
+
+/* NOTES: 
+- FIFO methods
+
+*/ 

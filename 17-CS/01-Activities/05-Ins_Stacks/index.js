@@ -16,3 +16,9 @@ class Stack {
 }
 
 module.exports = Stack;
+
+/* NOTES: 
+- LIFO Data structure. 
+
+
+*/
