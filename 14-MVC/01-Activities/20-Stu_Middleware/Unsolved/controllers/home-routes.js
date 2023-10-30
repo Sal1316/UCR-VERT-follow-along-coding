@@ -1,10 +1,8 @@
 const router = require("express").Router();
 const { Gallery, Painting } = require("../models");
 
-// TODO: Import the custom middleware
-const withAuth = require("../utils/auth");
+// const withAuth = require("../utils/auth");
 
-// GET all galleries for homepage
 router.get("/", async (req, res) => {
   try {
     const dbGalleryData = await Gallery.findAll({
@@ -30,13 +28,8 @@ router.get("/", async (req, res) => {
   }
 });
 
-// GET one gallery
-// TODO: Replace the logic below with the custom middleware
-router.get("/gallery/:id", withAuth, async (req, res) => {
-  /* if (!req.session.loggedIn) {
-        res.redirect("/login");
-     } else { // not needed since we passed in withAuth */
-
+// GET one gallery withAuth, 
+router.get("/gallery/:id", async (req, res) => {
   try {
     const dbGalleryData = await Gallery.findByPk(req.params.id, {
       include: [
@@ -61,9 +54,8 @@ router.get("/gallery/:id", withAuth, async (req, res) => {
   }
 });
 
-// GET one painting
-// TODO: Replace the logic below with the custom middleware
-router.get("/painting/:id", withAuth, async (req, res) => {
+// withAuth, 
+router.get("/painting/:id", async (req, res) => {
   try {
     const dbPaintingData = await Painting.findByPk(req.params.id);
 
