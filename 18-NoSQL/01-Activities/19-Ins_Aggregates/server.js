@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.get('/sum-price', async (req, res) => {
   try {
-    // Call aggregate() on model
+    // Call aggregate() on model. Each stage of aggregate depends on the previous.
     const result = await Item
       .aggregate([
         // Where prices are less or equal to 5

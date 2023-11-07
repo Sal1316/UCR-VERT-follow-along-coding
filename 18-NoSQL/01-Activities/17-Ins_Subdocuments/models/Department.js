@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 // Child documents or subdocuments can be embedded into a parent document
 // the managerSchema defines the shape for manager subdocument
 const managerSchema = new mongoose.Schema({
+  // _id: false, // to enable subdepartments to not have the id.
   name: { type: String, required: true },
   salary: Number,
 });

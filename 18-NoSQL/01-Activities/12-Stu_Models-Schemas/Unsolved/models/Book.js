@@ -1,22 +1,22 @@
 const mongoose = require('mongoose');
 
-// TODO: Add a comment describing the functionality of the code below
+// this is creating a schema for the book collection.
 const bookSchema = new mongoose.Schema({
   title: { type: String, required: true },
   author: { type: String, required: false },
-  publisher: String,
+  publisher: String, // shorthand notation as above.
   stockCount: Number,
   price: Number,
   inStock: Boolean,
   lastAccessed: { type: Date, default: Date.now },
 });
 
-// TODO: Add a comment describing the functionality of the code below
+// mongoose.modle() to compoite a modled based on the schema 'bookschema'
 const Book = mongoose.model('Book', bookSchema);
 
 const handleError = (err) => console.error(err);
 
-// TODO: Add a comment describing the functionality of the code below
+// creates a new instance of the model, a document/
 Book
   .create({
     title: 'Diary of Anne Frank',
@@ -29,8 +29,7 @@ Book
   .then(result => console.log('Created new document', result))
   .catch(err => handleError(err));
 
-// TODO: Add a comment describing the difference between this instance being created
-// and the instance that was created above
+// Create a new instance with only the requird title and optional author properties.
 Book
   .create({
     title: 'Oh the Places You Will Go!',
@@ -39,8 +38,7 @@ Book
   .then(result => console.log('Created new document', result))
   .catch(err => handleError(err));
 
-// TODO: Add a comment describing the difference between this instance being created
-// and the instance that was created above
+// Creating a book with only the req title property.
 Book.create({ title: 'Harold and the Purple Crayon' })
   .then(result => console.log('Created new document', result))
   .catch(err => handleError(err));

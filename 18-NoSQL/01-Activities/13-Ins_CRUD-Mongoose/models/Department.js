@@ -12,7 +12,7 @@ const handleError = (err) => console.error(err);
 // Will add data only if collection is empty to prevent duplicates
 // Note that two documents can have the same name value
 Department.find({})
-  .exec()
+  .exec() // basically executes query
   .then(async collection => {
     if (collection.length === 0) {
       const results = await Department.insertMany(

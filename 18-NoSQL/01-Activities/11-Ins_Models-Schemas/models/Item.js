@@ -1,4 +1,4 @@
-// Define Mongoose
+
 const mongoose = require('mongoose');
 
 // Create a new instance of the Mongoose schema to define shape of each document
@@ -14,7 +14,7 @@ const grocerySchema = new mongoose.Schema({
 });
 
 // Using mongoose.model() to compile a model based on the schema
-// 'Item' is the name of the model
+// 'Item' is the name of the model. When its done, it will become lowercase 'items' plural
 // grocerySchema is the name of the schema we are using to create a new instance of the model
 const Item = mongoose.model('Item', grocerySchema);
 

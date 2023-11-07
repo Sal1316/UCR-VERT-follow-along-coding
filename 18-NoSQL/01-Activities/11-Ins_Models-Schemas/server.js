@@ -19,6 +19,7 @@ app.get('/all-items', async (req, res) => {
   }
 });
 
+// once the connection is open, the app is running.
 db.once('open', () => {
   app.listen(PORT, () => {
     console.log(`API server running on port ${PORT}!`);

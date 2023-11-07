@@ -75,7 +75,7 @@ app.get("/price-less-than-10", (req, res) => {
 
 app.get("/featured-authors", (req, res) => {
   db.collection("authorList")
-    .find({ "authors.featured": true }) // nee to put the authors.featured in a string.
+    .find({ "authors.featured": true }) // need to put the authors.featured in a string.
     .toArray()
     .then((results) => res.send(results))
     .catch((err) => {
