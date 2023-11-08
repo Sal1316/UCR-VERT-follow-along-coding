@@ -1,10 +1,10 @@
-# 🐛 The Delete Button Does Not Remove the List Item When Clicked
+# ✅ 🐛 The Delete Button Does Not Remove the List Item When Clicked
 
 Work with a partner to resolve the following issues:
 
-* As a user, I want to be able to delete a list item from a list when I click on the list item.
+- As a user, I want to be able to delete a list item from a list when I click on the list item.
 
-* As a user, I want to be able to edit a list item when I click the Edit button.
+- As a user, I want to be able to edit a list item when I click the Edit button.
 
 ## Expected Behavior
 
@@ -20,7 +20,7 @@ When a user clicks the Edit button, a text input does not appear with the list i
 
 ## Steps to Reproduce the Problem
 
-To reproduce the problem, follow these steps: 
+To reproduce the problem, follow these steps:
 
 1. In the command line, navigate to `24-Stu_IndexedDB-CRUD/Unsolved`.
 
@@ -46,15 +46,16 @@ The following image demonstrates the web application's appearance and functional
 
 ## 💡 Hints
 
-What types of permissions do you need to alter data inside a database? 
+What types of permissions do you need to alter data inside a database?
 
 ## 🏆 Bonus
 
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
-* How does the usage of CRUD operations with IndexedDB compare with their usage with SQL databases? 
+- How does the usage of CRUD operations with IndexedDB compare with their usage with SQL databases?
 
 Use [Google](https://www.google.com) or another search engine to research this.
 
 ---
+
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.

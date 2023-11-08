@@ -12,7 +12,7 @@ module: {
   rules: [
     {
       test: /\.css$/i, // anytime it runs into something that ends in .css, it handles it with the use.
-      use: ['style-loader', 'css-loader'],
+      use: ['style-loader', 'css-loader'], // dependencies
     },
   ],
 },

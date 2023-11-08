@@ -4,7 +4,7 @@
 
 ## Acceptance Criteria
 
-* It’s done when logic is added to the `index.js` to register a service worker.
+* ✅ It’s done when logic is added to the `index.js` to register a service worker.
 
 * It's done when the `webpack.config.js` file is updated to use the GenerateSW class of the workbox webpack plugin.
 

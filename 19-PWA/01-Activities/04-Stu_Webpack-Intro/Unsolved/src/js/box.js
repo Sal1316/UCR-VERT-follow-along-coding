@@ -1,5 +1,5 @@
 // TODO: Add a comment explaining the role of `export` in this function `boxClick()`
-// ans: it exports the function right away insteadn of using the export function at the bottom
+// ans: it exports the function right away instead of using the export function at the bottom
 
 export const boxClick = () => {
   const box = document.getElementById("box");

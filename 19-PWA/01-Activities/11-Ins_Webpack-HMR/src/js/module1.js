@@ -15,7 +15,7 @@ moduleContent.innerHTML = `
   <div class="col s12">
     <div class="card darken-1">
       <div class="card-content dark-text">
-        <span class="card-title">This content was added by module 1</span>
+        <span class="card-title">This content was added by module 1. This is new Contents</span>
       </div>
     </div>
   </div>

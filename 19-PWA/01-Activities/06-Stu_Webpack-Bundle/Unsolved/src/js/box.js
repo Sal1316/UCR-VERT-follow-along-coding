@@ -1,5 +1,4 @@
 import Yellow from "../images/yellow-robot.png";
-
 import Blue from "../images/blue-robot.png";
 
 export const boxClick = () => {
