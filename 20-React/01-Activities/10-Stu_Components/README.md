@@ -10,9 +10,9 @@ Work with a partner to implement the following user story:
 
 The activity is done when it meets the following criteria:
 
-* It's done when I have modified the `List` component so that inside its `ul` tags, one `li` tag renders for each item in the array of grocery objects being passed via props.
+* ✅ It's done when I have modified the `List` component so that inside its `ul` tags, one `li` tag renders for each item in the array of grocery objects being passed via props.
 
-* It's done when each `li` tag displays the `text` property of each grocery object using the `map()` method.
+* ✅ It's done when each `li` tag displays the `text` property of each grocery object using the `map()` method.
 
 ## 📝 Notes
 

@@ -1,4 +1,4 @@
-# 📖 Create and View Data Using MongoDB Compass
+#✅ 📖 Create and View Data Using MongoDB Compass
 
 Work with a partner to implement the following user story:
 
@@ -8,19 +8,19 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It is done when I click the Connect button to navigate to the Compass home page.
+* ✅ It is done when I click the Connect button to navigate to the Compass home page.
 
 > Note: You do not have to paste a connection string before clicking Connect.
 
-* It is done when I have created a new local database named `inventoryDB` using Compass's Embedded MongoDB Shell (MongoSH).
+* ✅ It is done when I have created a new local database named `inventoryDB` using Compass's Embedded MongoDB Shell (MongoSH).
 
-* It is done when I have added a new collection named `bookCollection`, inserted a field called `title`, and provided a value for the `title` field.
+* ✅ It is done when I have added a new collection named `bookCollection`, inserted a field called `title`, and provided a value for the `title` field.
 
-* It is done when I refresh the page and the `inventoryDB` appears on the list of databases.
+* ✅ It is done when I refresh the page and the `inventoryDB` appears on the list of databases.
 
-* It is done when I open the `bookCollection` collection and the document I just created is visible on the Documents tab and an `_id` field has been automatically inserted.
+* ✅ It is done when I open the `bookCollection` collection and the document I just created is visible on the Documents tab and an `_id` field has been automatically inserted.
 
-* It is done when I have modified the existing document, added a new field called `author`, and provided a value for the `author` field.
+* ✅ It is done when I have modified the existing document, added a new field called `author`, and provided a value for the `author` field.
 
 ## 📝 Notes
 

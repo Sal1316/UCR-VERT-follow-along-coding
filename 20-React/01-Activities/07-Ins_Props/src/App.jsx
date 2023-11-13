@@ -8,7 +8,7 @@ const alertType = "danger"
 // We then return Alert, we pass it a prop, "message" set to the value of our message variable
 // We also pass a type prop to the component set to the value of "alertType"
 function App() {
-  return <Alert type={alertType} message={message} />;
+  return <Alert type={alertType} message={message} />; // you are able to pass in properties to the Alert coponent.
 }
 
 export default App;

@@ -1,13 +1,22 @@
 // Here we import the Section.css file to grant access to some additional classNames
-import '../styles/Section.css';
+// import "../styles/Section.css";
 
 // TODO: Create a styles object called "styles"
+const styles = {
+  section: {
+    background: "#f3e5f5",
+    padding: 20,
+  },
+  sectionH2: {
+    textAlign: "center",
+  },
+};
 
 function Section() {
   // TODO: Add a style attribute to `section`
   return (
-    <section className="section">
-      <h2>Lorem Ipsum Dolor Sit Amet</h2>
+    <section className="section" style={styles.section}>
+      <h2 style={styles.sectionH2}>Lorem Ipsum Dolor Sit Amet</h2>
       <p>
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
         accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab

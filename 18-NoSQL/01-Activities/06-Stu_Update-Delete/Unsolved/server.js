@@ -31,7 +31,8 @@ client
 app.use(express.json());
 
 app.post("/create", (req, res) => {
-  // The title and author will be provided by the request body
+  // Working...
+  // The title and author will be provided by the JSON request body with Insomnia
   db.collection("bookCollection")
     .insertOne({ title: req.body.title, author: req.body.author })
     .then((results) => res.json(results))
@@ -41,6 +42,7 @@ app.post("/create", (req, res) => {
 });
 
 app.get("/read", (req, res) => {
+  // Working...
   db.collection("bookCollection")
     .find({})
     .toArray()
@@ -50,13 +52,16 @@ app.get("/read", (req, res) => {
     });
 });
 
-// TODO: Add Delete route that uses a filter to delete a single document by id
-app.delete("/delete", (req, res) => {
-  const bookId = new ObjectId(req.body._id);
+// TODO: Add Delete route that uses a filter to delete a single document by id. -- Done
+app.delete("/delete/:id", (req, res) => {
+  const bookId = new ObjectId(req.body.id); // gets the id from request body in the url and converts it to mongoDb id format.
 
   db.collection("bookCollection")
     .deleteOne({ _id: bookId })
-    .then((results) => res.json(results))
+    .then((results) => {
+      res.json(results)
+      res.send(results.deletedCount ? 'Document deleted' : 'No document found!')
+    })
     .catch((err) => {
       if (err) throw err;
     });

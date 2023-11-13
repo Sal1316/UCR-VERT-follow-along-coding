@@ -1,7 +1,8 @@
 import JSXVariables from "./components/JSXVariables";
 
-function App() {
+export const App = () => {
   return <JSXVariables />;
 }
 
-export default App;
+// export default App; dont need this since we changed the syntax
+

@@ -5,7 +5,7 @@ const { MongoClient } = require('mongodb');
 const app = express();
 const port = 3001;
 
-// Connection string to local instance of MongoDB// this is in MongoDB companas when it opens up.
+// Connection string to local instance of MongoDB// this is in MongoDB compass when it opens up.
 const connectionStringURI = `mongodb://127.0.0.1:27017`; 
 
 // Initialize a new instance of MongoClient

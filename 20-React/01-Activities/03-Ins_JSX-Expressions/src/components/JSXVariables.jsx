@@ -1,4 +1,4 @@
-const name = 'Mac';
+const name = "Mac";
 const num1 = 1;
 const num2 = 2;
 
@@ -19,7 +19,8 @@ function JSXVariables() {
             {Math.floor(Math.random() * 10) + 1},
             {Math.floor(Math.random() * 10) + 1}.
           </h2>
-          <h2>I can even reverse my name: {name.split('').reverse()}</h2>
+          <h2>I can even reverse my name: {name.split("").reverse()}</h2>
+          {/* jsx knows and combines the split array to output the reversed name */}
         </div>
       </div>
     </div>

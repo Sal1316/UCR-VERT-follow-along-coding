@@ -46,11 +46,9 @@ seedDBAndStartServer();
 
 app.use(express.json());
 
-// TODO: Update route to use cursor methods
+// TODO: Update route to use cursor methods. What is cursor method?
 app.get("/read", (req, res) => {
   const {skip, limit, sort} = req.body;
-  
-
   db.collection("numberList")
     .find()
     .sort({ number: -1 })

@@ -13,7 +13,7 @@ const data = [
   },
 
   // Using a single embedded document to create relationship
-  // This is a ONE-TO-ONE relationship
+  // This is a ONE-TO-ONE relationship bc there is only one promotion available for "frozen" and "snaks"
   {
     department: "frozen",
     promotion: {
@@ -30,8 +30,8 @@ const data = [
       percentage_discount: 50,
     },
   },
-  // Using multiple embedded document to create a relationship to a single document
-  // This is a ONE-TO-MANY relationship
+  // Using multiple embedded document to create a relationship to a single document.
+  // This is a ONE-TO-MANY relationship bc there are mny "promotions" available.
   {
     department: "produce",
     promotion: [

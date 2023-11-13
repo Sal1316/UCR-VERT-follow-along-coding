@@ -1,10 +1,10 @@
-# 🐛 Query on Embedded Document Not Returning Matching Data
+# ✅🐛 Query on Embedded Document Not Returning Matching Data
 
 Work with a partner to resolve the following issue(s):
 
-* As a book store owner, I should be able to execute a query that returns a list of books that have a price of less than $10.
+* ✅ As a book store owner, I should be able to execute a query that returns a list of books that have a price of less than $10.
 
-* As a book store owner, I should be able to execute a query that returns a list of books that has at least one featured author.
+* ✅ As a book store owner, I should be able to execute a query that returns a list of books that has at least one featured author.
 
 ## Expected Behavior
 

@@ -63,9 +63,10 @@ seedDBAndStartServer();
 
 app.use(express.json());
 
+// Working
 app.get("/price-less-than-10", (req, res) => {
   db.collection("authorList")
-    .find({ "information.price": { $lt: 10 } })
+    .find({ "information.price": { $lt: 10 } }) // changed from { data: }
     .toArray()
     .then((results) => res.send(results))
     .catch((err) => {
@@ -73,9 +74,10 @@ app.get("/price-less-than-10", (req, res) => {
     });
 });
 
+// Working
 app.get("/featured-authors", (req, res) => {
   db.collection("authorList")
-    .find({ "authors.featured": true }) // need to put the authors.featured in a string.
+    .find({ "authors.featured": true }) // changed from { featured: }
     .toArray()
     .then((results) => res.send(results))
     .catch((err) => {
