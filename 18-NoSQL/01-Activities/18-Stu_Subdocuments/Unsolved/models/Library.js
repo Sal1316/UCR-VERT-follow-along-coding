@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-// TODO: Define a new schema named `bookSchema` for the subdocument
+// TODO: Define a new schema named `bookSchema` that will be the subdocument --done.
 const bookSchema = new mongoose.Schema({
   title: { type: String, required: true },
   price: Number,
@@ -8,10 +8,11 @@ const bookSchema = new mongoose.Schema({
 
 const librarySchema = new mongoose.Schema({
   name: { type: String, required: true },
-  books: [bookSchema], // represent the books schema as an array.
+  books: [bookSchema], // represent the bookSchema as an array.
   lastAccessed: { type: Date, default: Date.now },
 });
 
+// Here the model is compiled from the librarySchema.
 const Library = mongoose.model("Library", librarySchema);
 
 const booksData = [

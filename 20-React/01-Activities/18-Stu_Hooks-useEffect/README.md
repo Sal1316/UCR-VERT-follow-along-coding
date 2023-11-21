@@ -8,7 +8,7 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when I have imported `useEffect` into [Thermostat.jsx](./Unsolved/src/components/Thermostat.jsx).
+* ✅ It's done when I have imported `useEffect` into [Thermostat.jsx](./Unsolved/src/components/Thermostat.jsx).
 
 * It's done when I have set a value for the `temp` variable.
 

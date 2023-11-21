@@ -1,18 +1,18 @@
-import { useState } from 'react';
-import './style.css';
+import { useState } from "react";
+import "./style.css";
 
 function Form() {
   // Here we set two state variables for firstName and lastName using `useState`
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
+  const [firstName, setFirstName] = useState(""); // set to '' bc if its empty, it returns undefined.
+  const [lastName, setLastName] = useState("");
 
-  const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { name, value } = e.target;
+  // const handleInputChange = (e) => {
+  //   // Getting the value and name of the input which triggered the change
+  //   const { name, value } = e.target;
 
-    // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-    return name === 'firstName' ? setFirstName(value) : setLastName(value);
-  };
+  //   // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
+  //   return name === "firstName" ? setFirstName(value) : setLastName(value);
+  // };
 
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
@@ -20,8 +20,8 @@ function Form() {
 
     // Alert the user their first and last name, clear the inputs
     alert(`Hello ${firstName} ${lastName}`);
-    setFirstName('');
-    setLastName('');
+    setFirstName("");
+    setLastName("");
   };
 
   return (
@@ -33,20 +33,18 @@ function Form() {
         <input
           value={firstName}
           name="firstName"
-          onChange={handleInputChange}
+          onChange={(e) => setFirstName(e.target.value)}
           type="text"
           placeholder="First Name"
         />
         <input
           value={lastName}
           name="lastName"
-          onChange={handleInputChange}
+          onChange={(e) => setLastName(e.target.value)}
           type="text"
           placeholder="Last Name"
         />
-        <button type="submit">
-          Submit
-        </button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );

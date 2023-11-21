@@ -1,4 +1,4 @@
-# 🐛 Event Handling in JSX
+# ✅ 🐛 Event Handling in JSX
 
 ## Activity
 

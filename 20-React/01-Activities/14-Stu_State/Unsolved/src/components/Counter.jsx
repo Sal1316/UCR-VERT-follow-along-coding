@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import CardBody from './CardBody';
+import { useState } from "react";
+import CardBody from "./CardBody";
 
 // TODO: Add a comment explaining what export default does
 export default function Counter() {
@@ -8,13 +8,14 @@ export default function Counter() {
 
   // TODO: Explain what is happening with this click handler
   const handleIncrement = () => {
-    setCount((count + 1));
+    setCount(count + 1);
   };
 
   // TODO: Explain what is happening with this click handler
   const handleDecrement = () => {
     if (count > 0) {
-      setCount((count - 1));
+      // > 0 so the number does not go into the negatives.
+      setCount(count - 1);
     }
   };
 
@@ -23,9 +24,9 @@ export default function Counter() {
       <div className="card-header bg-primary text-white">Click Counter!</div>
       {/* TODO: Add a comment that explains what props are getting passed to CardBody */}
       <CardBody
-        count={count}
-        handleIncrement={handleIncrement}
-        handleDecrement={handleDecrement}
+        count={count} // the count state which is the present counter.
+        handleIncrement={handleIncrement} // a refrence to the incrementing function.
+        handleDecrement={handleDecrement} // a refrence to the decrementing function.
       />
     </div>
   );

@@ -3,8 +3,6 @@ const mongoose = require('mongoose');
 
 // Create a new instance of the Mongoose schema to define shape of each document
 const grocerySchema = new mongoose.Schema({
-  // Add individual properties and their types
-  // Setting required to true will disallow null values
   item: { type: String, required: true },
   price: Number,
 });

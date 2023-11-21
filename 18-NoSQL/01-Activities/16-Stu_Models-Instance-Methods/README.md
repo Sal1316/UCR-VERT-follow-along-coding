@@ -1,4 +1,4 @@
-# 🏗️ Implement Instance Methods on a Mongoose Model
+# ✅ 🏗️ Implement Instance Methods on a Mongoose Model
 
 Work with a partner to implement the following user story:
 
@@ -6,19 +6,19 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It is done when I define a new schema named `bookSchema`.
+* ✅It is done when I define a new schema named `bookSchema`.
 
-* It is done when the new schema has three properties: `title`, `author`, and `price`.
+* ✅It is done when the new schema has three properties: `title`, `author`, and `price`.
 
-* It is done when I assign a function named `getDiscount` to the methods object of the `bookSchema` that reduces the price by 50 percent and console logs the title of the book and the reduced price.
+* ✅It is done when I assign a function named `getDiscount` to the methods object of the `bookSchema` that reduces the price by 50 percent and console logs the title of the book and the reduced price.
 
-* It is done when I have created a model named `Book`.
+* ✅It is done when I have created a model named `Book`.
 
-* It is done when I have created an instance of the model, or document, named `discountedBook`.
+* ✅It is done when I have created an instance of the model, or document, named `discountedBook`.
 
-* It is done when I test the instance method by running `node models/Book.js`.
+* ✅ It is done when I test the instance method by running `node models/Book.js`.
 
-* It is done when the price of `discountedBook` is reduced by 50 percent and the results are logged to the console.
+* ✅ It is done when the price of `discountedBook` is reduced by 50 percent and the results are logged to the console.
 
 ---
 
