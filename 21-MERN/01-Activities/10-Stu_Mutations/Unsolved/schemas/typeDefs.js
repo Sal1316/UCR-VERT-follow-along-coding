@@ -35,8 +35,16 @@ const typeDefs = gql`
 
   type Mutation {
     addSchool(name: String!, location: String!, studentCount: Int!): School
-    updateClass(id: ID!, building: String!): Class
+    updateClass(name: String!, building: String!, creditHours: Int!): Class
   }
 `;
 
 module.exports = typeDefs;
+
+/* Notes:
+- the 'Mutation' type defines a single available mutation, addSchool.
+  The mutation accepts three arguments (name, location, and studentCount) and returns a newly created School object. 
+  As you'd expect, this Book object conforms to the structure that we defined in our schema.
+
+
+*/

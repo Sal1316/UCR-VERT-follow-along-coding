@@ -21,7 +21,7 @@ const resolvers = {
   // Define the functions that will fulfill the mutations
   Mutation: {
     addSchool: async (parent, { name, location, studentCount }) => {
-      // Create and return the new School object
+      // Create and return the new School object based on what you specified in typeDefs.js
       return await School.create({ name, location, studentCount });
     },
   },

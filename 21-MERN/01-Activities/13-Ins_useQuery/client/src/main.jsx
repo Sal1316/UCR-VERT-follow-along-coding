@@ -20,6 +20,10 @@ const router = createBrowserRouter([
         path: '/profiles/:profileId',
         element: <Profile />,
       },
+      // {
+      //   path: '/profiles/:profileId',
+      //   element: <Profile />,
+      // },
     ],
   },
 ]);
@@ -27,3 +31,5 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
 )
+
+// The main.js is mainly responsible for setting up react router.

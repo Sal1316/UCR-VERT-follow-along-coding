@@ -33,9 +33,9 @@ const typeDefs = gql`
     class(id: ID!): Class
   }
 
-  # Define which mutations the client is allowed to make
+  # Define which mutations/changes the client is allowed to make
   type Mutation {
-    # Set the required fields for new schools
+    # Set the required fields for adding new schools.  This will return a new : School which will have the School schema from above
     addSchool(name: String!, location: String!, studentCount: Int!): School
   }
 `;

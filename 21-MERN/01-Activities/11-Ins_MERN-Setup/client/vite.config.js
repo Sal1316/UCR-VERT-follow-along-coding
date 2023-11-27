@@ -11,11 +11,22 @@ export default defineConfig({
     // We are pointing our Vite client-side development server to proxy API requests to our server-side Node server at port 3001.
     // Without this line, API calls would attempt to fallback and query for data from the current domain: localhost:3000
     proxy: {
-      '/graphql': {
+      '/graphql': { // means, anything that is going to '/graphql', reroute it to localhost:3001 where my server is running.
         target: 'http://localhost:3001',
         changeOrigin: true,
-        secure: false,
+        secure: false, // whether or not you are working on an https service.
       },     
     }
   }
 })
+
+
+/* NOTES: 
+- Client runs on port 3000, and
+  Server runs on port 3001.
+
+- CORS prevents unathorized domains from accessing your server.
+
+- proxy: server intercepts the requests to local host and forwards them to the server you specified. Which is.... localhost:3001.
+
+*/ 

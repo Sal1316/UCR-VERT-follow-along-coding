@@ -29,7 +29,8 @@ const typeDefs = `
     classes: [Class]
     professors: [Professor]
     # Define a query with an ID parameter to return a single Class object
-    class(id: ID!): Class
+    class(id: ID!): Class  
+    # class entry point that accepts called id, and the type is a required ID
   }
 `;
 

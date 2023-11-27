@@ -1,4 +1,4 @@
-const gql = String.raw; // Changes the syntax highlighting in template literals
+const gql = String.raw; // Changes the syntax highlighting in template literals 
 
 const typeDefs = gql`
   type School {
@@ -17,14 +17,14 @@ const typeDefs = gql`
     professor: Professor
   }
 
-  # TODO: Update type definition to include classes
+  # TODO: Update type definition to include classes.  By adding the classes: [Class], you are essentially nesting the 'Class' schema inside of 'Professor' schema.
   type Professor {
     _id: ID
     name: String
     officeHours: String
     officeLocation: String
     studentScore: Float
-    classes: [Class]
+    classes: [Class] 
   }
 
   type Query {

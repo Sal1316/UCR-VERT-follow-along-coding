@@ -16,3 +16,6 @@ export default defineConfig({
     },
   },
 });
+
+//   Client runs on port 3000, and
+//   Server runs on port 3001.

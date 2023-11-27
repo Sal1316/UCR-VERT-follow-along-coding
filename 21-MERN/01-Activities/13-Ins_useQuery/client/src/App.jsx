@@ -10,17 +10,17 @@ import Footer from './components/Footer';
 // We also instantiate a new InMemoryCache class that automatically caches queried data, enhancing performance.
 const client = new ApolloClient({
   uri: '/graphql',
-  cache: new InMemoryCache(),
+  cache: new InMemoryCache(), // helps prevent duplicate requests.
 });
 
 function App() {
   return (
-    // Important for API Consumption: Wrap your component tree with the ApolloProvider component to enable access to the ApolloClient from anywhere within the application
+    // Important for API Consumption: Wrap your component tree with the ApolloProvider component to enable access to the ApolloClient (client={client}) from anywhere within the application
     <ApolloProvider client={client}>
         <div className="flex-column justify-flex-start min-100-vh">
           <Header />
           <div className="container">
-            <Outlet />
+            <Outlet /> 
           </div>
           <Footer />
         </div>

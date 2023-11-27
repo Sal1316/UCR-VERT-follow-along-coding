@@ -1,4 +1,4 @@
-# 🏗️ Update Professors to Include Their Classes
+# ✅ 🏗️ Update Professors to Include Their Classes
 
 Work with a partner to implement the following user story:
 

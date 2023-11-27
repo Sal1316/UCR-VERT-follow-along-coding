@@ -14,7 +14,7 @@ const resolvers = {
       return await Class.find({}).populate('professor');
     },
     professors: async () => {
-      return await Professor.find({});
+      return await Professor.find({}); // professors dont have any related data, so we just return all professors.
     }
   }
 };
