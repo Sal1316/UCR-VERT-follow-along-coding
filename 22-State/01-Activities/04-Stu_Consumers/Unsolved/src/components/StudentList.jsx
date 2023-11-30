@@ -1,13 +1,13 @@
-import { useState } from 'react';
+import { useState } from "react";
 // Import our custom useStudentContext hook to have access to the initial state
-import { useStudentContext } from '../utils/StudentContext';
+import { useStudentContext } from "../utils/StudentContext";
 
 export default function StudentList() {
   // TODO: Import the students, actions and majors from our custom useStudentContext hook
-
+  const { students, addStudent, removeStudent, majors } = useStudentContext();
   // Initialize state for new students and new student majors
-  const [newStudentName, setNewStudentName] = useState('');
-  const [newStudentMajor, setNewStudentMajor] = useState('');
+  const [newStudentName, setNewStudentName] = useState("");
+  const [newStudentMajor, setNewStudentMajor] = useState("");
 
   return (
     <div>
@@ -34,8 +34,7 @@ export default function StudentList() {
                       <button
                         type="button"
                         onClick={() => {
-                          // TODO: Update the button's onClick so that it will remove students
-                          // Your code here
+                          removeStudent(student.id);
                         }}
                       >
                         <span role="img" aria-label="close">
@@ -61,14 +60,18 @@ export default function StudentList() {
                 value={newStudentMajor}
               >
                 <option>Choose major...</option>
-                {/* // TODO: Map over each major and return an <option> element for each with all the necessary attributes*/}
-                {/* Your code here */}
+                {majors.map((major) => (
+                  <option key={major} value={major}>
+                    {major}
+                  </option>
+                ))}
               </select>
               <button
                 type="button"
                 onClick={() => {
-                  // TODO: Write an onClick for the button so that it will add students
-                  // Your code here
+                  addStudent({ name: newStudentName, major: newStudentMajor });
+                  setNewStudentMajor("");
+                  setNewStudentName("");
                 }}
               >
                 Add Student

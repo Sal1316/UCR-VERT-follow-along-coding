@@ -1,7 +1,7 @@
 // Here we import the Header.css file to grant access to some additional classNames
 // import "../styles/Header.css";
 
-// TODO: Create a styles object called "styles"
+// ✅ TODO: Create a styles object called "styles"
 const styles = {
   header: {
     background: "red",

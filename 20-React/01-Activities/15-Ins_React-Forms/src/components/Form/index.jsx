@@ -3,16 +3,14 @@ import "./style.css";
 
 function Form() {
   // Here we set two state variables for firstName and lastName using `useState`
-  const [firstName, setFirstName] = useState(""); // set to '' bc if its empty, it returns undefined.
+  const [firstName, setFirstName] = useState(""); // set to '', bc if its empty, it returns undefined.
   const [lastName, setLastName] = useState("");
 
-  // const handleInputChange = (e) => {
-  //   // Getting the value and name of the input which triggered the change
-  //   const { name, value } = e.target;
-
-  //   // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-  //   return name === "firstName" ? setFirstName(value) : setLastName(value);
-  // };
+  /* // removed this fx since we replaced with annynomous in the onChange form.
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    return name === "firstName" ? setFirstName(value) : setLastName(value);
+  };*/ 
 
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
@@ -33,7 +31,7 @@ function Form() {
         <input
           value={firstName}
           name="firstName"
-          onChange={(e) => setFirstName(e.target.value)}
+          onChange={(e) => setFirstName(e.target.value)} // changing the state direclty from onChange.
           type="text"
           placeholder="First Name"
         />

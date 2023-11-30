@@ -1,4 +1,4 @@
-# 📐 Add Comments That Describe the Functionality of a React App
+# ✅ 📐 Add Comments That Describe the Functionality of a React App
 
 ## Before We Begin
 

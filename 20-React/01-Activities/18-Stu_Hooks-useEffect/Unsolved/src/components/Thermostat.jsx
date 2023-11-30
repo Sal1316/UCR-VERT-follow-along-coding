@@ -1,20 +1,16 @@
-// Import `useEffect` Hook from React
 import { useState, useEffect } from "react";
 
 function Thermostat() {
-  // Set the starting temperature
   const [temp, setTemp] = useState(75);
 
   useEffect(() => {
     document.title = `${temp} Degrees Fahrenheit`;
   }, [temp]);
 
-  // Handler for increasing the temp by 1
   const increaseTemp = () => {
     setTemp(temp + 1);
   };
 
-  // Handler for decreasing the temp by 1
   const decreaseTemp = () => {
     setTemp(temp - 1);
   };
@@ -30,7 +26,7 @@ function Thermostat() {
         </p>
         <button type="button" className="btn btn-danger" onClick={increaseTemp}>
           Raise temperature
-        </button>{" "}
+        </button>
         <button
           type="button"
           className="btn btn-primary"

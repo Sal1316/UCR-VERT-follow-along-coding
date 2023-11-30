@@ -7,8 +7,6 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#home"
           onClick={() => handlePageChange("Home")}
-          //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
-          // ans: this terniary operator switches the class to active, if in Home.
           className={currentPage === "Home" ? "nav-link active" : "nav-link"}
         >
           Home
@@ -18,8 +16,6 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#about"
           onClick={() => handlePageChange("About")}
-          //  TODO: Add a comment explaining what this logic is doing
-
           className={currentPage === "About" ? "nav-link active" : "nav-link"}
         >
           About
@@ -29,8 +25,6 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#blog"
           onClick={() => handlePageChange("Blog")}
-          //  TODO: Add a comment explaining what this logic is doing
-
           className={currentPage === "Blog" ? "nav-link active" : "nav-link"}
         >
           Blog
@@ -40,8 +34,6 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#contact"
           onClick={() => handlePageChange("Contact")}
-          //  TODO: Add a comment explaining what this logic is doing
-
           className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
         >
           Contact

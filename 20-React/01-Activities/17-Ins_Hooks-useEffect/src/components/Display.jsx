@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-/* useEffect when the component mouts to the dom we can have it run useEffect*/
+/* when the component mounts to the dom we can have it run useEffect*/
 
 export default function Display() {
   const [count, setCount] = useState(0);
@@ -8,7 +8,7 @@ export default function Display() {
 
   // When the component mounts to the VDOM, run this callback
   useEffect(() => {
-    const storedCount = localStorage.getItem("myCount");
+    const storedCount = localStorage.getItem("myCount"); // what sets 'myCount'?
 
     // If the value is found in storage, convert the string to a number and update state
     if (storedCount) {
@@ -16,20 +16,21 @@ export default function Display() {
     }
   }, []); // only runs on time with empty depency array. Only runs when the component is first loaded.
 
-  // When the state changes run this callback
+  // When the 'count' state changes run this callback
   useEffect(() => {
     // Update the localStorage count variable using the setItem method
     console.log((count, "being updated."));
     localStorage.setItem("myCount ", count);
   }, [count]); // only changes when the count variable changes.
 
-  const handleIncrease = () => {
+  const increment = () => {
     setCount(count + 1);
   };
 
   const clearStorage = () => {
     localStorage.clear();
-    setCount(0);
+    setCount(0); // resets count to 0
+    setCount2(0); // resets count2 to 0
   };
 
   return (
@@ -39,14 +40,14 @@ export default function Display() {
       </p>
       <code>check localStorage in developer console</code>
       <hr />
-      <button type="button" onClick={handleIncrease}>
+      <button type="button" onClick={increment}>
         Click Me
       </button>
       <button type="button" onClick={clearStorage}>
         Reset Count
       </button>
-      <button type="button" onClick={() => setCount2(count + 100)}>
-        Reset Count
+      <button type="button" onClick={() => setCount2(count2 + 100)}>
+        Click Me
       </button>
     </div>
   );

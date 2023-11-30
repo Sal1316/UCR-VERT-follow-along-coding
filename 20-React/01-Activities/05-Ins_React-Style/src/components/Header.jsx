@@ -1,4 +1,4 @@
-// Here we are importing a CSS file as a dependency
+// Here we are importing a CSS file as a dependency. Meaning that this imported file applies css to our Header.jsx file.
 import "../styles/Header.css";
 
 function Header() {

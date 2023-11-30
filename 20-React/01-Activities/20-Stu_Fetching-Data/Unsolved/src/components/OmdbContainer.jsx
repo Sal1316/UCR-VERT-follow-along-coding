@@ -9,7 +9,7 @@ import API from "../utils/API";
 
 const OmdbContainer = () => {
   const [result, setResult] = useState({});
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState(""); // what does this do?
 
   // When the search form is submitted, use the API.search method to search for the movie(s)
   const searchMovie = (query) =>
@@ -20,20 +20,19 @@ const OmdbContainer = () => {
       })
       .catch((err) => console.log(err));
 
+  //  Not inside the searchMovie fx.
   useEffect(() => {
-    searchMovie("The Matrix");
+    searchMovie("The Matrix"); // the default movie that shows when the page loads.
   }, []);
 
-  // TODO: Fix the handleInputChange function
   const handleInputChange = (e) => {
     e.preventDefault();
     setSearch(e.target.value);
   };
 
-  // TODO: Fix the handleFormSubmit function not actually searching for the movie
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    searchMovie(search);
+    searchMovie(search); // gets the form value from SearchForm.jsx throuhg props
     setSearch("");
   };
 

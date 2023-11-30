@@ -1,4 +1,4 @@
-# 🏗️ Implement JSX Expressions
+# ✅🏗️ Implement JSX Expressions
 
 ## Activity
 
@@ -10,7 +10,7 @@ Work with a partner to implement the following user story:
 
 - ✅ It's done when I create the JavaScript variables requested in [JSXVariables.jsx](./Unsolved/src/components/JSXVariables.jsx).
 
-- ✅It's done when I render a `name` variable that will hold my name.
+- ✅ It's done when I render a `name` variable that will hold my name.
 
 - ✅ It's done when I render the number of letters in the `name` variable.
 

@@ -5,7 +5,7 @@ import './App.css';
 export default function App() {
   return (
     <div>
-      <UserProvider>
+       <UserProvider> {/* Wrap in UserProvider to grant access to global variables. */}
         <UserComponent />
       </UserProvider>
     </div>

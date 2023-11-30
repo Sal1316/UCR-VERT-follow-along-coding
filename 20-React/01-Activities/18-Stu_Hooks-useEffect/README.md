@@ -1,4 +1,4 @@
-# 📖 Implement the useEffect Hook
+# ✅ 📖 Implement the useEffect Hook
 
 ## Activity
 
@@ -10,9 +10,9 @@ Work with a partner to implement the following user story:
 
 * ✅ It's done when I have imported `useEffect` into [Thermostat.jsx](./Unsolved/src/components/Thermostat.jsx).
 
-* It's done when I have set a value for the `temp` variable.
+* ✅ It's done when I have set a value for the `temp` state variable.
 
-* It's done when I have used the `useEffect` Hook to set the `document.title` to the current temperature. 
+* ✅ It's done when I have used the `useEffect` Hook to set the `document.title` to the current temperature. 
 
 ## 📝 Notes
 

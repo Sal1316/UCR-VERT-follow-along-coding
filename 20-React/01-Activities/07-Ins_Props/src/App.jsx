@@ -2,7 +2,7 @@
 import Alert from './components/Alert';
 
 // We create a couple variables which contain strings
-const message = 'Invalid user id or password';
+const message = 'Invalid user id or paSSword';
 const alertType = "danger"
 
 // We then return Alert, we pass it a prop, "message" set to the value of our message variable

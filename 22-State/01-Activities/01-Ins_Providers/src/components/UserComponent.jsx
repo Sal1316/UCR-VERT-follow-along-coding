@@ -4,7 +4,7 @@ export default function UserComponent() {
       <h1>Account summary</h1>
       <span className="text-larger">
         The provider made the user account accessible to this child component.
-        Install the React developer tools and take a look under the{' '}
+        Install the React developer tools and take a look under the
         <code>components</code> tab.
       </span>
       <div id="links"></div>

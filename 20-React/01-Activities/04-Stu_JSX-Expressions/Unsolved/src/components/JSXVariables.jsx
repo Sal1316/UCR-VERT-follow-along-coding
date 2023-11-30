@@ -1,6 +1,6 @@
 function JSXVariables() {
   const name = "Sal";
-  const thoughts = "react is great.";
+  const thoughts = "React is great.";
 
   return (
     <div className="main-container">
@@ -9,7 +9,7 @@ function JSXVariables() {
           <h1>Hi! My name is {name}</h1>
           <h2>My name has {name.length} letters</h2>
           {/* in the {} you cannot evaluate objects */}
-          <h2>I think React {thoughts}</h2>
+          <h2>I think {thoughts}</h2>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-# 🐛 Information from the OMDB API Does Not Display
+# ✅ 🐛 Information from the OMDB API Does Not Display
 
 ## Activity
 
@@ -8,11 +8,11 @@ Work with a partner to resolve the following issue:
 
 ## Expected Behavior
 
-* When a user visits the page, the result for "The Matrix" should display on the left side of the page.
+* ✅ When a user visits the page, the result for "The Matrix" should display on the left side of the page.
 
-* When the user types the name of a movie into the input field, the search term should appear in the field as the user types it.
+* ✅ When the user types the name of a movie into the input field, the search term should appear in the field as the user types it.
 
-* When the user enters a search term and clicks submit, the results for the search should display on the left side of the page.
+* ✅ When the user enters a search term and clicks submit, the results for the search should display on the left side of the page.
 
 ## Actual Behavior
 

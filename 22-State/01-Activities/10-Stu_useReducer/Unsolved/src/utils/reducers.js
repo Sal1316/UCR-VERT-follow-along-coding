@@ -7,8 +7,8 @@ import {
   REMOVE_MAJOR,
   SET_STUDENT_NAME,
   SET_STUDENT_MAJOR,
-} from './actions';
-import createId from './createId';
+} from "./actions";
+import createId from "./createId";
 
 // Create a function that will handle combining two objects. Accepts state and an action as an argument.
 export default function reducer(state, action) {
@@ -24,6 +24,8 @@ export default function reducer(state, action) {
       return {
         ...state,
         students: [...state.students, newStudent],
+        studentName: "", // clear out the student name and major after adding from input box.
+        studentMajor: "",
       };
     }
     // Take a copy of state and return it with a modified version of the students array excluding the `student.id` in `action.payload`

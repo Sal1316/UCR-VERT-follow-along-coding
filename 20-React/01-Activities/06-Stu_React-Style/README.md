@@ -1,4 +1,4 @@
-# 📖 Implement React Styling
+# ✅ 📖 Implement React Styling
 
 ## Activity
 

@@ -17,7 +17,7 @@ const styles = {
 };
 
 function Navbar() {
-  // TODO: Add a style attribute to `nav`
+  // ✅ TODO: Add a style attribute to `nav`
   return (
     <nav className="navbar" style={styles.navbar}>
       <a href="/" style={styles.navbarA}>

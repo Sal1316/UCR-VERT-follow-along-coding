@@ -1,17 +1,17 @@
 import { useState } from "react";
 import CardBody from "./CardBody";
 
-// TODO: Add a comment explaining what export default does
+/* export default is used to export the Counter component as the default export of this module.
+It allows you to import this component without specifying its name, like: import Counter from './Counter'. from the file instead of the function name.*/
 export default function Counter() {
-  // TODO: Add a comment that explains how the useState hook works
   const [count, setCount] = useState(0);
 
-  // TODO: Explain what is happening with this click handler
+  // handler increments by 1
   const handleIncrement = () => {
     setCount(count + 1);
   };
 
-  // TODO: Explain what is happening with this click handler
+  // handle decrements by 1
   const handleDecrement = () => {
     if (count > 0) {
       // > 0 so the number does not go into the negatives.
@@ -22,7 +22,6 @@ export default function Counter() {
   return (
     <div className="card text-center">
       <div className="card-header bg-primary text-white">Click Counter!</div>
-      {/* TODO: Add a comment that explains what props are getting passed to CardBody */}
       <CardBody
         count={count} // the count state which is the present counter.
         handleIncrement={handleIncrement} // a refrence to the incrementing function.

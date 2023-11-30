@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 // TODO: Import our type variables
+import { ADD_STUDENT, REMOVE_STUDENT, }
 
 // TODO: Import our custom context hook to have access to the global state
 
@@ -30,7 +31,7 @@ export default function StudentList() {
 
               <tbody>
                 {/* // TODO: Refactor to access `students` from our state object */}
-                {students.map((student) => (
+                {state.students.map((student) => (
                   <tr key={student.id}>
                     <td>{student.id}</td>
                     <td>{student.name}</td>
@@ -39,8 +40,7 @@ export default function StudentList() {
                       <button
                         type="button"
                         onClick={() => {
-                          // TODO: Call dispatch method with an object containing type and payload
-                          // Your code here
+                          dispatch({type: REMOVE_STUDENT, payload: student.id})
                         }}
                       >
                         <span role="img" aria-label="delete">
@@ -70,8 +70,8 @@ export default function StudentList() {
                 value={state.studentMajor}
               >
                 <option>Choose major...</option>
-                {/* // TODO: Refactor to access `students` from our state object */}
-                {majors.map((major) => (
+                
+                {state.majors.map((major) => (
                   <option key={major} value={major}>
                     {major}
                   </option>
@@ -80,7 +80,7 @@ export default function StudentList() {
               <button
                 type="button"
                 onClick={() => {
-                  // TODO: Call dispatch method with an object containing type and payload for adding a new student
+                  dispatch({ type: ADD_STUDENT, payload: { name: state.studentName, major: state.studentMajor }})
                 }}
               >
                 Add Student
