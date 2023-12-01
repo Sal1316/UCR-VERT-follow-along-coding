@@ -1,8 +1,8 @@
 // render will be used from our testing library instead of react-dom while testing
 import { render } from '@testing-library/react';
-import Welcome from '../components/Welcome';
+import Welcome from '../components/Welcome'; // importing the component to be tested.
 
-// It blocks describe the area of the application that we are testing
+// 'it' blocks of code, describe the area of the application that we are testing
 it('renders without a name and topic', () => {
   render(<Welcome />);
 

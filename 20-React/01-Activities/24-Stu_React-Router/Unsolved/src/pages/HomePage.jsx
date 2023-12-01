@@ -26,7 +26,6 @@ export default function HomePage() {
         {users.map((user) => (
           <ListItem key={user.id}>
             <Profile user={user} />
-            {/* Todo: Update this link component's to prop so that the user can click to see a single user's profile */}
             <Link
               to={`profile/${user.id}`}
               className="badge bg-primary rounded-pill"

@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         index: true,
         element: <HomePage />,
       },
-      {
+      { // this page is accessable after clicking the 'see more' button in the user card in home.
         path: "/profile/:userId",
         element: <ProfilePage />,
       },

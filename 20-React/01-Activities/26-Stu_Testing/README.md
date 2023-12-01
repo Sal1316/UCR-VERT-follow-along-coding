@@ -8,9 +8,9 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when I have run `npm install pretty -D` inside my practice React app directory.
+* ✅ It's done when I have run `npm install pretty -D` inside my practice React app directory.
 
-* It's done when I have imported the necessary components files into `*.test.jsx`.
+* ✅ It's done when I have imported the necessary components files into `*.test.jsx`.
 
 * It's done when I create a test to check that each component renders properly on the page.
 

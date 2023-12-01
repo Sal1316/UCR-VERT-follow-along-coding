@@ -3,6 +3,7 @@ export default function ProfileTeaser({ user: { username, name, email } }) {
 
   return (
     <>
+      <div>Profile Teaser</div>
       <div className="ms-2 me-auto">
         <h2 className="fw-bold mb-1">{name}</h2>
         <h5 className="mb-1">{usernameConcat}</h5>
