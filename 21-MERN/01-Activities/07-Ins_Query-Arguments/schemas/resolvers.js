@@ -22,10 +22,9 @@ const resolvers = {
 
 module.exports = resolvers;
 
-
 /* NOTES: 
 - Why does the 'class' query have parameters? 
   bc, you are getting only one item so you pass in the item to get the id out.
 
 
-*/ 
+*/

@@ -1,10 +1,7 @@
 import React from "react";
 
-// Import the `useParams()` hook from React Router
 import { useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
-
-// TODO: Import the required code here
 
 const SingleThought = () => {
   const { thoughtId } = useParams();

@@ -1,4 +1,6 @@
-const typeDefs = `
+const gql = String.raw;
+
+const typeDefs = gql`
   type School {
     _id: ID
     name: String
@@ -28,7 +30,7 @@ const typeDefs = `
     schools: [School]
     classes: [Class]
     professors: [Professor]
-    # Define a query with an ID parameter to return a single Class object
+    # Define a query with an ID parameter to return a single Class object by ID.
     class(id: ID!): Class
   }
 `;

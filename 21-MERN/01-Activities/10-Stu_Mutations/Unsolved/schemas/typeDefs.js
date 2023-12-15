@@ -43,8 +43,10 @@ module.exports = typeDefs;
 
 /* Notes:
 - the 'Mutation' type defines a single available mutation, addSchool.
-  The mutation accepts three arguments (name, location, and studentCount) and returns a newly created School object. 
-  As you'd expect, this Book object conforms to the structure that we defined in our schema.
+  The mutation accepts three arguments (name, location, and studentCount) 
+  and returns a newly created School object. 
+  As you'd expect, this Book object conforms to the structure that we 
+  defined in our schema.
 
 
 */

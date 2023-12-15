@@ -2,13 +2,13 @@ import './App.css';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import { Outlet } from 'react-router-dom';
 
-import Home from './pages/Home';
+// import Home from './pages/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
 const client = new ApolloClient({
   uri: '/graphql',
-  cache: new InMemoryCache(),
+  cache: new InMemoryCache(), // give us some features for example, if you have already visited a site, go back and then to that site again. It wont rerender. It will just cache.
 });
 
 function App() {

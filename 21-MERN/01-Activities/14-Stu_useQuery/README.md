@@ -1,4 +1,4 @@
-# 🏗️ Implement Query to Retrieve Thought Data
+# ✅ 🏗️ Implement Query to Retrieve Thought Data
 
 Work with a partner to implement the following user story:
 

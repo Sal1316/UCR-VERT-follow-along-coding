@@ -25,7 +25,7 @@ const resolvers = {
     updateClass: async (parent, { id, building }) => {
       return await Class.findOneAndUpdate(
         { _id: id },
-        { building }, // updating the buldinb name.
+        { building }, // updating the building number.
         { new: true } // to get the new data to show
       );
     },

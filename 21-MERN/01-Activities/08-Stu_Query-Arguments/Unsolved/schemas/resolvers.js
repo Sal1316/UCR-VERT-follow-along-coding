@@ -12,7 +12,7 @@ const resolvers = {
       return await Class.find({}).populate("professor");
     },
 
-    // TODO: Add a new resolver for a single Class object
+    // TODO: Add a new resolver for a single Class object. This way allows the user to manually input ex, the Id in the vareables box in sandbox.
     class: async (parent, args) => {
       return await Class.findById(args.id).populate("professor");
     },

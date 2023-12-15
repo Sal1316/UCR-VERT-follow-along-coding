@@ -10,7 +10,7 @@ const resolvers = {
     // The second parameter, commonly referred to as "args," represents the variable argument values passed with the query.
     // It is always an object, and in this case, we are destructuring that object to retrieve the profileId value.
     profile: async (parent, { profileId }) => {
-      return Profile.findOne({ _id: profileId });
+      return Profile.findOne({ _id: profileId }); // could have also used findById()
     },
   },
   Mutation: {

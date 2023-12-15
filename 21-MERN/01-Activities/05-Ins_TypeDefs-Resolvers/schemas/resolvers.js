@@ -1,11 +1,11 @@
-const { School, Class, Professor } = require('../models');
+const { School, Class, Professor } = require('../models'); // importing the models from mongoose.
 
 const resolvers = {
   Query: {
     schools: async () => {
       // Populate the classes and professor subdocuments when querying for schools
       return await School.find({}).populate('classes').populate({
-        path: 'classes',
+        path: 'classes', // calling populate on classes again to pupulate professor.
         populate: 'professor'
       });
     },

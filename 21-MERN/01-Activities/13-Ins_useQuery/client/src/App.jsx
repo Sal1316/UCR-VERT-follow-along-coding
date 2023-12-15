@@ -8,14 +8,14 @@ import Footer from './components/Footer';
 
 // Important for API Consumption: Create an instance of the ApolloClient class and specify the endpoint of your GraphQL API (e.g., 'http://localhost:3001')—the proxy set up in the previous activity facilitates this. 
 // We also instantiate a new InMemoryCache class that automatically caches queried data, enhancing performance.
-const client = new ApolloClient({
+const client = new ApolloClient({// what does thei client do? ans: its an instance of the Apollo Client library. It's configured to communicate with a GraphQL API.
   uri: '/graphql',
-  cache: new InMemoryCache(), // helps prevent duplicate requests.
+  cache: new InMemoryCache(), // helps prevent duplicate requests. 
 });
 
 function App() {
   return (
-    // Important for API Consumption: Wrap your component tree with the ApolloProvider component to enable access to the ApolloClient (client={client}) from anywhere within the application
+    // Important for API Consumption: Wrap your component tree with the 'ApolloProvider' component to enable access to the ApolloClient (client={client}) from anywhere within the application
     <ApolloProvider client={client}>
         <div className="flex-column justify-flex-start min-100-vh">
           <Header />

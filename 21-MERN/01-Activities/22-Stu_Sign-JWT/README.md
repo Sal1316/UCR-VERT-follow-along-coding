@@ -1,4 +1,4 @@
-# 📐 Add Comments to Implementation of JWT Signing
+# ✅ 📐 Add Comments to Implementation of JWT Signing
 
 Work with a partner to add comments that describe the functionality of the code found in [resolvers.js](./Unsolved/schemas/resolvers.js).
 

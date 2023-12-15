@@ -19,3 +19,8 @@ export const ADD_SKILL = gql`
     }
   }
 `;
+
+/* NOTES:
+- the code above is the same queries we were writing in apollo studio.
+
+*/ 

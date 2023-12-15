@@ -25,8 +25,9 @@ export default defineConfig({
 - Client runs on port 3000, and
   Server runs on port 3001.
 
-- CORS prevents unathorized domains from accessing your server.
+- Cross Origin Resource Sharing (CORS) prevents unathorized domains from accessing your server.
 
 - proxy: server intercepts the requests to local host and forwards them to the server you specified. Which is.... localhost:3001.
+  Proxy just reroutes everything thats going to /graphql and sends it to the target, which is our local host.
 
 */ 

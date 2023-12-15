@@ -1,13 +1,11 @@
-
-import ThoughtList from '../components/ThoughtList';
-import { QUERY_THOUGHTS } from '../utils/queries';
-import { useQuery } from '@apollo/client';
-
+import ThoughtList from "../components/ThoughtList";
+import { QUERY_THOUGHTS } from "../utils/queries";
+import { useQuery } from "@apollo/client";
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_THOUGHTS);
-  
-  const thoughts = data?.thoughts || [];
+
+  const thoughts = data?.thoughts || []; // chaining basically says that if data is undefined, the everything following is undefined too.
 
   return (
     <main>

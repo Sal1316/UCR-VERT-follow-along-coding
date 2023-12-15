@@ -1,4 +1,4 @@
-const gql = STRING.raw;
+const gql = String.raw;
 
 const typeDefs = gql`
   type User {

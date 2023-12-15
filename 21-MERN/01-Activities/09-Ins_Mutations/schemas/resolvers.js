@@ -18,7 +18,7 @@ const resolvers = {
       return await Professor.find({}).populate('classes');
     },
   },
-  // Define the functions that will fulfill the mutations
+  // Define the functions that will fulfill the mutations. The name 'addSchool' should match the type mutation from typeDefs.
   Mutation: {
     addSchool: async (parent, { name, location, studentCount }) => {
       // Create and return the new School object based on what you specified in typeDefs.js

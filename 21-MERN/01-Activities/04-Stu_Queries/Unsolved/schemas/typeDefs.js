@@ -31,3 +31,10 @@ const typeDefs = `
 `;
 
 module.exports = typeDefs;
+
+/* NOTES:
+- The GraphQL system understands the relationships between types based on the schema you've defined, 
+allowing you to traverse these relationships in your queries to fetch related data.
+
+
+*/ 

@@ -1,4 +1,6 @@
-const typeDefs = `
+const gql = String.raw;
+
+const typeDefs = gql`
   type School {
     _id: ID
     name: String
@@ -13,7 +15,7 @@ const typeDefs = `
     name: String
     building: String
     creditHours: Int
-    # Add a queryable field to retrieve a single Professor object
+    # Add a queryable field to retrieve a single Professor object. Here we used the Professor data type to extablish a relationship between 'Class' and 'Professor'
     professor: Professor
   }
 
@@ -26,6 +28,7 @@ const typeDefs = `
     studentScore: Float
   }
 
+  # the Query, defines the entry points for the application.
   type Query {
     schools: [School]
     classes: [Class]

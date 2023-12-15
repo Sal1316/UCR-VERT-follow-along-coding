@@ -6,7 +6,7 @@ const path = require("path");
 const { typeDefs, resolvers } = require("./schemas");
 const db = require("./config/connection");
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001; // the PORT would come from Heroku if it was hosted on a server.
 const app = express();
 const server = new ApolloServer({
   typeDefs,
@@ -21,7 +21,7 @@ const startApolloServer = async () => {
 
   app.use("/graphql", expressMiddleware(server));
 
-  if (process.env.NODE_ENV === "production") { // if we are in production mode, serve up the file in the dist folder.
+  if (process.env.NODE_ENV === "production") { // if we are in production mode, serve up the file in the dist folder. Will need to run a 'build' first.
     app.use(express.static(path.join(__dirname, "../client/dist")));
 
     app.get("*", (req, res) => { // any requests that come into the application, gets redirected to the index.html file.
