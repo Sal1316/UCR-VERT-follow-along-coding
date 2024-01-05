@@ -1,15 +1,14 @@
 header {
   height: 100px;
   width: 100%;
-  /* ✅Sets border to bottom only */
+  /* Sets border to bottom only */
   border-bottom: 10px solid darkblue;
   background-color: #999900;
 }
 
 section {
-  width: 70%;
-  /* ✅Sets top and bottom margin to 20px. Auto will center element */
-  margin: 20px auto;
+  width: 50%;
+  margin: 20px auto; /* Sets top and bottom margin to 20px. Auto will center element */
   border-bottom: 5px solid darkblue;
   background-color: #ffffd4;
 }

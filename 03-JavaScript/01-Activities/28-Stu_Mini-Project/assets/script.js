@@ -6,12 +6,12 @@ var messageEl = document.querySelector('#message');
 var options = ["R", "P", "S"];
 
 var playGame = function () {
-  var userChoice = window.prompt("Enter R, P, or S:"); // prompt saves the values inputed by the user. if press cancel, returns undefined.
+  var userChoice = window.prompt("Enter R, P, or S for Rock, Paper, or Scissors:"); // prompt saves the values inputed by the user. if press cancel, returns undefined.
 
   if (!userChoice) {
     console.log("Game Ended.");
     messageEl.textContent = "The Game Was Ended. Have a NIce Day!";
-    return; // exits the game if there is not user chice.
+    return; // exits the game if there no user choice.
   }
 
   userChoice = userChoice.toUpperCase();
@@ -44,8 +44,6 @@ var playGame = function () {
   } 
 
   messageEl.textContent ="Thank you for playing.."
-
-
 };
 
 playGame();

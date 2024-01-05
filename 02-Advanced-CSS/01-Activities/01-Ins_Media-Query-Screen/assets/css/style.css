@@ -25,7 +25,7 @@ nav p {
   text-decoration: none;
 }
 nav ul {
-  display:flex;
+  /* display:flex; */
   align-items: center;
   
   /* padding: 14px 20px; */

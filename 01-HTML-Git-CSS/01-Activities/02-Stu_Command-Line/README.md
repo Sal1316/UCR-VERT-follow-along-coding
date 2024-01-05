@@ -6,9 +6,9 @@ Work with a partner to implement the following user story:
 
 ## Acceptance Criteria
 
-* It's done when a new directory named `first-day` has been created using command-line commands.
+*✅ It's done when a new directory named `first-day` has been created using command-line commands.
 
-* It's done when the `first-day` directory contains a file named `index.html`. The file should also be created using command-line commands.
+*✅ It's done when the `first-day` directory contains a file named `index.html`. The file should also be created using command-line commands.
 
 ## 📝 Notes
 
@@ -20,13 +20,13 @@ Refer to the documentation:
 
 ## 💡 Hints
 
-What command can you use to list the contents of a directory? How can you use this command to check your work?
+What command can you use to list the contents of a directory? How can you use this command to check your work? ls
 
 ## 🏆 Bonus
 
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
-* Which command do you use to copy or move files?
+* Which command do you use to copy or move files? 
 
 Use [Google](https://www.google.com) or another search engine to research this.
 
