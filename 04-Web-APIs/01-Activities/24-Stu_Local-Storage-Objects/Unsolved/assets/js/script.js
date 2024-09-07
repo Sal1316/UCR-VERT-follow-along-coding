@@ -21,6 +21,6 @@ signUpButton.addEventListener("click", function(event) {
   userObject.email = passwordInput.value.trim();
   
   // TODO: Set new submission to local storage 
-  localStorage.setItem("userObj", JSON.stringify(userObject)); // still a JSON object so we have to convert it.
+  localStorage.setItem("userObj", JSON.stringify(userObject)); // still a JSON object so we have to convert it when we get it.
 
 });

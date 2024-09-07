@@ -6,6 +6,6 @@ console.log(this);
 console.log("window.document: ");
 console.log(window.document);
 
-// Logs body of document
+// Logs body of html document
 console.log("document.body: ");
 console.log( document.body);

@@ -2,7 +2,7 @@
 function bankAccount() {
   // Create two variables inside of the outer function.
   // We will be accessing the two variables inside of our inner function.
-  const checking = 400;
+  const checkings = 400;
   const savings = 1000;
 
   // Return a newly created inner function.
@@ -11,7 +11,7 @@ function bankAccount() {
       // We have access to our outer functions variable which we console.log.
       // This is a closure. The inner function has access to the outer functions scope.
       console.log(
-        `You have $${checking} in your checking account and $${savings} in your savings account`
+        `You have $${checkings} in your checking account and $${savings} in your savings account`
       );
     },
   };
@@ -27,5 +27,5 @@ myBank.displayFunds();
 console.dir(myBank); // with dir you can see if it has closure in the console.
 
 // By console logging the outer function's variable we can see that the variables are not able to be accessed.
-console.log(checking);
+console.log(checkings);
 console.log(savings);

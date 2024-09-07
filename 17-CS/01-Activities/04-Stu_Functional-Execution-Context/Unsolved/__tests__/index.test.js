@@ -1,4 +1,5 @@
-const avg = require("../index");
+const avg = require("../index"); // inportin the js file to test
+
 
 describe("The average function", () => {
   test("can find the average of the array", () => {

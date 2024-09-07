@@ -4,7 +4,7 @@ function counter() {
 
   return {
     increment: () => {
-      return ++count; // it increments it first. Pre increemnts as apposed to post increment count++
+      return ++count; // it increments it first. Pre increemnt (++count), as apposed to post increment (count++)
     },
   };
 }

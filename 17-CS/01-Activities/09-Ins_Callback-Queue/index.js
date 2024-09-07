@@ -24,7 +24,7 @@ function outer() {
 
 outer();
 
-// console
+// console logs: 
 // Yes, I'm listening
 // I like turtles
 // Are you listening?

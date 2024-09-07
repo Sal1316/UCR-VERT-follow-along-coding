@@ -1,4 +1,4 @@
-# 🏗️ Create a Function to Pass into the Reducer Method That Finds the Average of an Array of Numbers
+# ✅ 🏗️ Create a Function to Pass into the Reducer Method That Finds the Average of an Array of Numbers
 
 Work with a partner to implement the following user story:
 

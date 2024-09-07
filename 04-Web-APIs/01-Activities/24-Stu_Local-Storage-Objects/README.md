@@ -20,7 +20,7 @@ Refer to the documentation:
 
 ## 💡 Hints
 
-What JSON method can you use to return a string? 
+What JSON method can you use to return a string? JSON.Stringify()
 
 ## 🏆 Bonus
 

@@ -12,13 +12,13 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Set up sessions
-const sess = {
-  secret: "Super secret secret",
-  resave: false,
-  saveUninitialized: true,
-};
-
-app.use(session(sess));
+app.use(
+  session({
+    secret: "Super secret secret",
+    resave: false,
+    saveUninitialized: true,
+  })
+);
 
 const hbs = exphbs.create({ helpers });
 

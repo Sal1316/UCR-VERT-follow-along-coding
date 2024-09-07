@@ -11,15 +11,12 @@ const helpers = require("./utils/helpers");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// SESSIONS SET UP:
-const sess = {
-  secret: "Super secret secret", // you would want this in the .env file for security
+// USE SESSIONS:
+app.use(session({
+  secret: "Super secret secret", // this is a string used to sign the session ID cookie. You would want this in the .env file for security.
   resave: false, // forces the sesiong to be saved back to the session store(storage).
   saveUninitialized: false, // forces a session that in uninitializes
-};
-
-// USE SESSIONS:
-app.use(session(sess));
+}));
 
 const hbs = exphbs.create({ helpers });
 

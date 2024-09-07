@@ -1,4 +1,4 @@
-# 🐛 User Interaction with Application Is Blocked on Page Load
+# ✅ 🐛 User Interaction with Application Is Blocked on Page Load
 
 Work with a partner to resolve the following issue:
 

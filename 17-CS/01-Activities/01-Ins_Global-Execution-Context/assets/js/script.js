@@ -12,7 +12,7 @@ function sayHello(name) {
   console.log(`${greeting} ${name}, ${salutation}`);
 }
 
-// 3) The alert is a Web API, once resolved, is stored in the callback queue then the call stack to be processed
+// 3) The alert is a Web API, once resolved, it is stored in the callback queue then the call stack to be processed
 alert("What's up doc?");
 
 // 4) Calling sayHello, places it on the call stack which creates a new function execution context

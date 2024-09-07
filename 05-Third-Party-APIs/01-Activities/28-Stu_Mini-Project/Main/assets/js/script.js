@@ -6,10 +6,10 @@ var projectNameInputEl = $('#project-name-input');
 var projectTypeInputEl = $('#project-type-input');
 var projectDateInputEl = $('#project-date-input');
 
-// handle displaying the time
+// displaying current time.
 function displayTime() {
-  var rightNow = dayjs().format('MMM DD, YYYY [at] hh:mm:ss a');
-  timeDisplayEl.text(rightNow);
+  var timeRightNow = dayjs().format('MMM DD, YYYY [at] hh:mm:ss a');
+  timeDisplayEl.text(timeRightNow);
 }
 
 // Reads projects from local storage and returns array of project objects.
